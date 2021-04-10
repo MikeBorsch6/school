@@ -11,9 +11,24 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
 
         <!-- Styles -->
-        <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+        <style>
+            @php
+                echo(file_get_contents(public_path('css/app.css')))
+            @endphp
+        </style>
+        
+        {{-- <link rel="stylesheet" href="{{ base_path('public/css/app.css') }}"> --}}
 
         <!-- Scripts -->
+        
+        <script defer>
+            @php
+            echo(
+                file_get_contents(public_path('js/app.js'))
+            )
+            @endphp
+        </script>
+    
         <script src="{{ asset('js/app.js') }}" defer></script>
     </head>
     <body>
