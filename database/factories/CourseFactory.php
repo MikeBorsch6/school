@@ -38,8 +38,8 @@ class  CourseFactory extends Factory
             'section_actual' => $current,
             'section_remaining' => 30-$current,
             'user_id' => User::factory(),
-            'date' => '01/25-05/19',
-            'location' => 'REMOTE'
+            'date' => '01/25/20-05/19/20',
+            'location' => rand(100, 657),
         ];
     }
 }
