@@ -16,11 +16,11 @@
                 echo(file_get_contents(public_path('css/app.css')))
             @endphp
         </style>
-        
-        {{-- <link rel="stylesheet" href="{{ base_path('public/css/app.css') }}"> --}}
 
-        <!-- Scripts -->
-        
+       <link rel="stylesheet" href="{{ base_path('public/css/app.css') }}">
+
+
+
         <script defer>
             @php
             echo(
@@ -28,7 +28,7 @@
             )
             @endphp
         </script>
-    
+
         <script src="{{ asset('js/app.js') }}" defer></script>
     </head>
     <body>

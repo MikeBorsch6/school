@@ -1,202 +1,104 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Home</title>
-    <link rel="stylesheet" type="text/css" href="main.css">
+@extends('layouts.dashboard')
+@section('content')
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="{{asset('/images/school1.png')}}" style="width:100%">
+            <div class="text">Our Beautiful Campus</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="{{asset('/images/school2.png')}}" style="width:100%">
+            <div class="text">Our Beautiful Campus</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="{{asset('/images/school3.png')}}" style="width:100%">
+            <div class="text">Our Beautiful Campus</div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-</head>
+    </div>
+    <br>
 
-<style>
-    h5{
-        position: center;
-
-    }
-    {box-sizing: border-box}
-
-    .mySlides {display: none}
-    img {vertical-align: middle;}
-
-    /* Slideshow container */
-    .slideshow-container {
-        max-width: 10000px;
-        position: relative;
-        margin: auto;
-    }
-
-    /* Next & previous buttons */
-    .prev, .next {
-        cursor: pointer;
-        position: absolute;
-        top: 50%;
-        width: auto;
-        padding: 16px;
-        margin-top: -22px;
-        color: white;
-        font-weight: bold;
-        font-size: 18px;
-        transition: 0.6s ease;
-        border-radius: 0 3px 3px 0;
-        user-select: none;
-    }
-
-    /* Position the "next button" to the right */
-    .next {
-        right: 0;
-        border-radius: 3px 0 0 3px;
-    }
-
-    /* On hover, add a black background color with a little bit see-through */
-    .prev:hover, .next:hover {
-        background-color: rgba(0,0,0,0.8);
-    }
-
-    /* Caption text */
-    .text {
-        color: #f2f2f2;
-        font-size: 15px;
-        padding: 8px 12px;
-        position: absolute;
-        bottom: 8px;
-        width: 100%;
-        text-align: center;
-    }
-
-    /* Number text (1/3 etc) */
-    .numbertext {
-        color: #f2f2f2;
-        font-size: 12px;
-        padding: 8px 12px;
-        position: absolute;
-        top: 0;
-    }
-
-    /* The dots/bullets/indicators */
-    .dot {
-        cursor: pointer;
-        height: 15px;
-        width: 15px;
-        margin: 0 2px;
-        background-color: #bbb;
-        border-radius: 50%;
-        display: inline-block;
-        transition: background-color 0.6s ease;
-    }
-
-    .active, .dot:hover {
-        background-color: #717171;
-    }
-
-    /* Fading animation */
-    .fade {
-        -webkit-animation-name: fade;
-        -webkit-animation-duration: 1.5s;
-        animation-name: fade;
-        animation-duration: 1.5s;
-    }
-
-    @-webkit-keyframes fade {
-        from {opacity: .4}
-        to {opacity: 1}
-    }
-
-    @keyframes fade {
-        from {opacity: .4}
-        to {opacity: 1}
-    }
-
-    /* On smaller screens, decrease text size */
-    @media only screen and (max-width: 300px) {
-        .prev, .next,.text {font-size: 11px}
-    }
-</style>
-
-
-<body>
-<header id = "main-header">
-
-    <h1>Saturn University</h1>
-    <h5>The Galaxy is the limit.<h4>
-
-</header>
-
-<ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="catalog.html">Catalog</a></li>
-    <li><a href="masterschedule.html">Master Schedule</a></li>
-    <li><a href="academicC.html">Academic Calendar</a></li>
-    <li class="right"><a href="Login.html">Log in</a></li>
-</ul>
-
-
-
-<div class="slideshow-container">
-
-    <div class="mySlides fade">
-        <div class="numbertext"></div>
-        <img src="school1.png" style="width:100%">
-        <div class="text">Our Beautiful Campus</div>
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
     </div>
 
-    <div class="mySlides fade">
-        <div class="numbertext"></div>
-        <img src="school2.png" style="width:100%">
-        <div class="text">Our Beautiful Campus</div>
+
+    <div>
+        <p>Here at our university you will excel</p>
+    </div>
+    <div>
+        <div class = "president">
+            <div class="title">
+                Learn about our efforts against Covid
+            </div>
+            <div class ="presimg">A word from our President:<p style="float: left;"><img src="ceotest2.png" height="200px" width="200px" border="1px"></p></div>
+            <div>
+                <p>"During times of loss and distance learning, we are determined to help our students with the resources our school has available. We never want them to lose hope in their future."</p>
+            </div>
+        </div>
     </div>
 
-    <div class="mySlides fade">
-        <div class="numbertext"></div>
-        <img src="school3.png" style="width:100%">
-        <div class="text">Our Beautiful Campus</div>
+    <div>
+        <div class = "nasapanel">
+            <div class="title">
+                Our Partnership with NASA
+            </div>
+            <div class ="presimg"><img src="logonasa.png"><p style="float: right;"><img src="nasa.png" height="200px" width="200px" border="1px"></p></div>
+            <div>
+                <p>As NASA continues to push the boundaries of exploration further into space than ever before, the agency is looking to the next generation to join STEM fields. Students interested in science, technology, engineering and mathematics-focused careers can engage in educational opportunities at Saturn University.</p>
+            </div>
+        </div>
     </div>
 
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <div>
+        <div class = "aboutus">
+            <div class="title">
+                About Saturn University
+            </div>
+            <div class ="presimg"><p style="float: right;"><img src="school3.png" height="200px" width="300px" border="1px"></p></div>
+            <div>
+                <p>Saturn University is a dynamic and diverse STEM focused college that fosters academic excellence through close interaction among students, faculty and staff. Saturn University weaves the values of integrity, community engagement, and global citizenship into the fabric of its academic programs and campus life. In an environment that cultivates critical thinking, empathy, creativity and intercultural understanding, we endeavor to stimulate a passion for learning and a commitment to building a more just and sustainable world. Mission.</p>
+            </div>
+            <div><p style="float: right;"><img src = "school1.png" height="200px" width="300px" border = "1px"></p></div>
+        </div>
+    </div>
 
-</div>
-<br>
+    </body>
+@endsection
 
-<div style="text-align:center">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
-</div>
+@section('scripts')
+            <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
 
-<script>
-    var slideIndex = 1;
-    showSlides(slideIndex);
+            function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
 
-    function plusSlides(n) {
-        showSlides(slideIndex += n);
-    }
+            function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
 
-    function currentSlide(n) {
-        showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++) {
+            function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
             slides[i].style.display = "none";
         }
-        for (i = 0; i < dots.length; i++) {
+            for (i = 0; i < dots.length; i++) {
             dots[i].className = dots[i].className.replace(" active", "");
         }
-        slides[slideIndex-1].style.display = "block";
-        dots[slideIndex-1].className += " active";
-    }
-</script>
-
-<div>
-    <p>Here at our university you will excel</p>
-</div>
-
-
-</body>
-<div class="copyrightSec">
-    <p>Copyright Saturn University</p>
-</div>
-</html>
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+        }
+    </script>
+@endsection
