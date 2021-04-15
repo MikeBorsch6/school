@@ -3,17 +3,17 @@
     <div class="slideshow-container">
         <div class="mySlides fade">
             <div class="numbertext"></div>
-            <img src="{{asset('/images/school1.png')}}" style="width:100%">
+            <img src="{{asset('/images/student1.png')}}" style="width:100%">
             <div class="text">Our Beautiful Campus</div>
         </div>
         <div class="mySlides fade">
             <div class="numbertext"></div>
-            <img src="{{asset('/images/school2.png')}}" style="width:100%">
+            <img src="{{asset('/images/student2.png')}}" style="width:100%">
             <div class="text">Our Beautiful Campus</div>
         </div>
         <div class="mySlides fade">
             <div class="numbertext"></div>
-            <img src="{{asset('/images/school3.png')}}" style="width:100%">
+            <img src="{{asset('/images/student3.png')}}" style="width:100%">
             <div class="text">Our Beautiful Campus</div>
         </div>
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
