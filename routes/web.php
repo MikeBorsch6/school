@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controller\LoginComntroller;
-use App\Http\Controller\DashboardController;
+use App\Http\Controller\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,13 +19,21 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/dashboard', function(){
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
+Route::get('/home', function(){
+    return view('home');
+})->middleware(['auth'])->name('home');
 
 Route::get('/login', function(){
     return view('login');
 })->middleware(['auth'])->name('login');;
+
+Route::get('/catalog', function(){
+    return view('catalog');
+})->middleware(['auth'])->name('catalog');;
+
+Route::get('/masterschedule', function(){
+    return view('masterschedule');
+})->middleware(['auth'])->name('masterschedule');;
 
 
 

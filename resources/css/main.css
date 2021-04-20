@@ -1,7 +1,9 @@
 body {
     font-size: 18px;
     color: gray;
-    background-image: url("back2.jpg");
+    background-image: url('/public/images/back2.png');
+    object-position: center;
+    align-content: center;
 
 }
 
@@ -22,7 +24,7 @@ li {
 
 li a {
     display: block;
-    color: darkgoldenrod;
+    color: #B8860B;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -31,6 +33,10 @@ li a {
 li a:hover {
     background-color: black;
 }
+h1.title1{
+    text-align: center;
+}
+
 
 .active {
     background-color: navy;
@@ -45,9 +51,9 @@ li a:hover {
     font-family: Geneva;
     color:darkgoldenrod;
     background-color:darkslateblue;
-    background-image: url(saturn1.png);
+    background-image: url('/public/images/saturn1.png');
     background-repeat: no-repeat;
-    background-image-size: 20px
+    background-image-size: 20px;
 
     color:goldenrod;
     padding: 30px;
@@ -161,3 +167,180 @@ img {vertical-align: middle;}
 @media only screen and (max-width: 300px) {
     .prev, .next,.text {font-size: 11px}
 }
+
+.president{
+    border: 2px goldenrod;
+    background-color: black;
+    padding: 20px;
+    font-family: serif;
+    display: block;
+    outline: #483D8B solid 10px;
+    margin: 100px 80px 100px 80px;
+    position: right;
+    text-align: right;
+    font-style: italic;
+    font-size: 30px;
+    display: inline-block;
+
+}
+
+.presimg{
+    position: left;
+    font-size: 18px;
+    font-style: bold;
+    font-family: verdana;
+
+}
+
+.title{
+    border: 2px;
+    padding: 10px;
+    text-align: left;
+    font-size: 18px;
+    font-family: Geneva;
+    color: goldenrod;
+}
+
+.nasapanel{
+    border: 2px goldenrod;
+    background-color: black;
+    padding: 20px;
+    width: 400px;
+    float: left;
+    height: 400px;
+    margin: 80px;
+    display: block;
+    outline: #483D8B solid 10px;
+    left: 100px;
+}
+
+.aboutus
+{
+    outline-style: vertical;
+    outline-style: thin;
+    font-size: 18px;
+    font-family: Geneva;
+}
+
+
+.copyrightSec {
+    font-size: 10px;
+    overflow: hidden;
+    background-color: #483D8B;
+    position: bottom;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+}
+
+
+table.tableAc{
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 90%;
+    padding: 30px;
+    display: block;
+    justify-content: center;
+    margin: 10px 50px;
+
+
+}
+
+table.tableAc td, table.tableAc th {
+    border: 2px solid #58427c;
+    text-align: left;
+    padding: 8px;
+}
+
+table.tableAc tr:nth-child(even) {
+    background-color: #f8f8ff;
+}
+table.tableAc tr:nth-child(odd) {
+    background-color: #dcd0ff;
+}
+
+
+table.tableCat {
+    border: 1px solid lavender;
+    background-color: lavender;
+    width:100%;
+
+}
+table.tableCat th{
+    background-color:#58427c ;
+    color: black;
+}
+
+table.tableCat tr:nth-child(even) {
+    background-color: #cec8ef;
+    color: black;
+    text-align: center;
+}
+table.tableCat tr:nth-child(odd) {
+    background-color: #e6e6fa;
+    color: black;
+    text-align: center;
+}
+
+table.tableMa {
+    font-family: arial, sans-serif;
+    border: 1px solid lavender;
+    background-color: lavender;
+    width:100%;
+    color: black;
+}
+
+table.tableMa th{
+    background-color:#58427c ;
+    color: black;
+}
+
+.btn-group button {
+
+    background-color: #f8f8ff; /* white background */
+    border: 1px solid purple; /* purple border */
+    color: black;
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer;
+    margin: 10px;
+    justify-content: center;
+    width: 10%;
+    position: relative;
+
+}
+
+.btn-group button:not(:last-child) {
+    border-bottom: none; /* Prevent double borders */
+
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+    background-color: #A39EC5;
+}
+
+.depart button{
+    background-color: #dcd0ff; /* Green background */
+    border: 1px solid black; /* Green border */
+    color: white; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    width: 50%; /* Set a width if needed */
+    display: block; /* Make the buttons appear below each other */
+    margin: 0px 350px;
+
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center; /*take this out*/
+    height: 200px;
+
+}
+
+
+
+
+
+

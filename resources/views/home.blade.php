@@ -1,4 +1,4 @@
-@extends('layouts.dashboard')
+@extends('layouts.home')
 @section('content')
     <div class="slideshow-container">
         <div class="mySlides fade">
