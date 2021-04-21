@@ -17,24 +17,31 @@
 </header>
 
 <ul>
-    <li><a href="home.blade.php">Home</a></li>
-    <li><a href="catalog.blade.php">Catalog</a></li>
-    <li><a href="masterschedule.blade.php">Master Schedule</a></li>
-    <li><a href="selectCal.html">Academic Calendar</a></li>
+    <li><a href="/home">Home</a></li>
+    <li><a href="/catalog">Catalog</a></li>
+    <li><a href="/masterschedule">Master Schedule</a></li>
+    <li><a href="/selectCal">Academic Calendar</a></li>
     <li class="right"><a href="Login.html">Log in</a></li>
 </ul>
 
 </body>
 
 </head>
+
+<style>
+    @php
+        echo(file_get_contents(public_path('css/main.css')))
+    @endphp
+</style>
+
 <body>
 
 <h1 class="title1">Master Schedule</h1>
 
 <div class="btn-group">
     <div class="center">
-        <button class="btn-group"><a href="selDepMaF21.blade.php">Fall 2021</button>
-        <button class="btn-group"><a href="selDepMaS21.blade.php">Spring 2021</button>
+        <button class="btn-group"><a href="/selDepMaF21">Fall 2021</button>
+        <button class="btn-group"><a href="/selDepMaS21">Spring 2021</button>
     </div>
 </div>
 

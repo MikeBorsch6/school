@@ -1,7 +1,7 @@
 <!DOCTYPE html>
   <html>
   <head>
-    <title>Master Schedule Fall 2021</title>
+    <title>Master Schedule Spring 2021</title>
      <link rel="stylesheet" type="text/css" href="main.css">
 
 
@@ -13,10 +13,10 @@
     </header>
 
     <ul>
-        <li><a href="/home">Home</a></li>
-        <li><a href="/catalog">Catalog</a></li>
-        <li><a href="/masterschedule">Master Schedule</a></li>
-        <li><a href="/selectCal">Academic Calendar</a></li>
+      <li><a href="index.html">Home</a></li>
+        <li><a href="selDepCat.html">Catalog</a></li>
+        <li><a href="selMaster.html">Master Schedule</a></li>
+        <li><a href="selectCal.html">Academic Calendar</a></li>
         <li class="right"><a href="Login.html">Log in</a></li>
     </ul>
 
@@ -30,7 +30,7 @@
 
 <body>
 
-    <h1 class="title1">Women's Studies</h1>
+    <h1 class="title1">Education</h1>
 <table class="tableMa">
   <tr>
     <th>CRN</th>
@@ -59,7 +59,7 @@
     <td>paulas@saturnuni.com</td>
   </tr>
   <tr>
-    <td>10308</td>
+    <td>10311</td>
     <td>2321</td>
     <td>2897</td>
     <td>Intro to American History</td>

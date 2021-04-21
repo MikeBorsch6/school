@@ -13,10 +13,10 @@
     <h1>Saturn University</h1>
     <h5>The Galaxy is the limit.</h5>
     <ul>
-        <li><a href="home.blade.php">Home</a></li>
-        <li><a href="catalog.blade.php">Catalog</a></li>
-        <li><a href="masterschedule.blade.php">Master Schedule</a></li>
-        <li><a href="academicC.html">Academic Calendar</a></li>
+        <li><a href="/home">Home</a></li>
+        <li><a href="/catalog">Catalog</a></li>
+        <li><a href="/masterschedule">Master Schedule</a></li>
+        <li><a href="/selectCal">Academic Calendar</a></li>
         <li class="right"><a href="Login.html">Log in</a></li>
     </ul>
 

@@ -13,14 +13,20 @@
     </header>
 
     <ul>
-        <li><a href="home.blade.php">Home</a></li>
-        <li><a href="catalog.blade.php">Catalog</a></li>
-        <li><a href="masterschedule.blade.php">Master Schedule</a></li>
-        <li><a href="selectCal.html">Academic Calendar</a></li>
+        <li><a href="/home">Home</a></li>
+        <li><a href="/catalog">Catalog</a></li>
+        <li><a href="/masterschedule">Master Schedule</a></li>
+        <li><a href="/selectCal">Academic Calendar</a></li>
         <li class="right"><a href="Login.html">Log in</a></li>
     </ul>
 
 </head>
+
+<style>
+    @php
+        echo(file_get_contents(public_path('css/main.css')))
+    @endphp
+</style>
 
 
 	<body>
@@ -29,14 +35,14 @@
 <div class="container">
       <div class="center2">
         <div class="depart">
-  		<button class="depart"><a href ="americStudyM1.blade.php">American Studies</a></button>
+  		<button class="depart"><a href ="americanstudiesM1.blade.php">American Studies</a></button>
       <button class="depart"><a href ="bioSciM1.blade.php">Biological Sciences</a></button>
       <button class="depart"><a href ="businessM1.blade.php">Business</a></button>
       <button class="depart"><a href ="chemPhyM1.blade.php">Chemistry and Physics</a></button>
       <button class="depart"><a href ="comLearnM1.blade.php">Community Learning</a></button>
       <button class="depart"><a href ="compSciM1.blade.php">Computer Science</a></button>
       <button class="depart"><a href ="crimiM1.blade.php">Criminology</a></button>
-      <button class="depart"><a href ="educaM1.html">Education</a></button>
+      <button class="depart"><a href ="educaM1.blade.php">Education</a></button>
       <button class="depart"><a href ="englishM1.blade.php">English</a></button>
       <button class="depart"><a href ="firstYrM1.blade.php">First-Year Experience</a></button>
       <button class="depart"><a href ="genStudyM1.blade.php">General Studies</a></button>

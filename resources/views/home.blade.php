@@ -66,6 +66,7 @@
                 <p>Saturn University is a dynamic and diverse STEM focused college that fosters academic excellence through close interaction among students, faculty and staff. Saturn University weaves the values of integrity, community engagement, and global citizenship into the fabric of its academic programs and campus life. In an environment that cultivates critical thinking, empathy, creativity and intercultural understanding, we endeavor to stimulate a passion for learning and a commitment to building a more just and sustainable world. Mission.</p>
             </div>
             <div><p style="float: right;"><img src = "school1.png" height="200px" width="300px" border = "1px"></p></div>
+
         </div>
     </div>
 
