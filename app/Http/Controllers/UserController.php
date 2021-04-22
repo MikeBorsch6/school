@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Faker\Factory as Faker;
 use App\Models\Course;
 use Illuminate\Http\Request;
 use App\Models\User;
@@ -18,6 +18,16 @@ class UserController extends Controller
     public function create()
     {
         //
+    }
+
+    public static function address()
+    {
+        $faker = Faker::create();
+        $users=User::all();
+        $users->each(function($x,$key) use($faker){
+            $x->address = $faker->address;
+            $x->save();
+        });
     }
 
     public function store(Request $request)
