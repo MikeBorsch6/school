@@ -1,7 +1,7 @@
 body {
     font-size: 18px;
     color: gray;
-    background-image: url('/public/images/back2.png');
+    background-image: url('/images/back2.png');
     object-position: center;
     align-content: center;
 }
@@ -49,9 +49,9 @@ h1.title1{
     font-family: Geneva;
     color:darkgoldenrod;
     background-color:darkslateblue;
-    background-image: url('/public/images/saturn1.png');
+    background-image: url('/images/saturn1.png');
     background-repeat: no-repeat;
-    background-image-size: 20px
+    background-image-size: 20px;
 
     color:goldenrod;
     padding: 30px;
@@ -327,7 +327,6 @@ table.tableMa th{
     align-items: center; /*take this out*/
     height: 200px;
 }
-
 
 
 

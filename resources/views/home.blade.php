@@ -4,17 +4,14 @@
         <div class="mySlides fade">
             <div class="numbertext"></div>
             <img src="{{asset('/images/student1.png')}}" style="width:100%">
-            <div class="text">Our Beautiful Campus</div>
         </div>
         <div class="mySlides fade">
             <div class="numbertext"></div>
             <img src="{{asset('/images/student2.png')}}" style="width:100%">
-            <div class="text">Our Beautiful Campus</div>
         </div>
         <div class="mySlides fade">
             <div class="numbertext"></div>
             <img src="{{asset('/images/student3.png')}}" style="width:100%">
-            <div class="text">Our Beautiful Campus</div>
         </div>
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -28,16 +25,12 @@
         <span class="dot" onclick="currentSlide(3)"></span>
     </div>
 
-
-    <div>
-        <p>Here at our university you will excel</p>
-    </div>
     <div>
         <div class = "president">
             <div class="title">
                 Learn about our efforts against Covid
             </div>
-            <div class ="presimg">A word from our President:<p style="float: left;"><img src="ceotest2.png" height="200px" width="200px" border="1px"></p></div>
+            <div class ="presimg">A word from our President:<p style="float: left;"><img src="/images/ceotest2.png" height="200px" width="200px" border="1px"></p></div>
             <div>
                 <p>"During times of loss and distance learning, we are determined to help our students with the resources our school has available. We never want them to lose hope in their future."</p>
             </div>
@@ -49,7 +42,7 @@
             <div class="title">
                 Our Partnership with NASA
             </div>
-            <div class ="presimg"><img src="logonasa.png"><p style="float: right;"><img src="nasa.png" height="200px" width="200px" border="1px"></p></div>
+            <div class ="presimg"><img src="/images/logonasa.png"><p style="float: right;"><img src="/images/nasa.png" height="200px" width="200px" border="1px"></p></div>
             <div>
                 <p>As NASA continues to push the boundaries of exploration further into space than ever before, the agency is looking to the next generation to join STEM fields. Students interested in science, technology, engineering and mathematics-focused careers can engage in educational opportunities at Saturn University.</p>
             </div>
@@ -61,11 +54,11 @@
             <div class="title">
                 About Saturn University
             </div>
-            <div class ="presimg"><p style="float: right;"><img src="school3.png" height="200px" width="300px" border="1px"></p></div>
+            <div class ="presimg"><p style="float: right;"><img src="/images/school3.png" height="200px" width="300px" border="1px"></p></div>
             <div>
                 <p>Saturn University is a dynamic and diverse STEM focused college that fosters academic excellence through close interaction among students, faculty and staff. Saturn University weaves the values of integrity, community engagement, and global citizenship into the fabric of its academic programs and campus life. In an environment that cultivates critical thinking, empathy, creativity and intercultural understanding, we endeavor to stimulate a passion for learning and a commitment to building a more just and sustainable world. Mission.</p>
             </div>
-            <div><p style="float: right;"><img src = "school1.png" height="200px" width="300px" border = "1px"></p></div>
+            <div><p style="float: right;"><img src = "/images/school1.png" height="200px" width="300px" border = "1px"></p></div>
 
         </div>
     </div>

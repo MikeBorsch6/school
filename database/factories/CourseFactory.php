@@ -25,7 +25,7 @@ class  CourseFactory extends Factory
         $selectedCourse = array_rand($course);
 
         return [
-            'crn' => rand(10000, 19999),
+            'crn' => rand(20000, 29999),
             'subject' => $selectedCourse,
             'course' => 1500,
             'section' => 001,
@@ -37,7 +37,6 @@ class  CourseFactory extends Factory
             'capacity' => 30,
             'section_actual' => $current,
             'section_remaining' => 30-$current,
-            'user_id' => User::factory(),
             'date' => '01/25/20-05/19/20',
             'location' => rand(100, 657),
         ];

@@ -6,7 +6,7 @@
 		<header id = "main-header">
 
 			<h1>Saturn University</h1>
-				<h5>The Galaxy is the limit.</h5>
+            <h5>The Galaxy is the limit.</h5>
 
 		</header>
 
