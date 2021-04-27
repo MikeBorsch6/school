@@ -47,13 +47,13 @@ Route::get('/selectCal', function(){
     return view('layouts.selectCal');
 })->middleware(['auth'])->name('selectCal');
 
-Route::get('/selectCal/academicCFall', function(){
-    return view('layouts.academicCFall');
-})->middleware(['auth'])->name('academicCalCFall');
+Route::get('/selectCal/academicCFall21', function(){
+    return view('layouts.academicCFall21');
+})->middleware(['auth'])->name('academicCalCFall21');
 
-Route::get('/selectCal/academicCSpring', function(){
-    return view('layouts.academicCSpring');
-})->middleware(['auth'])->name('academicCSpring');
+Route::get('/selectCal/academicCSpring21', function(){
+    return view('layouts.academicCSpring21');
+})->middleware(['auth'])->name('academicCSpring21');
 
 Route::get('/departments/americanstudies', function(){
     return view("layouts.americanstudies");
