@@ -40,7 +40,7 @@ Route::get('/selectCal', function(){
 })->middleware(['auth'])->name('selectCal');
 
 Route::get('/departments/americanstudies', function(){
-    return view("layouts.americanstudy");
+    return view("layouts.americanstudies");
 })->middleware(['auth']);
 
 Route::get('/departments/americanstudiesM', function(){

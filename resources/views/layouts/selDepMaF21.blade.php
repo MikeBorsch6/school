@@ -17,7 +17,7 @@
         <li><a href="/catalog">Catalog</a></li>
         <li><a href="/masterschedule">Master Schedule</a></li>
         <li><a href="/selectCal">Academic Calendar</a></li>
-        <li class="right"><a href="Login.html">Log in</a></li>
+        <li class="right"><a href="/login">Log in</a></li>
     </ul>
 
 </head>
@@ -35,32 +35,30 @@
 <div class="container">
       <div class="center2">
         <div class="depart">
-  		<button class="depart"><a href ="americanstudiesM.blade.php">American Studies</a></button>
-  		<button class="depart"><a href ="bioSciM.blade.php">Biological Sciences</a></button>
-  		<button class="depart"><a href ="businessM.blade.php">Business</a></button>
-  		<button class="depart"><a href ="chemPhyM.blade.php">Chemistry and Physics</a></button>
-  		<button class="depart"><a href ="comLearnM.blade.php">Community Learning</a></button>
-  		<button class="depart"><a href ="compSciM.blade.php">Computer Science</a></button>
-      <button class="depart"><a href ="crimiM.blade.php">Criminology</a></button>
-      <button class="depart"><a href ="educaM.blade.php">Education</a></button>
-      <button class="depart"><a href ="englishM.blade.php">English</a></button>
-      <button class="depart"><a href ="firstYrM.blade.php">First-Year Experience</a></button>
-      <button class="depart"><a href ="genStudyM.blade.php">General Studies</a></button>
-      <button class="depart"><a href ="histPhilM.blade.php">History and Philosophy</a></button>
-      <button class="depart"><a href ="libStudyM.blade.php">Liberal Studies</a></button>
-      <button class="depart"><a href ="mathM.blade.php">Mathematics</a></button>
-      <button class="depart"><a href ="mentalM.blade.php">Mental Health</a></button>
-      <button class="depart"><a href ="modernLanM.blade.php">Modern Languages</a></button>
-      <button class="depart"><a href ="musicDM.blade.php">Music and Dance</a></button>
-      <button class="depart"><a href ="polEcoLawM.blade.php">Politics, Economics, and Law</a></button>
-      <button class="depart"><a href ="proStudyM.blade.php">Professional Studies</a></button>
-      <button class="depart"><a href ="psychM.blade.php">Psychology</a></button>
-      <button class="depart"><a href ="publicHealM.blade.php">Public Health</a></button>
-      <button class="depart"><a href ="socioM.blade.php">Sociology</a></button>
-      <button class="depart"><a href ="visualAM.blade.php">Visual Arts</a></button>
-      <button class="depart"><a href ="womenStudyM.blade.php">Women's Studies</a></button>
-
-
+            <button class="depart"><a href ="/departments/americanstudiesM">American Studies</a></button>
+            <button class="depart"><a href ="/departments/bioscienceM">Biological Sciences</a></button>
+            <button class="depart"><a href ="/departments/businessM">Business</a></button>
+            <button class="depart"><a href ="/departments/chemphyM">Chemistry and Physics</a></button>
+            <button class="depart"><a href ="/departments/comlearningM">Community Learning</a></button>
+            <button class="depart"><a href ="/departments/compscienceM">Computer Science</a></button>
+            <button class="depart"><a href ="/departments/criminologyM">Criminology</a></button>
+            <button class="depart"><a href ="/departments/educationM">Education</a></button>
+            <button class="depart"><a href ="/departments/englishM">English</a></button>
+            <button class="depart"><a href ="/departments/firstyearM">First-Year Experience</a></button>
+            <button class="depart"><a href ="/departments/genstudyM">General Studies</a></button>
+            <button class="depart"><a href ="/departments/histphilM">History and Philosophy</a></button>
+            <button class="depart"><a href ="/departments/libstudyM">Liberal Studies</a></button>
+            <button class="depart"><a href ="/departments/mathM">Mathematics</a></button>
+            <button class="depart"><a href ="/departments/mentalM">Mental Health</a></button>
+            <button class="depart"><a href ="/departments/modernlanM">Modern Languages</a></button>
+            <button class="depart"><a href ="/departments/musicdM">Music and Dance</a></button>
+            <button class="depart"><a href ="/departments/polecolawM">Politics, Economics, and Law</a></button>
+            <button class="depart"><a href ="/departments/prostudyM">Professional Studies</a></button>
+            <button class="depart"><a href ="/departments/psychologyM">Psychology</a></button>
+            <button class="depart"><a href ="/departments/publichealthM">Public Health</a></button>
+            <button class="depart"><a href ="/departments/sociologyM">Sociology</a></button>
+            <button class="depart"><a href ="/departments/visualartsM">Visual Arts</a></button>
+            <button class="depart"><a href ="/departments/womenstudiesM">Women's Studies</a></button>
 
 		</div>
     </div>

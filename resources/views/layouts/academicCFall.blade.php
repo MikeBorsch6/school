@@ -11,11 +11,11 @@
     </header>
 
     <ul>
-        <li><a href="home.blade.php">Home</a></li>
-        <li><a href="catalog.blade.php">Catalog</a></li>
-        <li><a href="masterschedule.blade.php">Master Schedule</a></li>
-        <li><a href="selectCal.blade.php">Academic Calendar</a></li>
-        <li class="right"><a href="Login.html">Log in</a></li>
+        <li><a href="/home">Home</a></li>
+        <li><a href="/catalog">Catalog</a></li>
+        <li><a href="/masterschedule">Master Schedule</a></li>
+        <li><a href="/academicCFall">Academic Calendar</a></li>
+        <li class="right"><a href="/login">Log in</a></li>
     </ul>
     </head>
 

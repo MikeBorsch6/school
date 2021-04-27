@@ -18,7 +18,7 @@
         <li><a href="/catalog">Catalog</a></li>
         <li><a href="/masterschedule">Master Schedule</a></li>
         <li><a href="/selectCal">Academic Calendar</a></li>
-        <li class="right"><a href="Login.html">Log in</a></li>
+        <li class="right"><a href="/login">Log in</a></li>
     </ul>
 
 </head>

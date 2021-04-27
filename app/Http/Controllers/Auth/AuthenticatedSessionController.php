@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Auth;
 
 class AuthenticatedSessionController extends Controller
 {
-    
+
     public function create()
     {
         return view('auth.login');
@@ -21,7 +21,6 @@ class AuthenticatedSessionController extends Controller
         $request->authenticate();
 
         $request->session()->regenerate(); /**session token, so you can go to different pages on shcool site*/
-
         return redirect()->intended(RouteServiceProvider::HOME);
     }
 
