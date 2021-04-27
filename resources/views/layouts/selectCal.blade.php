@@ -36,8 +36,8 @@
 
 		<div class="btn-group">
       <div class="center">
-        <button class="btn-group"><a href="academicCFall.blade.php">Fall 2021</button>
-        <button class="btn-group"><a href="academicCSpring.blade.php">Spring 2021</button>
+        <button class="btn-group"><a href="/selectCal/academicCFall">Fall 2021</a></button>
+        <button class="btn-group"><a href="/selectCal/academicCSpring">Spring 2021</a></button>
   		</div>
 		</div>
 

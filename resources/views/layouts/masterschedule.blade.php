@@ -40,8 +40,8 @@
 
 <div class="btn-group">
     <div class="center">
-        <button class="btn-group"><a href="/selDepMaF21">Fall 2021</button>
-        <button class="btn-group"><a href="/selDepMaS21">Spring 2021</button>
+        <button class="btn-group"><a href="/masterschedule/selDepMaF21">Fall 2021</button>
+        <button class="btn-group"><a href="/masterschedule/selDepMaS21">Spring 2021</button>
     </div>
 </div>
 

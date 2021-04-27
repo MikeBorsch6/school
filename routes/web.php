@@ -35,20 +35,36 @@ Route::get('/masterschedule', function(){
     return view('layouts.masterschedule');
 })->middleware(['auth'])->name('masterschedule');
 
+Route::get('/masterschedule/selDepMaF21', function(){
+    return view('layouts.selDepMaF21');
+})->middleware(['auth'])->name('selDepMaF21');
+
+Route::get('/masterschedule/selDepMaS21', function(){
+    return view('layouts.selDepMaS21');
+})->middleware(['auth'])->name('selDepMaS21');
+
 Route::get('/selectCal', function(){
     return view('layouts.selectCal');
 })->middleware(['auth'])->name('selectCal');
+
+Route::get('/selectCal/academicCFall', function(){
+    return view('layouts.academicCFall');
+})->middleware(['auth'])->name('academicCalCFall');
+
+Route::get('/selectCal/academicCSpring', function(){
+    return view('layouts.academicCSpring');
+})->middleware(['auth'])->name('academicCSpring');
 
 Route::get('/departments/americanstudies', function(){
     return view("layouts.americanstudies");
 })->middleware(['auth']);
 
 Route::get('/departments/americanstudiesM', function(){
-    return view("layouts.americanstudyM");
+    return view("layouts.americanstudiesM");
 })->middleware(['auth']);
 
 Route::get('/departments/americanstudiesM1', function(){
-    return view("layouts.americanstudyM1");
+    return view("layouts.americanstudiesM1");
 })->middleware(['auth']);
 
 Route::get('/departments/bioscience', function(){
@@ -103,11 +119,11 @@ Route::get('/departments/compscience', function(){
     return view("layouts.compSci");
 })->middleware(['auth']);
 
-Route::get('/departments/compsciM', function(){
+Route::get('/departments/compscienceM', function(){
     return view("layouts.compSciM");
 })->middleware(['auth']);
 
-Route::get('/departments/compsciM1', function(){
+Route::get('/departments/compscienceM1', function(){
     return view("layouts.compSciM1");
 })->middleware(['auth']);
 

@@ -14,7 +14,7 @@
             <li><a href="/home">Home</a></li>
             <li><a href="/catalog">Catalog</a></li>
             <li><a href="/masterschedule">Master Schedule</a></li>
-  			<li><a href="/academicC">Academic Calendar</a></li>
+  			<li><a href="/academicCSpring">Academic Calendar</a></li>
   			<li class="right"><a href="/login">Log in</a></li>
 		</ul>
 
