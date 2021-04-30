@@ -4,16 +4,13 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use User;
+use App\Models\Grade;
 
-class Course extends Model
+class CourseUser extends Model
 {
     use HasFactory;
 
-    public function users()
-    {
-        return $this->belongsToMany(User::class);
-    }
+    protected $table = 'course_user';
 
     public function grade()
     {

@@ -33,4 +33,9 @@ class User extends Authenticatable
     {
         return $this->belongsToMany(Course::class);
     }
+
+    public function grades()
+    {
+        return $this->courses->grades();
+    }
 }

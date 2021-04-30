@@ -13,11 +13,21 @@ class UserFactory extends Factory
 
     public function definition()
     {
+        $roles = [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+        ];
+
         return [
             'name' => $this->faker->name,
             'email' => $this->faker->unique()->safeEmail,
             'email_verified_at' => now(),
-            'role_id' => 1,
+            'role_id' => $roles[array_rand($roles)],
             'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
             'remember_token' => Str::random(10),
             'address' => $this->faker->address
