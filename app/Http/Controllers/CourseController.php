@@ -60,8 +60,16 @@ class CourseController extends Controller
          $query = Course::whereYear('created_at', $year);
 
         match ($semester) {
-            '1' => $query->where('date', '01/25-05/19'),
-            '2' => $query->where('date', '08/03-12/15')
+            '1' => $query->where('date', '01/25/21-05/19/21'),
+            '2' => $query->where('date', '08/03/21-12/15/21'),
+            '3' => $query->where('date', '01/25/20-05/19/20'),
+            '4' => $query->where('date', '08/03/20-12/15/20'),
+            '5' => $query->where('date', '01/25/19-05/19/19'),
+            '6' => $query->where('date', '08/03/19-12/15/19'),
+            '7' => $query->where('date', '01/25/18-05/19/18'),
+            '8' => $query->where('date', '08/03/18-12/15/18'),
+            '9' => $query->where('date', '01/25/17-05/19/17'),
+            '10' => $query->where('date', '08/03/17-12/15/17')
         };
 
         return $query->get();
