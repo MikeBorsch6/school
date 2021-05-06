@@ -1,0 +1,686 @@
+body {
+    font-family: Geneva;
+    text-align: center;
+    font-size: 18px;
+    color: black;
+    background-image: url('/public/images/back2.png');
+
+
+}
+#grad1 {
+    height: 1500px;
+    background-color: purple; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to bottom right, darkslateblue, lavender);
+    background-size: cover;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #483D8B;
+}
+
+
+.dropbtn {
+    background-color: #6c63a2;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: right;
+    display: inline-block;
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #ecebf3;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #C2C2C2;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #6c63a2;
+}
+
+.header img {
+    float: left;
+    width: 50px;
+    height: 50px;
+
+}
+
+.button {
+    background-color: #b19cd9;
+    border: none;
+    color: white;
+    padding: 21px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 40px 20px;
+    cursor: pointer;
+    border-radius: 70%;
+}
+{
+    box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+    width: 90%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    align-content: center;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #483D8B;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+input[type=submit]:hover {
+    background-color: #e6e8fa;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #e6e6fa;
+    padding: 80px;
+    align-self: center;
+}
+
+.col-25 {
+    float: left;
+    width: 30%;
+    margin-top: 6px;
+    text-align: left
+}
+
+.col-75 {
+    float: left;
+    width: 45%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+input.inLine{
+    width: 15%;
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-right: 5px;
+}
+
+input.inDesc{
+    width: 25%;
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+
+}
+
+.add-row{
+    float:left;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background-color: #191970;
+    color: white;
+
+}
+
+.delete-row{
+    background-color: #191970;
+    color: white;
+}
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+table.tableUser {
+    font-family: arial, sans-serif;
+    border: 1px solid lavender;
+    background-color: lavender;
+    width:100%;
+    color: black;
+    text-align: center;
+}
+
+table.tableUser th{
+    background-color:#58427c ;
+    color: black;
+}
+
+table.tableUser tr:nth-child(even) {
+    background-color: #cec8ef;
+    color: black;
+    text-align: center;
+}
+table.tableUser tr:nth-child(odd) {
+    background-color: #e6e6fa;
+    color: black;
+    text-align: center;
+}
+
+form{
+    margin: 20px 20px;
+    align-content: center;
+    padding: 10px;
+}
+form input, button{
+    padding: 5px 5px;
+    float: right;
+}
+table.tableHolds{
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-collapse: collapse;
+
+
+}
+table.tableHolds th {
+    background-color: #191970;
+    color: white;
+}
+table.tableHolds table, th, td{
+    border: 1px solid #cdcdcd;
+
+}
+table.tableHolds th, table td{
+    padding: 10px;
+    text-align: left;
+}
+table.tableHolds td{
+    border: 1px solid #cdcdcd;
+}
+
+.buttonHold{
+
+    color: white;
+    padding: 21px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 40px 20px;
+    cursor: pointer;
+    border-radius: 70%;
+
+}
+
+table.transcriptUser
+{
+    font-family: arial, sans-serif;
+    width: 20%;
+    float: left;
+    color: black;
+    border: 1px solid black;
+    margin-left: 10px;
+
+}
+
+table.transcriptUser th {
+
+    text-align: center;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    background-color: #8878c3;
+
+
+
+
+}
+
+table.transcriptUser table, td {
+    text-align: center;
+
+
+}
+
+table.transcriptMain
+{
+    width: 75%;
+    margin-right: 10px;
+    border: 1px solid black;
+    float: right;
+    color: black;
+
+
+}
+
+table.transcriptMain th {
+    text-align: center;
+    border-bottom: 1px solid black;
+    border-collapse: collapse;
+    color: #000061;
+    background-color: #b8860b;
+
+
+}
+
+table.transcriptMain td {
+    text-align: center;
+    border:none;
+}
+
+
+.div1leftT{
+    align-items: left;
+
+}
+
+.div1mainT{
+    align-items: right;
+
+}
+
+form.grade{
+    width: 10%;
+    padding: 10px 20px;
+    display: inline-block;
+    align-content: center;
+}
+
+table.degreeUser{
+
+    font-family: arial, sans-serif;
+    color: black;
+    border: 1px solid purple;
+    padding: 10px;
+    display: inline-block;
+    text-align: left;
+}
+
+table.degreeUser th {
+
+    border: 1px solid purple;
+    padding: 10px;
+    background-color: #483d8b;
+}
+
+table.degreeUser td {
+    border: 1px solid purple;
+    padding: 10px;
+
+}
+
+table.degreeEval {
+    font-family: arial, sans-serif;
+    color: black;
+    border: 1px solid purple;
+    padding: 10px;
+    display: inline-block;
+    text-align: left;
+    border-spacing: 0px;
+    width: 80%;
+
+}
+
+table.degreeEval th {
+    background-color: #483d8b;
+    padding: 10px;
+    border:none;
+    width: 80%;
+    font-size: 15px;
+
+
+}
+
+table.degreeEval td {
+    padding: 10px;
+    border:none;
+    width: 80%;
+    font-size: 12px;
+
+}
+
+.divDU{
+    align-items: center;
+}
+
+.divDE{
+    align-items: center;
+}
+
+table.attendance{
+    font-family: arial, sans-serif;
+    color: black;
+    border: 1px solid purple;
+    background-color: #e6e8fa;
+    width:100%;
+
+}
+
+table.attendance th{
+
+    background-color: #b8860b;
+    padding: 10px;
+
+}
+
+table.attendance td{
+    padding: 10px;
+
+}
+
+table.prerequi{
+    width:99%;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 1px solid black;
+    float: right;
+    color: black;
+    display: absolute;
+
+}
+
+table.prerequi th{
+    background-color: #483d8b;
+    text-align: center;
+    border-bottom: 1px solid black;
+    border-collapse: collapse;
+    color: #000061;
+
+
+}
+
+table.prerequi td{
+    text-align: center;
+    border:none;
+}
+
+#myInput {
+
+    width: 10%;
+    padding: 10px 20px;
+    display: inline-block;
+    align-content: center;
+}
+
+.divP1{
+    margin-bottom: 20px;
+    margin: 100px;
+
+}
+.divP2{
+    margin-top: 20px;
+
+}
+
+.title2{
+    color: #000061;
+}
+
+.title3{
+    text-align: left;
+}
+
+form.pass{
+    width: 10%;
+    padding: 10px 20px;
+    display: inline-block;
+    text-align: left;
+    font-size: 10px;
+}
+.depart button{
+    background-color: #dcd0ff; /* Green background */
+    border: 1px solid black; /* Green border */
+    color: white; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    width: 50%; /* Set a width if needed */
+    display: block; /* Make the buttons appear below each other */
+    margin: 0px 350px;
+
+}
+
+table.classinfo{
+    width:99%;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #f4c430;
+    color: black;
+    display: absolute;
+    border: 2px solid black;
+    margin-bottom: 20px;
+}
+
+table.classinfo th{
+    color: #23297a;
+    font-weight: bold;
+    border: none;
+
+}
+
+table.classinfo td{
+    border: none;
+
+}
+
+table.roster{
+    width:99%;
+    margin-left: 10px;
+    margin-right: 10px;
+    float: right;
+    color: black;
+    display: absolute;
+
+}
+
+table.roster th{
+    background-color: #483d8b;
+    text-align: center;
+    border-bottom: 1px solid black;
+    border-collapse: collapse;
+    color: #000061;
+
+
+}
+
+table.roster td{
+    text-align: center;
+    border:none;
+}
+
+table.roster td{
+    border-bottom: 1px solid black;
+}
+
+.semestR{
+    background-color: #734f96;
+    border: none;
+    color: white;
+    padding: 21px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 40px 20px;
+    cursor: pointer;
+    border-radius: 70%;
+
+}
+.divMaster{
+    background-color: #e6e8fa;
+    padding: 40px 70px;
+    border: 2px solid black;
+    display: absolute;
+    margin-bottom: 20px;
+
+}
+
+
+.buttMaster{
+    background-color: #e6e8fa;
+    border: 2px solid black;
+    color: black;
+    padding: 21px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 40px 20px;
+    cursor: pointer;
+    border-radius: 70%;
+
+}
+
+hr.rounded {
+    border-top: 8px solid #483d8b;
+    border-radius: 5px;
+
+}
+
+table.registered{
+    width: 99%;
+    border-collapse: collapse;
+    margin: 10px 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+}
+table.registered th {
+    background-color: #191970;
+    padding: 10px;
+    border-bottom: 1px solid black;
+
+    color: white;
+}
+
+table.registered td{
+    padding: 10px;
+    border-bottom: 1px solid black;
+    background-color: #e6e8fa;
+}
+
+form.register{
+    width: 10%;
+    padding: 10px 20px;
+    float: left;
+    margin: 30px 30px;
+    text-align: left;
+
+}
+.btnAdd{
+    align-items: right;
+    background-color: #191970;
+
+}
+
+form.drop{
+    width: 10%;
+    padding: 10px 20px;
+    float: left;
+    margin: 30px 30px;
+    text-align: left;
+
+}
+
+.btnDrop{
+    align-items: right;
+    background-color: #191970;
+
+}
+
+div.formlink{
+    float: left;
+    margin: 20px 20px;
+    text-align: left;
+
+}
+
+div.formNo{
+
+    float: left;
+    margin: 20px 20px;
+    text-align: left;
+}
+
+form.formRequest{
+    width: 50%;
+    margin: 20px 20px;
+    align-content: center;
+    padding: 10px;
+
+}
+
+table.courseHist{
+    font-family: arial, sans-serif;
+    border: 1px solid lavender;
+    background-color: lavender;
+    width:100%;
+    color: black;
+    text-align: center;
+}
+
+table.courseHist th{
+    background-color:#58427c;
+    color: black;
+}
+
+table.courseHist tr:nth-child(even) {
+    background-color: #cec8ef;
+    color: black;
+    text-align: center;
+}
+table.courseHist tr:nth-child(odd) {
+    background-color: #e6e6fa;
+    color: black;
+    text-align: center;
+}
+
+input.buttonDelete{
+    float: left;
+    width: 8%;
+
+}

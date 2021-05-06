@@ -12,8 +12,8 @@ class CourseUser extends Model
 
     protected $table = 'course_user';
 
-    public function grade()
+    public function course()
     {
-        return $this->hasOne(Grade::class, 'course_user_id');
+        return $this->belongsTo(Course::class);
     }
 }

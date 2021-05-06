@@ -36,6 +36,26 @@ class User extends Authenticatable
 
     public function grades()
     {
-        return $this->courses->grades();
+        return $this->hasManyThrough(
+            Grade::class,
+                 CourseUser ::class,
+            'user_id',
+            'course_user_id',
+        )->with('course');
+    }
+
+    public function fields()
+    {
+        return $this->belongsToMany(Field::class);
+    }
+
+    public function majors()
+    {
+        return $this->belongsToMany(Field::class)->where('major', true);
+    }
+
+    public function minors()
+    {
+        return $this->belongsToMany(Field::class)->where('major', false);
     }
 }

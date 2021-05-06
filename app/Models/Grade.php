@@ -13,4 +13,9 @@ class Grade extends Model
         'course_user_id',
         'grade'
     ];
+
+    public function course()
+    {
+        return $this->belongsTo(CourseUser::class, 'course_user_id', 'id')->with('course');
+    }
 }

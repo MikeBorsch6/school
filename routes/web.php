@@ -23,6 +23,10 @@ Route::get('/home', function(){
     return view('home');
 })->name('home');
 
+Route::get('/admin', function(){
+    return view('layouts.AdminView');
+})->name('admin');
+
 Route::get('/login', function(){
     return view('login');
 })->middleware(['auth'])->name('login');
@@ -342,6 +346,207 @@ Route::get('/departments/womenstudiesM', function(){
 Route::get('/departments/womenstudiesM1', function(){
     return view("layouts.womenStudyM1");
 });
+
+///// ADMIN DASHBOARD STUFF
+///
+Route::get('/usersPage', function(){
+    return view('layouts.usersPage');
+})->name('usersPage');
+
+Route::get('/createUser', function(){
+    return view('layouts.createUser');
+})->name('createUser');
+
+Route::get('/searchUser', function(){
+    return view('layouts.searchUserP');
+})->name('searchUserP');
+
+Route::get('/coursePage', function(){
+    return view('layouts.coursePage');
+})->name('coursePage');
+
+Route::get('/createCour', function(){
+    return view('layouts.createCour');
+})->name('createCour');
+
+Route::get('/courseEditPage', function(){
+    return view('layouts.courseEditPage');
+})->name('courseEditPage');
+
+Route::get('/searchCour', function(){
+    return view('layouts.searchCour');
+})->name('searchCour');
+
+Route::get('/searchStudentG', function(){
+    return view('layouts.searchStudentG');
+})->name('searchStudentG');
+
+Route::get('/studentTranscriptA', function(){
+    return view('layouts.studentTranscriptA');
+})->name('studentTranscriptA');
+
+Route::get('/enterGrade', function(){
+    return view('layouts.enterGrade');
+})->name('enterGrade');
+
+Route::get('/Holds', function(){
+    return view('layouts.Holds');
+})->name('Holds');
+
+Route::get('/searchStudentH', function(){
+    return view('layouts.searchStudentH');
+})->name('searchStudentH');
+
+Route::get('/studentHolds', function(){
+    return view('layouts.studentHolds');
+})->name('studentHolds');
+
+Route::get('/searchUserP', function(){
+    return view('layouts.searchUserP');
+})->name('searchUserP');
+
+Route::get('/passwordReset', function(){
+    return view('layouts.passwordReset');
+})->name('passwordReset');
+
+Route::get('/classPage', function(){
+    return view('layouts.classPage');
+})->name('classPage');
+
+Route::get('/createClass', function(){
+    return view('layouts.createClass');
+})->name('createClass');
+
+Route::get('/searchClass', function(){
+    return view('layouts.searchClass');
+})->name('searchClass');
+
+Route::get('/editClass', function(){
+    return view('layouts.editClass');
+})->name('editClass');
+
+Route::get('/selectPrerequi', function(){
+    return view('layouts.selectPrerequi');
+})->name('selectPrerequi');
+
+Route::get('/prerequiPage', function(){
+    return view('layouts.prerequiPage');
+})->name('prerequiPage');
+
+Route::get('/selectDepartment', function(){
+    return view('layouts.selectDepartment');
+})->name('selectDepartment');
+
+Route::get('/minmajPage', function(){
+    return view('layouts.minmajPage');
+})->name('minmajPage');
+
+Route::get('/createMajor', function(){
+    return view('layouts.createMajor');
+})->name('createMajor');
+
+Route::get('/createMinor', function(){
+    return view('layouts.createMinor');
+})->name('createMinor');
+
+Route::get('/searchMajor', function(){
+    return view('layouts.searchMajor');
+})->name('searchMajor');
+
+Route::get('/editMajor', function(){
+    return view('layouts.editMajor');
+})->name('editMajor');
+
+Route::get('/searchMinors', function(){
+    return view('layouts.searchMinors');
+})->name('searchMinors');
+
+Route::get('/editMinor', function(){
+    return view('layouts.editMinor');
+})->name('editMinor');
+
+Route::get('/departments', function(){
+    return view('layouts.departPage');
+})->name('departPage');
+
+Route::get('/createDepart', function(){
+    return view('layouts.createDepart');
+})->name('createDepart');
+
+Route::get('/searchDepart', function(){
+    return view('layouts.searchDepart');
+})->name('searchDepart');
+
+Route::get('/editDepart', function(){
+    return view('layouts.editDepart');
+})->name('editDepart');
+
+Route::get('/selectSemestRost', function(){
+    return view('layouts.selectSemestRost');
+})->name('selectSemestRost');
+
+Route::get('/searchClassRosterF21', function(){
+    return view('layouts.searchClassRosterF21');
+})->name('searchClassRosterF21');
+
+Route::get('/classRosterF', function(){
+    return view('layouts.classRosterF');
+})->name('classRosterF');
+
+Route::get('/searchClassRosterS21', function(){
+    return view('layouts.searchClassRosterS21');
+})->name('searchClassRosterS21');
+
+Route::get('/classRosterS', function(){
+    return view('layouts.classRosterS');
+})->name('classRosterS');
+
+Route::get('/lockedAccounts', function(){
+    return view('layouts.lockedAccounts');
+})->name('lockedAccounts');
+
+Route::get('/MyInfoA', function(){
+    return view('layouts.MyInfoA');
+})->name('MyInfoA');
+
+/* STUDENT DASHBOARD */
+Route::get('/student', function(){
+    return view('layouts.StudentView');
+})->name('StudentView');
+
+Route::get('/registerPage', function(){
+    return view('layouts.registerPage');
+})->name('registerPage');
+
+Route::get('/selDepMaF21', function(){
+    return view('layouts.selDepMaF21');
+})->name('selDepMaF21');
+
+Route::get('/selDepMaS21', function(){
+    return view('layouts.selDepMaS21');
+})->name('selDepMaS21');
+
+Route::get('/myHolds', function(){
+    return view('layouts.myHolds');
+})->name('myHolds');
+
+Route::get('/myDegreeEval', function(){
+    return view('layouts.myDegreeEval');
+})->name('myDegreeEval');
+
+Route::get('/studentTranscript', function(){
+    return view('layouts.studentTranscript');
+})->name('studentTranscript');
+
+Route::get('/myForms', function(){
+    return view('layouts.myForms');
+})->name('myForms');
+
+Route::get('/MyInfoS', function(){
+    return view('layouts.MyInfoS');
+})->name('MyInfoS');
+
+
 
 
 
