@@ -16,11 +16,11 @@ use App\Http\Controller\HomeController;
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('welcome');
-});
+});*/
 
-Route::get('/home', function(){
+Route::get('/', function(){
     return view('home');
 })->name('home');
 
