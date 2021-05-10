@@ -4,13 +4,17 @@
     <title>Password Reset</title>
     <link rel="stylesheet" type="text/css" href="pagesU.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @php
+            echo(file_get_contents(public_path('css/pagesU.css')))
+        @endphp
+    </style>
     <div id="grad1">
 
     <ul>
         <div class="header">
-            <img src='images/saturn1.png' alt="logo" />
       <div class="dropdown" style="float:right;">
-          <button class="dropbtn">Michael Borsch</button>
+          <button class="dropbtn">{{Auth::user()->name}}</button>
           <div class="dropdown-content">
           <a href="/MyInfoA">My Info</a>
           <a href="/LogOut">Log out</a>
@@ -20,17 +24,14 @@
     </div>
 
     </ul>
-</div>
-
 <body>
-  <h2>Password Reset</h2>
+  <h2>Password Reset For User {{ $user->name }}</h2>
 
 
-<form class ="pass" action="/action_page.php">
+<form class ="pass" method="post" action="{{route('user.reset', $user->id)}}">
+    @csrf
   <label for="newpwd">Enter New Password:</label>
-  <input type="password" id="pwd" name="pwd"><br><br>
-  <label for="renewpwd">Re-enter New Password:</label>
-  <input type="password" id="pwd" name="pwd" minlength="8"><br><br>
+  <input type="password" id="pwd" name="password"><br><br>
   <input type="submit">
 </form>
 

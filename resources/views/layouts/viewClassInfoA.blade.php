@@ -25,7 +25,7 @@
     </div>
 
     </ul>
-</div>
+</head>
 
 <h1 class="title1">Roster</h1>
   <table class="classinfo">
@@ -33,7 +33,7 @@
     <th>Course Name:</th>
     <td>Linear Algebra</td>
     <th>Faculty Name:</th>
-    <td>Geta Tekanie</td>
+    <td>Maria Romero Sorto</td>
     <th>Days:</th>
     <td>Mon, Wed</td>
   </tr>
@@ -42,7 +42,7 @@
     <th>CRN:</th>
     <td>36823</td>
     <th>Semester Year:</th>
-    <td>Fall 2021</td>
+    <td>Spring 2021</td>
     <th>Start Time:</th>
     <td>1:00pm</td>
   </tr>
@@ -71,7 +71,7 @@
 </thead>
 <tbody>
   <tr>
-    <td><a href="/classRoster">Remove</a></td>
+    <td><a href="/studentTranscriptA">View</a></td>
     <td>800234223</td>
     <td>James Peng</td>
     <td>jpeng@saturnuni.com</td>
@@ -79,7 +79,7 @@
   </tr>
 
   <tr>
-    <td><a href="/classRoster">Remove</a></td>
+    <td><a href="/studentTranscriptA">View</a></td>
     <td>876543210</td>
     <td>Ariel Mariner</td>
     <td>amariner@saturnuni.com</td>
@@ -87,7 +87,7 @@
   </tr>
 
   <tr>
-    <td><a href="/classRoster">Remove</a></td>
+    <td><a href="/studentTranscriptA">View</a></td>
     <td>876587431</td>
     <td>Minera Reyes</td>
     <td>mreyes@saturnuni.com</td>
@@ -95,7 +95,7 @@
   </tr>
 
  <tr>
-    <td><a href="/classRoster">Remove</a></td>
+    <td><a href="/studentTranscriptA">View</a></td>
     <td>701336743</td>
     <td>Jotono Miyers</td>
     <td>jmiyers@saturnuni.com</td>
@@ -103,7 +103,7 @@
   </tr>
 
   <tr>
-    <td><a href="/classRoster">Remove</a></td>
+    <td><a href="/studentTranscriptA">View</a></td>
     <td>685437084</td>
     <td>Jason Frank</td>
     <td>jfrank@saturnuni.com</td>
@@ -111,7 +111,7 @@
   </tr>
 
   <tr>
-    <td><a href="/classRoster">Remove</a></td>
+    <td><a href="/studentTranscriptA">View</a></td>
     <td>700872387</td>
     <td>Primavera Trelli</td>
     <td>ptrelli@saturnuni.com</td>
@@ -119,7 +119,7 @@
   </tr>
 
   <tr>
-    <td><a href="/classRoster">Remove</a></td>
+    <td><a href="/studentTranscriptA">View</a></td>
     <td>743212347</td>
     <td>Loreala Paloski</td>
     <td>lpaloski@saturnuni.com</td>
@@ -128,7 +128,8 @@
 
 </tbody>
 </table>
-</head>
+</body>
+</div>
 </html>
 
 

@@ -4,13 +4,18 @@
     <title>Registration</title>
     <link rel="stylesheet" type="text/css" href="pagesU.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @php
+            echo(file_get_contents(public_path('css/pagesU.css')))
+        @endphp
+    </style>
     <div id="grad1">
 
     <ul>
       <div class="header">
       <img src='images/saturn1.png' alt="logo" />
       <div class="dropdown" style="float:right;">
-          <button class="dropbtn">Michael Borsch</button>
+          <button class="dropbtn">{{Auth::user()->name}}</button>
           <div class="dropdown-content">
           <a href="/MyInfoA">My Info</a>
           <a href="/LogOut">Log out</a>
@@ -20,9 +25,6 @@
     </div>
 
     </ul>
-
-
-</div>
 <body>
 
   <h1 class="title 1">Registration</h1>
@@ -48,61 +50,50 @@
       </thead>
 
       <tbody>
-        <tr>
-          <td>**Registered**</td>
-          <td>7231</td>
-          <td>Intro to Chemistry</td>
-          <td>36284</td>
-          <td>002</td>
-          <td>2</td>
-          <td>04/21/21</td>
-
-        </tr>
-
-        <tr>
-          <td>**Registered**</td>
-          <td>7231</td>
-          <td>Intro to Chemistry</td>
-          <td>36284</td>
-          <td>002</td>
-          <td>2</td>
-          <td>04/21/21</td>
-
-        </tr>
-
-        <tr>
-          <td>**Registered**</td>
-          <td>7231</td>
-          <td>Intro to Chemistry</td>
-          <td>36284</td>
-          <td>002</td>
-          <td>2</td>
-          <td>04/21/21</td>
-
-        </tr>
+      @foreach(Auth::user()->courses as $course)
+          <tr>
+              <td>
+                  {{ $course->crn }}
+              </td>
+              <td>
+                  {{ $course->title }}
+              </td>
+              <td>
+                  {{ $course->days }}
+              </td>
+              <td>
+                  {{ $course->time }}
+              </td>
+              <td>
+                  {{ $course->location }}
+              </td>
+          </tr>
+      @endforeach
       </tbody>
     </table>
 
 <hr class="rounded">
 
-<form class="register" action="/action_page.php" method="get">
-  <label for="CRN">Register Class</label>
-  <input type="text" id="CRN" name="CRN" value="">
-  <input type="submit" value="Submit" class = "btnAdd">
-</form>
-
-<form class="drop" action="/action_page.php" method="get">
-  <label for="crn2">Drop Class</label>
-  <input type="text" id="crn2" name="crn2" value="">
-  <input type="submit" value="Submit" class = "btnDrop">
-</form>
-
-
-
-
-
-
-
-  </body>
-  </div>
+  <form name="add-blog-post-form" id="add-blog-post-form" method="post" action="{{route('user-course')}}">
+      @csrf
+      <div class="form-group">
+          <label for="crn2">Register Class</label>
+          <br>
+          <input type="text" id="CRN" name="CRN" placeholder="CRN NUMBER" value="">
+      </div>
+      <br>
+      <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+    <br>
+  <form name="add-blog-post-form" id="add-blog-post-form" method="post" action="{{route('user-course-delete')}}">
+      @csrf
+      <div class="form-group">
+          <label for="crn2">Drop Class</label>
+          <br>
+          <input type="text" id="CRN" name="CRN" placeholder="CRN NUMBER" value="">
+      </div>
+      <br>
+      <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</body>
   </html>

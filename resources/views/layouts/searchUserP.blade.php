@@ -4,29 +4,28 @@
 		<title>Search User</title>
 		<link rel="stylesheet" type="text/css" href="pagesU.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            @php
+                echo(file_get_contents(public_path('css/pagesU.css')))
+            @endphp
+        </style>
 		<div id="grad1">
 
 		<ul>
 			<div class="header">
 			<img src='images/saturn1.png' alt="logo" />
 			<div class="dropdown" style="float:right;">
-  				<button class="dropbtn">Michael Borsch</button>
+  				<button class="dropbtn">{{Auth::user()->name}}</button>
   				<div class="dropdown-content">
   				<a href="/MyInfoA">My Info</a>
   				<a href="/LogOut">Log out</a>
-
   			</div>
   		</div>
   	</div>
-
 		</ul>
-
-
-
-	</div>
 	<body>
 
-  <label for="userSearch">Search Users:</label>
+  <label for="userSearchP">Search Users:</label>
   <input type="search" placeholder="Search.." class = "form-control search-input" data-table="tableUser">
   <input type="submit">
 </form>
@@ -36,58 +35,26 @@
   <tr>
   	<th>&nbsp;</th>
     <th>User ID</th>
-    <th>First Name</th>
-    <th>Last Name</th>
+    <th>Name</th>
     <th>User Type</th>
 
   </tr>
 </thead>
 <tbody>
-  <tr>
-  	<td><a href="/passwordReset">Edit</a></td>
-    <td>300321233</td>
-    <td>Marean</td>
-    <td>Vivenly</td>
-    <td>Student</td>
-  </tr>
-
-  <tr>
-  	<td><a href="/passwordReset">Edit</a></td>
-    <td>201282132</td>
-    <td>Jill</td>
-    <td>Litos</td>
-    <td>Faculty</td>
-  </tr>
-
-  <tr>
-  	<td><a href="/passwordReset">Edit</a></td>
-    <td>432319876</td>
-    <td>Lewis</td>
-    <td>Saffarri</td>
-    <td>Researcher</td>
-  </tr>
-
-  <tr>
-  	<td><a href="/passwordReset">Edit</a></td>
-    <td>233412467</td>
-    <td>Micheal</td>
-    <td>Borsch</td>
-    <td>Admin</td>
-  </tr>
-
-  <td><a href="/passwordReset">Edit</a></td>
-    <td>300334111</td>
-    <td>Ares</td>
-    <td>Toledoa</td>
-    <td>Student</td>
-  </tr>
-
-  <td><a href="/passwordReset">Edit</a></td>
-    <td>333234211</td>
-    <td>Sirena</td>
-    <td>Macprones</td>
-    <td>Student</td>
-  </tr>
+  @foreach(App\Models\User::all() as $user)
+      <tr>
+          <td><a href="/user/{{$user->id}}/password">Edit</a></td>
+          <td>{{ $user->id }}</td>
+          <td> {{ $user->name }}</td>
+          @if($user->role_id === 1)
+              <td> Admin</td>
+          @elseif($user->role_id === 2)
+              <td> Teacher</td>
+          @else
+              <td> Student</td>
+          @endif
+      </tr>
+  @endforeach
 </tbody>
 
   <script>

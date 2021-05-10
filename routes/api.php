@@ -16,13 +16,11 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::namespace('App\Http\Controllers')
+    ->middleware('auth')
     ->group(function() {
-        /**
-         * Users
-         */
         Route::get('users/{user}/courses', 'UserController@teachers');
-        Route::apiResource('users', 'UserController');
-        Route::get('users/{user}/courses/{course}', 'StudentCourseController@registerStudent');
+        Route::resource('users', 'UserController');
+        Route::post('user-course', 'StudentCourseController@registerStudent')->name('user-course');
         Route::get('users/{user}/courses/{course}/delete', 'StudentCourseController@deleteStudentCourse');
         /*
          * courses

@@ -4,13 +4,18 @@
 		<title>My Info</title>
 		<link rel="stylesheet" type="text/css" href="info.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            @php
+                echo(file_get_contents(public_path('css/info.css')))
+            @endphp
+        </style>
 
 
 		<ul>
 			<div class="header">
 			<img src='images/saturn1.png' alt="logo" />
   			<div class="dropdown" style="float:right;">
-  				<button class="dropbtn">James Peng</button>
+  				<button class="dropbtn">{{Auth::user()->name}}</button>
   				<div class="dropdown-content">
   				<a href="/MyInfo">My Info</a>
   				<a href="/LogOut">Log out</a>

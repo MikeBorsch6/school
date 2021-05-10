@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Edit Department</title>
+    <title>Admin Info</title>
     <link rel="stylesheet" type="text/css" href="pagesU.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        @php
-            echo(file_get_contents(public_path('css/pagesU.css')))
-        @endphp
-    </style>
+    @php
+        echo(file_get_contents(public_path('css/pagesU.css')))
+    @endphp
     <div id="grad1">
 
     <ul>
@@ -100,19 +98,22 @@ form.invert>button:nth-of-type(3){
  W.addEventListener('load',init,false);
 })(window)
 </script>
+</div>
 <body>
 
 
 <form>
-<label>Department ID:     <input readonly value="####"></label>
-<label>Department Name:   <input readonly value="Criminilogy"></label>
-<label>Chair Name: <input readonly value="Frankfurt Klen"></label>
-<label>Contact Number: <input readonly value="516-222-1100"></label>
-<label>Email Address: <input readonly value="frankfurtk@saturnuni.com"></label>
-
+<label>ID Number:   <input readonly value ="234631912"></label>
+<label>First Name:  <input readonly value ="Micahel"></label>
+<label>Last Name:   <input readonly value = "Borsch"></label>
+<label>Birth Date:  <input readonly value = "04/03/1999"></label>
+<label>EmailAddress:<input readonly value="michealb@saturnuni.com"></label>
+<label>HomeAddress: <input readonly value = "23 SadBoy Ln, Dest, NY, 11283"></label>
+<label>PhoneNumber: <input readonly value="323-484-3412"></label>
 <button>Save</button><button>Cancel</button><button>Edit</button><br>
 <input type = "submit" value ="Delete" class="buttonDelete">
 </form>
+
 
 
 </body>

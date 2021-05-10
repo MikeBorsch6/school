@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 	<html>
 	<head>
-		<title>Search Departments</title>
+		<title>Search User</title>
 		<link rel="stylesheet" type="text/css" href="pagesU.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
@@ -9,7 +9,7 @@
                 echo(file_get_contents(public_path('css/pagesU.css')))
             @endphp
         </style>
-        <div id="grad1">
+		<div id="grad1">
 
 		<ul>
 			<div class="header">
@@ -23,68 +23,56 @@
   			</div>
   		</div>
   	</div>
+
 		</ul>
 	<body>
 
-  <label for="userSearch">Search Departments:</label>
+  <label for="userSearch">Search Users:</label>
   <input type="search" placeholder="Search.." class = "form-control search-input" data-table="tableUser">
   <input type="submit">
 </form>
-<h1 class="title1">All Departments</h1>
+<h1 class="title1">All Users</h1>
   <table class="tableUser">
   <thead>
   <tr>
   	<th>&nbsp;</th>
-    <th>Department ID</th>
-    <th>Department Name</th>
-    <th>Chair Name</th>
-    <th>Contact Number</th>
-    <th>Email</th>
+    <th>User ID</th>
+    <th>Name</th>
+    <th>User Type</th>
 
   </tr>
 </thead>
 <tbody>
+</tbody>
+      <tr>
+          <td><a href="/researcherPageA">Edit</a></td>
+          <td>432319876</td>
+          <td>Lewis</td>
+          <td>Saffarri</td>
+          <td>Researcher</td>
+      </tr>
   <tr>
-  	<td><a href="/editDepart">Edit</a></td>
-    <td>003</td>
-    <td>Mathematics</td>
-    <td>Geta Tekanie</td>
-    <td>4438236123</td>
-    <td>getat@saturnuni.com</td>
-
+  	<td><a href="/adminPageA">Edit</a></td>
+    <td>233412467</td>
+    <td>Micheal</td>
+    <td>Borsch</td>
+    <td>Admin</td>
   </tr>
 
-  <tr>
-    <td><a href="/editDepart">Edit</a></td>
-    <td>003</td>
-    <td>Mathematics</td>
-    <td>Geta Tekanie</td>
-    <td>4438236123</td>
-    <td>getat@saturnuni.com</td>
+  <td><a href="/studentPageA">Edit</a></td>
+    <td>300334111</td>
+    <td>Ares</td>
+    <td>Toledoa</td>
+    <td>Student</td>
+  </table>
 
-  </tr>
-
-  <tr>
-    <td><a href="/editDepart">Edit</a></td>
-    <td>003</td>
-    <td>Mathematics</td>
-    <td>Geta Tekanie</td>
-    <td>4438236123</td>
-    <td>getat@saturnuni.com</td>
-
-  </tr>
-
- <tr>
-    <td><a href="/editDepart">Edit</a></td>
-    <td>003</td>
-    <td>Mathematics</td>
-    <td>Geta Tekanie</td>
-    <td>4438236123</td>
-    <td>getat@saturnuni.com</td>
-
+  <td><a href="/facultyPageA">Edit</a></td>
+    <td>333234211</td>
+    <td>Sirena</td>
+    <td>Macprones</td>
+    <td>Student</td>
   </tr>
 </tbody>
-</table>
 
   <script>
         (function(document) {

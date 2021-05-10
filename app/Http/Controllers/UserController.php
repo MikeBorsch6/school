@@ -6,6 +6,7 @@ use App\Models\Course;
 use Illuminate\Http\Request;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 
 
 class UserController extends Controller
@@ -32,16 +33,23 @@ class UserController extends Controller
 
     public function store(Request $request)
     {
-
         if(isset(Auth::user()->role_id) && Auth::user()->role_id === 1)
         {
             User::create(
-                $request
+                [
+                    'email' => $request->get('email_address'),
+                    'email' => $request->get('email_address'),
+                    'password' => Hash::make($request->get('password')),
+                    'address'  => $request->get('street_address'),
+                    'name' => "{$request->get('firstname')} {$request->get('lastname')}",
+                    'role_id' => $request->get('role_id', '3')
+                ]
             );
         }
-        else {
-            dd('not a user');
-        }
+
+        return redirect()->back();
+
+
     }
 
     public function show(User $user)
@@ -71,5 +79,21 @@ class UserController extends Controller
         if($user->role_id === 2) {
             return $user->courses;
         }
+    }
+
+    public function resetPasswordView(User $user)
+    {
+        return view('layouts.passwordReset')->with(['user' => $user]);
+    }
+
+    public function resetPassword(Request $request, User $user)
+    {
+        $user->update(
+            [
+                'password' => Hash::make($request->get('password'))
+            ]
+        );
+
+        return redirect(route('searchUserP'));
     }
 }

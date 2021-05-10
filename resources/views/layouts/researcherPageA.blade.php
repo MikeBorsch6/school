@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Edit Department</title>
+    <title>Researcher Info</title>
     <link rel="stylesheet" type="text/css" href="pagesU.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
@@ -23,7 +23,6 @@
         </div>
       </div>
     </div>
-
     </ul>
 
 <style>
@@ -104,15 +103,16 @@ form.invert>button:nth-of-type(3){
 
 
 <form>
-<label>Department ID:     <input readonly value="####"></label>
-<label>Department Name:   <input readonly value="Criminilogy"></label>
-<label>Chair Name: <input readonly value="Frankfurt Klen"></label>
-<label>Contact Number: <input readonly value="516-222-1100"></label>
-<label>Email Address: <input readonly value="frankfurtk@saturnuni.com"></label>
-
+<label>ID Number:   <input readonly value ="234637712"></label>
+<label>First Name:  <input readonly value ="Tina"></label>
+<label>Last Name:   <input readonly value = "Telly"></label>
+<label>Birth Date:  <input readonly value = "03/04/1998"></label>
+<label>EmailAddress:<input readonly value="tinat@saturnuni.com"></label>
+<label>HomeAddress: <input readonly value = "23 SadBoy Ln, Dest, NY, 11283"></label>
 <button>Save</button><button>Cancel</button><button>Edit</button><br>
 <input type = "submit" value ="Delete" class="buttonDelete">
 </form>
+
 
 
 </body>

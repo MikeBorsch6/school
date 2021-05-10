@@ -4,13 +4,18 @@
     <title>Search Student</title>
     <link rel="stylesheet" type="text/css" href="pagesU.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @php
+            echo(file_get_contents(public_path('css/pagesU.css')))
+        @endphp
+    </style>
     <div id="grad1">
 
         <ul>
             <div class="header">
                 <img src='images/saturn1.png' alt="logo" />
                 <div class="dropdown" style="float:right;">
-                    <button class="dropbtn">Michael Borsch</button>
+                    <button class="dropbtn">{{Auth::user()->name}}</button>
                     <div class="dropdown-content">
                         <a href="/MyInfoA">My Info</a>
                         <a href="/LogOut">Log out</a>
@@ -20,10 +25,6 @@
             </div>
 
         </ul>
-
-
-
-        </div>
 <body>
 
 <label for="userSearch">Search Student:</label>
@@ -36,37 +37,12 @@
     <tr>
         <th>&nbsp;</th>
         <th>User ID</th>
-        <th>First Name</th>
-        <th>Last Name</th>
+        <th>Name</th>
         <th>User Type</th>
 
     </tr>
     </thead>
     <tbody>
-    <tr>
-        <td><a href="/studentTranscriptA">Edit</a></td>
-        <td>300321233</td>
-        <td>Marean</td>
-        <td>Vivenly</td>
-        <td>Student</td>
-    </tr>
-
-    <tr>
-        <td><a href="/studentTranscriptA">Edit</a></td>
-        <td>300334111</td>
-        <td>Ares</td>
-        <td>Toledoa</td>
-        <td>Student</td>
-    </tr>
-
-    <tr>
-        <td><a href="/studentTranscriptA">Edit</a></td>
-        <td>333234211</td>
-        <td>Sirena</td>
-        <td>Macprones</td>
-        <td>Student</td>
-    </tr>
-    </tbody>
 </table>
 
 <script>

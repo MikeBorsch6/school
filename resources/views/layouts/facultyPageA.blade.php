@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Edit Department</title>
+    <title>Faculty Info</title>
     <link rel="stylesheet" type="text/css" href="pagesU.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
@@ -104,15 +104,22 @@ form.invert>button:nth-of-type(3){
 
 
 <form>
-<label>Department ID:     <input readonly value="####"></label>
-<label>Department Name:   <input readonly value="Criminilogy"></label>
-<label>Chair Name: <input readonly value="Frankfurt Klen"></label>
-<label>Contact Number: <input readonly value="516-222-1100"></label>
-<label>Email Address: <input readonly value="frankfurtk@saturnuni.com"></label>
-
+<label>ID Number:     <input readonly value="8023834"></label>
+<label>First Name:    <input readonly value="Maria"></label>
+<label>Last Name:     <input readonly value="Romero Sorto"></label>
+<label>Department ID: <input readonly value="023"></label>
+<label>Birth Date:    <input readonly value="11/20/1998"></label>
+<label>EmailAddress:  <input readonly value="mariars@saturnuni.com"></label>
+<label>HomeAddress:   <input readonly value="12 Ocean Dr, Montauk, NY"></label>
+<label>PhoneNumber:   <input readonly value="347-234-1239"></label>
 <button>Save</button><button>Cancel</button><button>Edit</button><br>
 <input type = "submit" value ="Delete" class="buttonDelete">
 </form>
+<div>
+    <a href="/courseHistoryfA">Classes Teaching</a>
+    <a href="/adviseeA">Advisees</a>
+
+</div>
 
 
 </body>

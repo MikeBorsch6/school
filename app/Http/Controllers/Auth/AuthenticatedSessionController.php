@@ -20,8 +20,20 @@ class AuthenticatedSessionController extends Controller
     {
         $request->authenticate();
 
-        $request->session()->regenerate(); /**session token, so you can go to different pages on shcool site*/
-        return redirect()->intended(RouteServiceProvider::HOME);
+        $request->session()->regenerate();
+
+        if(Auth::user()->role_id == 1 )
+        {
+            return redirect(route('admin'));
+        }
+        elseif(Auth::user()->role_id == 2)
+        {
+            return redirect(route('FacultyView'));
+        }
+        else {
+
+            return redirect(route('StudentView'));
+        }
     }
 
     public function destroy(Request $request)

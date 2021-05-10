@@ -3,12 +3,17 @@
 	<head>
 		<title>Student</title>
 		<link rel="stylesheet" type="text/css" href="dashboard.css">
+        <style>
+            @php
+                echo(file_get_contents(public_path('css/dashboard.css')))
+            @endphp
+        </style>
 
 		<ul>
             <div class="header">
                 <img src='images/saturn1.png' alt="logo" />
   			<div class="dropdown" style="float:right;">
-  				<button class="dropbtn">James Peng</button>
+  				<button class="dropbtn">{{Auth::user()->name}}</button>
   				<div class="dropdown-content">
   				<a href="/MyInfoS">My Info</a>
   				<a href="/LogOut">Log out</a>
@@ -45,29 +50,31 @@
 
 		<div>
 			<table id ="courses">
-				<tr>
-					<th>Courses I am Taking</th>
-				</tr>
-				<tr>
-					<td>sample course 1</td>
-
-				</tr>
-				<tr>
-					<td>sample course 2</td>
-				</tr>
-				<tr>
-					<td>sample course 3</td>
-				</tr>
-				<tr>
-					<td>sample course 4</td>
-				</tr>
-				<tr>
-					<td>sample course 5</td>
-				</tr>
+                <h2>Course I Am Taking</h2>
+				@foreach(Auth::user()->courses as $course)
+                    <tr>
+                        <td>
+                            {{ $course->crn }}
+                        </td>
+                        <td>
+                            {{ $course->title }}
+                        </td>
+                        <td>
+                            {{ $course->days }}
+                        </td>
+                        <td>
+                            {{ $course->time }}
+                        </td>
+                        <td>
+                            {{ $course->location }}
+                        </td>
+                    </tr>
+                @endforeach
 			</table>
 		</div>
 
 		<div>
+            <br>
 			<table id ="advisorSched">
 				<tr>
 					<th>Advisor Appointment</th>

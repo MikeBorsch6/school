@@ -12,6 +12,7 @@ use App\Http\Controller\HomeController;
 | Here is where you can register web routes for your application. These
 | routes are loaded by the RouteServiceProvider within a group which
 | contains the "web" middleware group. Now create something great!
+| contains the "web" middleware group. Now create something great!
 |
 */
 
@@ -25,7 +26,7 @@ Route::get('/home', function(){
 
 Route::get('/admin', function(){
     return view('layouts.AdminView');
-})->name('admin');
+})->middleware('auth')->name('admin');
 
 Route::get('/login', function(){
     return view('login');
@@ -357,10 +358,6 @@ Route::get('/createUser', function(){
     return view('layouts.createUser');
 })->name('createUser');
 
-Route::get('/searchUser', function(){
-    return view('layouts.searchUserP');
-})->name('searchUserP');
-
 Route::get('/coursePage', function(){
     return view('layouts.coursePage');
 })->name('coursePage');
@@ -405,9 +402,33 @@ Route::get('/searchUserP', function(){
     return view('layouts.searchUserP');
 })->name('searchUserP');
 
-Route::get('/passwordReset', function(){
-    return view('layouts.passwordReset');
-})->name('passwordReset');
+Route::get('/searchUser', function(){
+    return view('layouts.searchUser');
+})->name('searchUser');
+
+Route::get('/studentPageA', function(){
+    return view('layouts.studentPageA');
+})->name('searchPageA');
+
+Route::get('/adminPageA', function(){
+    return view('layouts.studentPageA');
+})->name('searchPageA');
+
+Route::get('/facultyPageA', function(){
+    return view('layouts.facultyPageA');
+})->name('facultyPageA');
+
+Route::get('/researcherPageA', function(){
+    return view('layouts.researcherPageA');
+})->name('researcherPageA');
+
+Route::get('/studentAttendanceA', function(){
+    return view('layouts.studentAttendanceA');
+})->name('searchAttendanceA');
+
+Route::get('/studentDegreeEval', function(){
+    return view('layouts.studentDegreeEval');
+})->name('searchDegreeEval');
 
 Route::get('/classPage', function(){
     return view('layouts.classPage');
@@ -503,20 +524,20 @@ Route::get('/classRosterS', function(){
 
 Route::get('/lockedAccounts', function(){
     return view('layouts.lockedAccounts');
-})->name('lockedAccounts');
+})->middleware('auth')->name('lockedAccounts');
 
 Route::get('/MyInfoA', function(){
     return view('layouts.MyInfoA');
-})->name('MyInfoA');
+})->middleware('auth')->name('MyInfoA');
 
 /* STUDENT DASHBOARD */
 Route::get('/student', function(){
     return view('layouts.StudentView');
-})->name('StudentView');
+})->middleware('auth')->name('StudentView');
 
 Route::get('/registerPage', function(){
     return view('layouts.registerPage');
-})->name('registerPage');
+})->middleware('auth')->name('registerPage');
 
 Route::get('/selDepMaF21', function(){
     return view('layouts.selDepMaF21');
@@ -528,28 +549,54 @@ Route::get('/selDepMaS21', function(){
 
 Route::get('/myHolds', function(){
     return view('layouts.myHolds');
-})->name('myHolds');
+})->middleware('auth')->name('myHolds');
 
 Route::get('/myDegreeEval', function(){
     return view('layouts.myDegreeEval');
-})->name('myDegreeEval');
+})->middleware('auth')->name('myDegreeEval');
 
 Route::get('/studentTranscript', function(){
     return view('layouts.studentTranscript');
-})->name('studentTranscript');
+})->middleware('auth')->name('studentTranscript');
 
 Route::get('/myForms', function(){
     return view('layouts.myForms');
-})->name('myForms');
+})->middleware('auth')->name('myForms');
 
 Route::get('/MyInfoS', function(){
     return view('layouts.MyInfoS');
-})->name('MyInfoS');
+})->middleware('auth')->name('MyInfoS');
+
+Route::get('/courseHistoryfA', function(){
+    return view('layouts.courseHistoryfA');
+})->name('courseHistoryfA');
+
+Route::get('/viewClassInfoA', function(){
+    return view('layouts.viewClassInfoA');
+})->name('viewClassInfoA');
+
+Route::get('/adviseeA', function(){
+    return view('layouts.adviseeA');
+})->name('adviseeA');
 
 
 
+Route::namespace('App\Http\Controllers')
+    ->middleware('auth')
+    ->group(function() {
+        Route::get('users/{user}/courses', 'UserController@teachers');
+        Route::resource('users', 'UserController');
+        Route::post('user-course', 'StudentCourseController@registerStudent')->name('user-course');
+        Route::post('users-course-delete', 'StudentCourseController@deleteStudentCourse')->name('user-course-delete');
+        /*
+         * courses
+         */
+        Route::get('courses/{year}/{semester}', 'CourseController@showCurrentYearCourses');
 
-
+        Route::get('/user/{user}/password', ['App\Http\Controllers\UserController', 'resetPasswordView']);
+        Route::post('/user/{user}/reset', ['App\Http\Controllers\UserController', 'resetPassword'])->name('user.reset');
+        Route::post('/user/{user}/reset', ['App\Http\Controllers\UserController', 'resetPassword'])->name('user.reset');
+    });
 
 
 require __DIR__.'/auth.php';
