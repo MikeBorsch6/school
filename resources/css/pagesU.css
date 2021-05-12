@@ -3,7 +3,7 @@ body {
     text-align: center;
     font-size: 18px;
     color: black;
-    background-image: url('/public/images/back2.png');
+    background-image: url('public/images/back2.png');
 
 
 }
@@ -684,3 +684,128 @@ input.buttonDelete{
     width: 8%;
 
 }
+
+table.rosterA{
+    width:10px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    color: black;
+    overflow: auto;
+    resize: all;
+
+
+}
+
+table.rosterA th{
+    background-color: #483d8b;
+    text-align: center;
+    border-bottom: 1px solid black;
+    border-collapse: collapse;
+    color: #000061;
+    font-size: 10px;
+
+
+}
+
+table.rosterA td{
+    text-align: center;
+    border:none;
+    font-size: 8px;
+}
+
+table.rosterA td{
+    border-bottom: 1px solid black;
+    font-size: 10px;
+}
+
+input.submitA{
+    float: left;
+    width: 5px;
+    font-size: 8px;
+    text-align: left;
+}
+
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+}
+
+
+button.search{
+    background-color: #483d8b;
+    width: 10%;
+}
+
+
+table.adviseeL{
+    width:98%;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    color: black;
+    overflow: auto;
+    resize: all;
+
+
+}
+
+table.adviseeL th{
+    background-color: #483d8b;
+    text-align: center;
+    border-bottom: 1px solid black;
+    border-collapse: collapse;
+    color: #000061;
+    font-size: 15px;
+
+
+}
+
+table.adviseeL td{
+    text-align: center;
+    border:none;
+    font-size: 15px;
+}
+
+table.adviseeL td{
+    border-bottom: 1px solid black;
+    font-size: 15px;
+}
+
+
+
+table.research{
+    font-family: arial, sans-serif;
+    border: 1px solid lavender;
+    background-color: lavender;
+    width:100%;
+    color: black;
+
+}
+
+table.research th{
+    background-color:#58427c;
+    color: black;
+    text-align: left;
+}
+
+table.research tr:nth-child(even) {
+    background-color: #cec8ef;
+    color: black;
+    text-align: center;
+}
+table.research tr:nth-child(odd) {
+    background-color: #e6e6fa;
+    color: black;
+    text-align: middle;
+}
+
+
+
+
+
+

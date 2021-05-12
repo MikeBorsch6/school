@@ -17,7 +17,7 @@
         <li><a href="selDepCat.html">Catalog</a></li>
         <li><a href="selMaster.html">Master Schedule</a></li>
         <li><a href="selectCal.html">Academic Calendar</a></li>
-        <li class="right"><a href="Login.html">Log in</a></li>
+        <li class="right"><a href="Login.blade.php">Log in</a></li>
     </ul>
 
 </head>

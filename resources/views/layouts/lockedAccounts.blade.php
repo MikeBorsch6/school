@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Locked Users</title>
+		<link rel="stylesheet" type="text/css" href="pagesU.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            @php
+                echo(file_get_contents(public_path('css/pagesU.css')))
+            @endphp
+        </style>
+		<div id="grad1">
+
+		<ul>
+			<div class="header">
+			<img src='images/saturn1.png' alt="logo" />
+			<div class="dropdown" style="float:right;">
+  				<button class="dropbtn">{{Auth::user()->name}}</button>
+  				<div class="dropdown-content">
+  				<a href="/MyInfoA">My Info</a>
+  				<a href="/LogOut">Log out</a>
+
+  			</div>
+  		</div>
+  	</div>
+
+		</ul>
+
+
+
+	</head>
+	<body>
+
+  <label for="userSearch">Search Users:</label>
+  <input type="search" placeholder="Search.." class = "form-control search-input" data-table="tableUser">
+  <input type="submit">
+</form>
+<h1 class="title1">All Locked Users</h1>
+  <table class="tableUser">
+  <thead>
+  <tr>
+  	<th>&nbsp;</th>
+    <th>User ID</th>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>User Type</th>
+
+  </tr>
+</thead>
+<tbody>
+  <tr>
+  	<td><a href="/passwordReset">Reset</a></td>
+    <td>300321233</td>
+    <td>Marean</td>
+    <td>Vivenly</td>
+    <td>Student</td>
+  </tr>
+
+  <tr>
+  	<td><a href="/passwordReset">Reset</a></td>
+    <td>201282132</td>
+    <td>Jill</td>
+    <td>Litos</td>
+    <td>Faculty</td>
+  </tr>
+
+  <tr>
+  	<td><a href="/passwordReset">Reset</a></td>
+    <td>432319876</td>
+    <td>Lewis</td>
+    <td>Saffarri</td>
+    <td>Researcher</td>
+  </tr>
+
+  <tr>
+  	<td><a href="/passwordReset">Reset</a></td>
+    <td>233412467</td>
+    <td>Micheal</td>
+    <td>Borsch</td>
+    <td>Admin</td>
+  </tr>
+
+
+</tbody>
+
+  <script>
+        (function(document) {
+            'use strict';
+
+            var TableFilter = (function(myArray) {
+                var search_input;
+
+                function _onInputSearch(e) {
+                    search_input = e.target;
+                    var tables = document.getElementsByClassName(search_input.getAttribute('data-table'));
+                    myArray.forEach.call(tables, function(table) {
+                        myArray.forEach.call(table.tBodies, function(tbody) {
+                            myArray.forEach.call(tbody.rows, function(row) {
+                                var text_content = row.textContent.toLowerCase();
+                                var search_val = search_input.value.toLowerCase();
+                                row.style.display = text_content.indexOf(search_val) > -1 ? '' : 'none';
+                            });
+                        });
+                    });
+                }
+
+                return {
+                    init: function() {
+                        var inputs = document.getElementsByClassName('search-input');
+                        myArray.forEach.call(inputs, function(input) {
+                            input.oninput = _onInputSearch;
+                        });
+                    }
+                };
+            })(Array.prototype);
+
+            document.addEventListener('readystatechange', function() {
+                if (document.readyState === 'complete') {
+                    TableFilter.init();
+                }
+            });
+
+        })(document);
+
+     $(document).ready(function() {
+
+    $('#example tr').click(function() {
+        var href = $(this).find("a").attr("href");
+        if(href) {
+            window.location = href;
+        }
+    });
+
+});
+    </script>
+
+</body>
+</div>
+</html>

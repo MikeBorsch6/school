@@ -34,12 +34,12 @@
 
 		<h1 class="title1">Academic Calendar</h1>
 
-		<div class="btn-group">
-      <div class="center">
-        <button class="btn-group"><a href="/selectCal/academicCFall21">Fall 2021</a></button>
-        <button class="btn-group"><a href="/selectCal/academicCSpring21">Spring 2021</a></button>
-  		</div>
-		</div>
+        <div class="btn-group">
+            <div class="center">
+                <a href="selectCal/academicCFall21" class="button"><img src='images/academ.png'> Fall 2021</a>
+                <a href="selectCal/academicCSpring21"class="button"><img src='images/academ.png'>Spring 2021</a>
+            </div>
+        </div>
 
 
 	</body>

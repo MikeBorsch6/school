@@ -339,6 +339,30 @@ table.tableMa th{
 
 }
 
+.button {
+    background-color: #483d8b;
+    border: none;
+    color: #b8860b;
+    padding: 21px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 40px 20px;
+    cursor: pointer;
+}
+
+.buttonM {
+    background-color: #483d8b;
+    border: none;
+    color: #b8860b;
+    padding: 10px 20px;
+    text-align: center;
+    display: block;
+    font-size: 16px;
+    margin: 10px 35px;
+    cursor: pointer;
+}
 
 
 

@@ -9,7 +9,7 @@
             @endphp
         </style>
 
-
+        <ul>
 			<div class="header">
 			<img src='images/saturn1.png' alt="logo" />
   			<div class="dropdown" style="float:right;">
@@ -20,10 +20,9 @@
 
   			</div>
   		</div>
-            </div>
-	</head>
 
-    <ul>
+    </ul>
+        </head>
 	<body>
 
 		<h1>Welcome, Admin</h1>

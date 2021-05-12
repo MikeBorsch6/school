@@ -530,6 +530,12 @@ Route::get('/MyInfoA', function(){
     return view('layouts.MyInfoA');
 })->middleware('auth')->name('MyInfoA');
 
+Route::get('/passwordReset', function(){
+    return view('layouts.passwordReset');
+})->middleware('auth')->name('passwordReset');
+
+
+
 /* STUDENT DASHBOARD */
 Route::get('/student', function(){
     return view('layouts.StudentView');
@@ -578,6 +584,86 @@ Route::get('/viewClassInfoA', function(){
 Route::get('/adviseeA', function(){
     return view('layouts.adviseeA');
 })->name('adviseeA');
+
+Route::get('/faculty', function(){
+    return view('layouts.FacultyView');
+})->name('FacultyView');
+
+Route::get('/courseHistoryf', function(){
+    return view('layouts.courseHistoryf');
+})->name('courseHistoryf');
+
+Route::get('/viewClassInfo', function(){
+    return view('layouts.viewClassInfo');
+})->name('viewClassInfo');
+
+Route::get('/studentTranscriptF', function(){
+    return view('layouts.studentTranscriptF');
+})->name('studentTranscriptF');
+
+Route::get('/currentClassesf', function(){
+    return view('layouts.currentClassesf');
+})->name('currentClassesf');
+
+Route::get('/attendanceSheet', function(){
+    return view('layouts.attendanceSheet');
+})->name('attendanceSheet');
+
+Route::get('/adviseesF', function(){
+    return view('layouts.adviseesF');
+})->name('adviseesF');
+
+Route::get('/studentPageF', function(){
+    return view('layouts.studentPageF');
+})->name('studentPageF');
+
+Route::get('/studentDegreeEvalF', function(){
+    return view('layouts.studentDegreeEvalF');
+})->name('studentDegreeEvalF');
+
+Route::get('/studentAttendanceF', function(){
+    return view('layouts.studentAttendanceF');
+})->name('studentAttendanceF');
+
+Route::get('/searchStudentFG', function(){
+    return view('layouts.searchStudentFG');
+})->name('searchStudentFG');
+
+Route::get('/searchStudentF', function(){
+    return view('layouts.searchStudentF');
+})->name('searchStudentF');
+
+Route::get('/studentFoundf', function(){
+    return view('layouts.studentFoundf');
+})->name('studentFoundf');
+
+Route::get('/studentFoundfG', function(){
+    return view('layouts.studentFoundfG');
+})->name('studentFoundfG');
+
+Route::get('/researcher', function(){
+    return view('layouts.ResearchView');
+})->name('ResearchView');
+
+Route::get('/departmentStats', function(){
+    return view('layouts.departmentStats');
+})->name('departmentStats');
+
+Route::get('/classStats', function(){
+    return view('layouts.classStats');
+})->name('classStats');
+
+Route::get('/gradesStats', function(){
+    return view('layouts.gradesStats');
+})->name('gradesStats');
+
+Route::get('/MyInfoR', function(){
+    return view('layouts.MyInfoR');
+})->name('MyInfoR');
+
+Route::get('/MyInfoR', function(){
+    return view('layouts.MyInfoR');
+})->name('MyInfoR');
 
 
 
