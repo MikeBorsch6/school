@@ -246,6 +246,10 @@ table.tableAc td, table.tableAc th {
     padding: 8px;
 }
 
+table.tableAc th {
+    background-color:darkslateblue;
+}
+
 table.tableAc tr:nth-child(even) {
     background-color: #f8f8ff;
 }
@@ -311,12 +315,12 @@ table.tableMa th{
 }
 
 .depart button{
-    background-color: #dcd0ff; /* Green background */
-    border: 1px solid black; /* Green border */
+    background-color: #dcd0ff; /* lavender background */
+    border: 1px solid black; /* black border */
     color: white; /* White text */
     padding: 10px 24px; /* Some padding */
     cursor: pointer; /* Pointer/hand icon */
-    width: 50%; /* Set a width if needed */
+    width: 60%; /* Set a width if needed */
     display: block; /* Make the buttons appear below each other */
     margin: 0px 350px;
 }
@@ -328,7 +332,7 @@ table.tableMa th{
     height: 200px;
 }
 
-.button {
+.button{
     background-color: #483d8b;
     border: none;
     color: #b8860b;
@@ -354,6 +358,11 @@ table.tableMa th{
 }
 
 
+
+.container{
+    height: 200px;
+    position: relative;
+}
 
 
 

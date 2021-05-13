@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-  <html>
-  <head>
+<html>
+<head>
     <title>Departments</title>
-     <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
 
 
     <header id = "main-header">
 
-      <h1>Saturn University</h1>
+        <h1>Saturn University</h1>
         <h5>The Galaxy is the limit.</h5>
 
     </header>
@@ -22,18 +22,18 @@
 
 </head>
 
-  <style>
-      @php
-          echo(file_get_contents(public_path('css/main.css')))
-      @endphp
-  </style>
+<style>
+    @php
+        echo(file_get_contents(public_path('css/main.css')))
+    @endphp
+</style>
 
 
-	<body>
+<body>
 
-		<h1 class = "title1" >Please select the department</h1>
+<h1 class = "title1" >Please select the department</h1>
 <div class="container">
-      <div>
+    <div>
         <div class="depart">
             <button class="depart"><a href ="/departments/americanstudiesM">American Studies</a></button>
             <button class="depart"><a href ="/departments/bioscienceM">Biological Sciences</a></button>
@@ -60,11 +60,11 @@
             <button class="depart"><a href ="/departments/visualartsM">Visual Arts</a></button>
             <button class="depart"><a href ="/departments/womenstudiesM">Women's Studies</a></button>
 
-		</div>
+        </div>
     </div>
 </div>
 
-	</body>
-	</html>
+</body>
+</html>
 
 

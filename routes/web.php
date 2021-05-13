@@ -40,13 +40,41 @@ Route::get('/masterschedule', function(){
     return view('layouts.masterschedule');
 })->name('masterschedule');
 
-Route::get('/masterschedule/selDepMaF21', function(){
+Route::get('/selDepMaF21', function(){
     return view('layouts.selDepMaF21');
 })->name('selDepMaF21');
 
-Route::get('/masterschedule/selDepMaS21', function(){
+Route::get('/selDepMaS21', function(){
     return view('layouts.selDepMaS21');
 })->name('selDepMaS21');
+
+Route::get('/selDepMaS20', function(){
+    return view('layouts.selDepMaS20');
+})->name('selDepMaS20');
+
+Route::get('/selDepMaF20', function(){
+    return view('layouts.selDepMaF20');
+})->name('selDepMaF20');
+
+Route::get('/selDepMaS19', function(){
+    return view('layouts.selDepMaS19');
+})->name('selDepMaS19');
+
+Route::get('/selDepMaF19', function(){
+    return view('layouts.selDepMaF19');
+})->name('selDepMaF19');
+
+Route::get('/selDepMaS18', function(){
+    return view('layouts.selDepMaS18');
+})->name('selDepMaS18');
+
+Route::get('/selDepMaF18', function(){
+    return view('layouts.selDepMaF18');
+})->name('selDepMaF18');
+
+Route::get('/selDepMaF17', function(){
+    return view('layouts.selDepMaF17');
+})->name('selDepMaF17');
 
 Route::get('/selectCal', function(){
     return view('layouts.selectCal');
@@ -661,9 +689,9 @@ Route::get('/MyInfoR', function(){
     return view('layouts.MyInfoR');
 })->name('MyInfoR');
 
-Route::get('/MyInfoR', function(){
-    return view('layouts.MyInfoR');
-})->name('MyInfoR');
+Route::get('/MyInfoF', function(){
+    return view('layouts.MyInfoF');
+})->name('MyInfoF');
 
 
 

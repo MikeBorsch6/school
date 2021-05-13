@@ -42,14 +42,14 @@
     <div class="center">
 
         <a href="/selDepMaF21" class="buttonM"><img src='images/academ.png'>Fall 2021</a>
-        <a href="/selDepMaF21" class="buttonM"><img src='images/academ.png'>Spring 2021</a>
-        <a href="/selDepMaF21" class="buttonM"><img src='images/academ.png'>Fall 2020</a>
-        <a href="/selDepMaF21" class="buttonM"><img src='images/academ.png'>Spring 2020</a>
-        <a href="/selDepMaF21" class="buttonM"><img src='images/academ.png'>Fall 2019</a>
-        <a href="/selDepMaF21" class="buttonM"><img src='images/academ.png'>Spring 2019</a>
-        <a href="/selDepMaF21" class="buttonM"><img src='images/academ.png'>Fall 2018</a>
-        <a href="/selDepMaF21" class="buttonM"><img src='images/academ.png'>Spring 2018</a>
-        <a href="/selDepMaF21" class="buttonM"><img src='images/academ.png'>Fall 2017</a>
+        <a href="/selDepMaS21" class="buttonM"><img src='images/academ.png'>Spring 2021</a>
+        <a href="/selDepMaF20" class="buttonM"><img src='images/academ.png'>Fall 2020</a>
+        <a href="/selDepMaS20" class="buttonM"><img src='images/academ.png'>Spring 2020</a>
+        <a href="/selDepMaF19" class="buttonM"><img src='images/academ.png'>Fall 2019</a>
+        <a href="/selDepMaS19" class="buttonM"><img src='images/academ.png'>Spring 2019</a>
+        <a href="/selDepMaF18" class="buttonM"><img src='images/academ.png'>Fall 2018</a>
+        <a href="/selDepMaS18" class="buttonM"><img src='images/academ.png'>Spring 2018</a>
+        <a href="/selDepMaF17" class="buttonM"><img src='images/academ.png'>Fall 2017</a>
     </div>
 </div>
 

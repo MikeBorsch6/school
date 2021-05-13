@@ -251,12 +251,15 @@ table.tableAc td, table.tableAc th {
     text-align: left;
     padding: 8px;
 }
+table.tableAc th {
+    background-color:darkslateblue;
+}
 
 table.tableAc tr:nth-child(even) {
     background-color: #f8f8ff;
 }
 table.tableAc tr:nth-child(odd) {
-    background-color: #dcd0ff;
+    background-color:#dcd0ff;
 }
 
 
@@ -319,13 +322,13 @@ table.tableMa th{
     background-color: #A39EC5;
 }
 
-.depart button{
-    background-color: #dcd0ff; /* Green background */
-    border: 1px solid black; /* Green border */
+button.depart{
+    background-color: #dcd0ff; /* lavender background */
+    border: 1px solid black; /* black border */
     color: white; /* White text */
     padding: 10px 24px; /* Some padding */
     cursor: pointer; /* Pointer/hand icon */
-    width: 50%; /* Set a width if needed */
+    width: 60%; /* Set a width if needed */
     display: block; /* Make the buttons appear below each other */
     margin: 0px 350px;
 
@@ -365,7 +368,10 @@ table.tableMa th{
 }
 
 
-
+.container{
+    height: 200px;
+    position: relative;
+}
 
 
 

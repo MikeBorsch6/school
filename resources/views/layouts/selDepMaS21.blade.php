@@ -33,7 +33,7 @@
 
 		<h1 class ="title1">Please select the department</h1>
 <div class="container">
-      <div class="center2">
+      <div>
         <div class="depart">
             <button class="depart"><a href ="/departments/americanstudiesM1">American Studies</a></button>
             <button class="depart"><a href ="/departments/bioscienceM1">Biological Sciences</a></button>

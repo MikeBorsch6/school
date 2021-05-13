@@ -32,7 +32,6 @@
     <th>CourseID</th>
     <th>Department ID</th>
     <th>Course Name</th>
-    <th>Description</th>
     <th>Course Credit</th>
     <th>Minimum Grade</th>
 
@@ -41,7 +40,6 @@
     <td>1001</td>
     <td>2321</td>
     <td>Intro to Math Ideas</td>
-    <td>This course involves mandatory attendance at a lecture class and required hours working in a lab. It will include topics of real number arithmetic as well as topics in Introductory Algebra, including linear equations and inequalities, graphing linear equations, exponents, polynomials and factoring, and systems of equations. Attendance at an orientation meeting prior to the beginning of the semester is mandatory. Offered every semester.</td>
     <td>2</td>
     <td>C</td>
   </tr>
@@ -49,7 +47,6 @@
     <td>1030</td>
     <td>2321</td>
     <td>College Algebra</td>
-    <td></td>
     <td>4</td>
     <td>C</td>
   </tr>
@@ -57,7 +54,6 @@
     <td>1050</td>
     <td>2321</td>
     <td>College Trigometry</td>
-    <td></td>
     <td>4</td>
     <td>C</td>
 
