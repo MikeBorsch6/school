@@ -18,7 +18,7 @@
   				<button class="dropbtn">{{Auth::user()->name}}</button>
   				<div class="dropdown-content">
   				<a href="/MyInfoA">My Info</a>
-  				<a href="/LogOut">Log out</a>
+  				<a href="/logout">Log out</a>
 
   			</div>
   		</div>
@@ -30,35 +30,16 @@
 		<h1>Create a Major</h1>
 
 		<div class="container">
-  <form action="/action_page.php">
+  <form method="post" action="{{route('field.create')}}">
+      @csrf
   <div class="row">
     <div class="col-25">
-      <label for="mID">Major ID</label>
+      <label for="mName">Field Name</label>
     </div>
     <div class="col-75">
-      <input type="text" id="mID" name="mid" placeholder="Major ID..">
+      <input type="text" id="mName" name="name" placeholder="Major Name..">
     </div>
   </div>
-
-  <div class="row">
-    <div class="col-25">
-      <label for="mName">Major Name</label>
-    </div>
-    <div class="col-75">
-      <input type="text" id="mName" name="majorname" placeholder="Major Name..">
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-25">
-      <label for="dID">Department ID</label>
-    </div>
-    <div class="col-75">
-      <input type="text" id="dID" name="did" placeholder="Department ID..">
-    </div>
-  </div>
-
-
   <div class="row">
     <input type="submit" value="Submit">
   </div>

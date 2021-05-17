@@ -18,6 +18,7 @@ class AuthenticatedSessionController extends Controller
 
     public function store(LoginRequest $request)
     {
+
         $request->authenticate();
 
         $request->session()->regenerate();
@@ -30,7 +31,8 @@ class AuthenticatedSessionController extends Controller
         {
             return redirect(route('FacultyView'));
         }
-        else {
+        else
+            {
 
             return redirect(route('StudentView'));
         }

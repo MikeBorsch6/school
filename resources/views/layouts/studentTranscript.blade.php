@@ -18,7 +18,7 @@
           <button class="dropbtn">{{Auth::user()->name}}</button>
           <div class="dropdown-content">
           <a href="MyInfoS.blade.php">My Info</a>
-          <a href="LogOut.html">Log out</a>
+          <a href="logout.html">Log out</a>
 
         </div>
       </div>
@@ -34,36 +34,47 @@
     <table class="transcriptUser">
 
         <tr>
-          <th>ID Number:</th>
-          <td>702372343</td>
+            <th>ID Number:</th>
+            <td>{{Auth::user()->id}}</td>
         </tr>
 
         <tr>
-          <th>Student Name:</th>
-          <td>James Peng</td>
+            <th>Student Name:</th>
+            <td>{{Auth::user()->name}}</td>
         </tr>
 
         <tr>
-          <th>BirthDate:</th>
-          <td>03/23/1998</td>
+            <th>Major: </th>
+            @if(Auth::user()->majors->isEmpty())
+                <td>NA</td>
+            @else
+                @foreach(Auth::user()->majors as $major)
+                @endforeach
+            @endif
+
         </tr>
 
         <tr>
-          <th>Major: </th>
-          <td>Computer Science</td>
+            <th>Minor: </th>
+            @if(Auth::user()->minors->isEmpty())
+                <td>NA</td>
+            @else
+                @foreach(Auth::user()->minors as $minor)
+                    <td>{{Auth::user()-> minor->name }}</td>
+                @endforeach
+            @endif
         </tr>
 
         <tr>
-          <th>Minor: </th>
-          <td>None</td>
+            <th>GPA:   </th>
+            @if(Auth::user()->grades->isEmpty())
+                <td>NA</td>
+            @else
+                <td>{{Auth::user()->gpa()}}</td>
+            @endif
         </tr>
 
-        <tr>
-          <th>GPA:   </th>
-          <td>3.9</td>
-        </tr>
-
-      </table>
+    </table>
 
   </div>
 
@@ -81,69 +92,15 @@
 </thead>
 
     <tbody>
-    <tr>
-    <td>3003</td>
-    <td>Spring 2019</td>
-    <td>Ocean and Marine Life</td>
-    <td>3</td>
-    <td>A+</td>
-  </tr>
-
-  <tr>
-    <td>1233</td>
-    <td>Spring 2019</td>
-    <td>Linear Algebra</td>
-    <td>4</td>
-    <td>B</td>
-  </tr>
-
-  <tr>
-    <td>3212</td>
-    <td>Spring 2019</td>
-    <td>Technical Communications</td>
-    <td>3</td>
-    <td>A</td>
-  </tr>
-
-  <tr>
-    <td>1233</td>
-    <td>Fall 2019</td>
-    <td>Database Management</td>
-    <td>4</td>
-    <td>B</td>
-  </tr>
-
-  <tr>
-    <td>1233</td>
-    <td>Fall 2019</td>
-    <td>Computer Networks</td>
-    <td>4</td>
-    <td>A+</td>
-  </tr>
-
-  <tr>
-    <td>1233</td>
-    <td>Fall 2019</td>
-    <td>Basic Spanish</td>
-    <td>4</td>
-    <td>B+</td>
-  </tr>
-
-  <tr>
-    <td>1233</td>
-    <td>Spring 2020</td>
-    <td>Systems Management</td>
-    <td>4</td>
-    <td>B+</td>
-  </tr>
-
-  <tr>
-    <td>1233</td>
-    <td>Spring 2020</td>
-    <td>Intro to Applications</td>
-    <td>4</td>
-    <td>A</td>
-  </tr>
+    @foreach(Auth::user()->grades as $grade)
+        <tr>
+            <td>{{$grade()->course->course->crn}}</td>
+            <td>{{$grade()->course->course->date}}</td>
+            <td>{{$grade()->course->course->subject}}</td>
+            <td>{{$grade()->course->course->credits}}</td>
+            <td><a href="{{route('enterGrade', ['grade' => $grade])}}">{{$grade->grade}}</a></td>
+        </tr>
+    @endforeach
 
 </tbody>
     </table>

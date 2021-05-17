@@ -13,12 +13,12 @@
 
     <ul>
       <div class="header">
-      <img src='images/saturn1.png' alt="logo" />
+      <img src='/images/saturn1.png' alt="logo" />
       <div class="dropdown" style="float:right;">
           <button class="dropbtn">{{Auth::user()->name}}</button>
           <div class="dropdown-content">
           <a href="/MyInfoA">My Info</a>
-          <a href="/LogOut">Log out</a>
+          <a href="/logout">Log out</a>
 
         </div>
       </div>
@@ -30,7 +30,9 @@
 
 
 
-<form class="grade" action="/action_page.php" method="get">
+<form class="grade" action="{{route('user.grade.edit', ['grade' => $grade])}}" method="post">
+    @method('put')
+    @csrf
   <label for="fname">Enter Grade:</label><br>
   <input type="text" id="grade" name="grade" value=""><br>
   <input type="submit" value="Submit">

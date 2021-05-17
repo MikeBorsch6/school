@@ -13,12 +13,12 @@
 
 		<ul>
 			<div class="header">
-			<img src='images/saturn1.png' alt="logo" />
+			<img src='/images/saturn1.png' alt="logo" />
   			<div class="dropdown" style="float:right;">
   				<button class="dropbtn">{{Auth::user()->name}}</button>
   				<div class="dropdown-content">
   				<a href="/MyInfo">My Info</a>
-  				<a href="/LogOut">Log out</a>
+  				<a href="/logout">Log out</a>
 
   			</div>
   		</div>
@@ -43,38 +43,32 @@
  				 </tr>
   				<tr>
     				<td><b>ID number</b></td>
-    				<td>800086431</td>
+    				<td>{{Auth::user()->id}}</td>
 
   				</tr>
   				<tr>
-    				<td><b>First Name</b></td>
-    				<td>James</td>
+    				<td><b>Name</b></td>
+    				<td>{{Auth::user()->name}}</td>
 
  				 </tr>
-  				<tr>
-    				<td><b>Last Name</b></td>
-    				<td>Peng</td>
 
-  				</tr>
   				<tr>
     				<td><b>Email</b></td>
-    				<td>Jpeng1@saturnuni.com</td>
+    				<td>{{Auth::user()->email}}</td>
 
   				</tr>
- 				 <tr>
-    				<td><b>Date of Birth</b></td>
-    				<td>09/12/1998</td>
 
-  				</tr>
   				<tr>
-    				<td><b>Street Address</b></td>
-    				<td>67 Sampled St</td>
+    				<td><b>Address</b></td>
+    				<td>{{Auth::user()->address}}</td>
   				</tr>
+
   				<tr>
     				<td><b>Advisor</b></td>
     				<td>Maria Romero Sorto</td>
 
   				</tr>
+
   				<tr>
     				<td><b>Advisor Email</b></td>
     				<td>romeroms@saturnuni.com</td>

@@ -18,7 +18,7 @@
   				<button class="dropbtn">{{Auth::user()->name}}</button>
   				<div class="dropdown-content">
   				<a href="/MyInfoA">My Info</a>
-  				<a href="/LogOut">Log out</a>
+  				<a href="/logout">Log out</a>
 
   			</div>
   		</div>
@@ -38,37 +38,16 @@
   	<th>&nbsp;</th>
     <th>Major ID</th>
     <th>Major Name</th>
-    <th>Department ID</th>
   </tr>
 </thead>
 <tbody>
-  <tr>
-  	<td><a href="/editMajor">Edit</a></td>
-    <td>786</td>
-    <td>Mathematics</td>
-    <td>009</td>
-  </tr>
-
-  <tr>
-    <td><a href="/editMajor">Edit</a></td>
-    <td>786</td>
-    <td>Mathematics</td>
-    <td>009</td>
-  </tr>
-
- <tr>
-    <td><a href="/editMajor">Edit</a></td>
-    <td>786</td>
-    <td>Mathematics</td>
-    <td>009</td>
-  </tr>
-
-<tr>
-    <td><a href="/editMajor">Edit</a></td>
-    <td>786</td>
-    <td>Mathematics</td>
-    <td>009</td>
-  </tr>
+@foreach(App\Models\Field::orderBy('id', 'ASC')->get() as $field)
+    <tr>
+        <td><a href="/editMajor/{{$field->id}}">Edit</a></td>
+        <td>{{$field->id}}</td>
+        <td>{{$field->name}}</td>
+    </tr>
+@endforeach
 </tbody>
 </table>
 

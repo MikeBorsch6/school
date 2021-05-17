@@ -18,7 +18,7 @@
   				<button class="dropbtn">{{Auth::user()->name}}</button>
   				<div class="dropdown-content">
   				<a href="/MyInfoA">My Info</a>
-  				<a href="/LogOut">Log out</a>
+  				<a href="/logout">Log out</a>
 
   			</div>
   		</div>
@@ -44,34 +44,21 @@
 </thead>
 <tbody>
 </tbody>
-      <tr>
-          <td><a href="/researcherPageA">Edit</a></td>
-          <td>432319876</td>
-          <td>Lewis</td>
-          <td>Saffarri</td>
-          <td>Researcher</td>
-      </tr>
-  <tr>
-  	<td><a href="/adminPageA">Edit</a></td>
-    <td>233412467</td>
-    <td>Micheal</td>
-    <td>Borsch</td>
-    <td>Admin</td>
-  </tr>
+      @foreach(App\Models\User::all() as $user)
+          <tr>
+              <td><a href="{{route('users.edit', ['user' => $user->id])}}">Edit</a></td>
+              <td>{{$user->id}}</td>
+              <td>{{ $user->name }}</td>
+              @if($user->role_id === 1)
+                  <td>Admin</td>
+              @elseif($user->role_id === 2)
+                  <td>Faculty</td>
+              @else
+                  <td>Student</td>
+              @endif
 
-  <td><a href="/studentPageA">Edit</a></td>
-    <td>300334111</td>
-    <td>Ares</td>
-    <td>Toledoa</td>
-    <td>Student</td>
-  </table>
-
-  <td><a href="/facultyPageA">Edit</a></td>
-    <td>333234211</td>
-    <td>Sirena</td>
-    <td>Macprones</td>
-    <td>Student</td>
-  </tr>
+          </tr>
+      @endforeach
 </tbody>
 
   <script>

@@ -18,7 +18,7 @@
   				<button class="dropbtn">{{Auth::user()->name}}</button>
   				<div class="dropdown-content">
   				<a href="/MyInfoA">My Info</a>
-  				<a href="/LogOut">Log out</a>
+  				<a href="/logout">Log out</a>
 
   			</div>
   		</div>
@@ -27,12 +27,12 @@
 		</ul>
 	<body>
 
+
+
 		<h1>Please select an option</h1>
 
 		<a href="/createMajor" class="button"><img src='images/addCour.png'><p>Create Major</p></a>
-		<a href="/createMinor" class="button"><img src='images/addCour.png'><p>Create Minor</p></a>
 		<a href="/searchMajor" class="button"><img src='images/editCour.png'><p>Edit Major</p></a>
-		<a href="/searchMinors" class="button"><img src='images/editCour.png'><p>Edit Minor</p></a>
 
 
   		</div>

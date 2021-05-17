@@ -10,10 +10,7 @@
         </style>
   </head>
 
-
   <body>
-
-
 
     <h2>Login</h2><br>
     <div class="login">

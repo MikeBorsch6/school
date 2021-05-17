@@ -17,8 +17,11 @@ class User extends Authenticatable
         'email',
         'password',
         'address',
-        'role_id'
+        'role_id',
+        'locked'
     ];
+
+    protected $gpa = 0;
 
     protected $hidden = [
         'password',
@@ -54,8 +57,56 @@ class User extends Authenticatable
         return $this->belongsToMany(Field::class)->where('major', true);
     }
 
+    public function role()
+    {
+        return $this->belongsTo(Role::class);
+    }
+
+    public function teaches()
+    {
+        return $this->hasMany(Course::class);
+    }
+
     public function minors()
     {
         return $this->belongsToMany(Field::class)->where('major', false);
+    }
+
+    public function gpa()
+    {
+
+        $this->grades
+            ->each(function($grade){
+                $result = match (true) {
+                    $grade->grade >= 90 => 4,
+                    $grade->grade >= 80 && $grade->grade <= 89 => 3,
+                    $grade->grade >= 70 && $grade->grade <= 79 => 2,
+                    $grade->grade >= 60 && $grade->grade <= 69 => 1,
+                    default => 0,
+                };
+
+                $this->gpa += $result;
+            });
+
+        return $this->grades()->count() > 0
+            ?  $this->gpa / $this->grades()->count()
+            : 0;
+
+    }
+
+    public function calculateLetterGrades($grade)
+    {
+        return match (true) {
+            $grade >= 90 => 'A',
+            $grade >= 80 && $grade <= 89 => 'B',
+            $grade >= 70 && $grade <= 79 => 'C',
+            $grade >= 60 && $grade <= 69 => 'D',
+            default => 'F',
+        };
+    }
+
+    public function holds()
+    {
+        return $this->belongsToMany(Hold::class);
     }
 }

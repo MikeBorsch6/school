@@ -18,7 +18,7 @@
           <button class="dropbtn">{{Auth::user()->name}}</button>
           <div class="dropdown-content">
           <a href="/MyInfoA">My Info</a>
-          <a href="/LogOut">Log out</a>
+          <a href="/logout">Log out</a>
 
         </div>
       </div>
@@ -27,14 +27,22 @@
     </ul>
 
 <body>
-  <h2>700876427</h2>
+  <h2>{{Auth::user()->id}}</h2>
   <h2>{{Auth::user()->name}}</h2>
 
   <ul>
     <li><strong><u>Hold</u></strong></li>
-    <li><span id="stylediv">None</span></li> <!--change to default what the php page says-->
+      @if(Auth::user()->holds->isEmpty())
+          <p>There are currently no holds on your account</p>
+      @else
+            @foreach(Auth::user()->holds as $hold)
+                <li><span id="stylediv">{{$hold->name}}</span></li>
+            @endforeach
+      @endif
+
+   <!--change to default what the php page says-->
   </ul>
-  <p>There are currently no holds on your account</p>
+
 
 </body>
 </div>

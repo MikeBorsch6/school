@@ -18,7 +18,7 @@
                     <button class="dropbtn">{{Auth::user()->name}}</button>
                     <div class="dropdown-content">
                         <a href="/MyInfoA">My Info</a>
-                        <a href="/LogOut">Log out</a>
+                        <a href="/logout">Log out</a>
 
                     </div>
                 </div>
@@ -50,61 +50,22 @@
     </tr>
     </thead>
     <tbody>
+    @foreach(App\Models\Course::where('date','08/03/21-12/16/21')->get() as $course)
     <tr>
-        <td><a href="/classRosterF">Select</a></td>
-        <td>127836</td>
-        <td>Linear Algebra</td>
-        <td>44382</td>
-        <td>Geta Tekanie</td>
-        <td>4</td>
-        <td>NAB 1127</td>
-        <td>Fall 2021</td>
-        <td>Mon,Wed</td>
-        <td>1:50pm - 3:20pm</td>
-        <td>21</td>
+        <td><a href="/classRosterF/{{$course->id}}">Select</a></td>
+        <td>{{$course->crn}}</td>
+        <td>{{$course->title}}</td>
+        <td>{{$course->id}}</td>
+        <td>{{$course->teacher->name}}</td>
+        <td>{{$course->section}}</td>
+        <td>{{$course->location}}</td>
+        <td>{{$course->date}}</td>
+        <td>{{$course->days}}</td>
+        <td>{{$course->time}}</td>
+        <td>{{$course->capacity}}</td>
     </tr>
+    @endforeach
 
-    <tr>
-        <td><a href="/classRosterF">Select</a></td>
-        <td>127836</td>
-        <td>Linear Algebra</td>
-        <td>44382</td>
-        <td>Geta Tekanie</td>
-        <td>4</td>
-        <td>NAB 1127</td>
-        <td>Fall 2021</td>
-        <td>Mon,Wed</td>
-        <td>1:50pm - 3:20pm</td>
-        <td>21</td>
-    </tr>
-
-    <tr>
-        <td><a href="/classRosterF">Select</a></td>
-        <td>127836</td>
-        <td>Linear Algebra</td>
-        <td>44382</td>
-        <td>Geta Tekanie</td>
-        <td>4</td>
-        <td>NAB 1127</td>
-        <td>Fall 2021</td>
-        <td>Mon,Wed</td>
-        <td>1:50pm - 3:20pm</td>
-        <td>21</td>
-    </tr>
-
-    <tr>
-        <td><a href="/classRosterF">Select</a></td>
-        <td>127836</td>
-        <td>Linear Algebra</td>
-        <td>44382</td>
-        <td>Geta Tekanie</td>
-        <td>4</td>
-        <td>NAB 1127</td>
-        <td>Fall 2021</td>
-        <td>Mon,Wed</td>
-        <td>1:50pm - 3:20pm</td>
-        <td>21</td>
-    </tr>
     </tbody>
 </table>
 

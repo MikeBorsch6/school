@@ -13,12 +13,12 @@
 
         <ul>
             <div class="header">
-                <img src='images/saturn1.png' alt="logo" />
+                <img src='/images/saturn1.png' alt="logo" />
                 <div class="dropdown" style="float:right;">
                     <button class="dropbtn">{{Auth::user()->name}}</button>
                     <div class="dropdown-content">
                         <a href="/MyInfoA">My Info</a>
-                        <a href="/LogOut">Log out</a>
+                        <a href="/logout">Log out</a>
 
                     </div>
                 </div>
@@ -28,38 +28,48 @@
 <body>
 <h2>Transcript</h2>
 
-
 <div class="div1leftT">
     <table class="transcriptUser">
 
         <tr>
             <th>ID Number:</th>
-            <td>702372343</td>
+            <td>{{$user->id}}</td>
         </tr>
 
         <tr>
             <th>Student Name:</th>
-            <td>James Peng</td>
-        </tr>
-
-        <tr>
-            <th>BirthDate:</th>
-            <td>03/23/1998</td>
+            <td>{{$user->name}}</td>
         </tr>
 
         <tr>
             <th>Major: </th>
-            <td>Computer Science</td>
+            @if($user->majors->isEmpty())
+                <td>NA</td>
+            @else
+                @foreach($user->majors as $major)
+                @endforeach
+            @endif
+
         </tr>
 
         <tr>
             <th>Minor: </th>
-            <td>None</td>
+            @if($user->minors->isEmpty())
+                <td>NA</td>
+            @else
+                @foreach($user->minors as $minor)
+                    <td>{{ $minor->name }}</td>
+                @endforeach
+            @endif
         </tr>
 
         <tr>
             <th>GPA:   </th>
-            <td>3.9</td>
+            @if($user->grades->isEmpty())
+                <td>NA</td>
+            @else
+                <td>{{$user->gpa()}}</td>
+            @endif
         </tr>
 
     </table>
@@ -80,70 +90,15 @@
         </thead>
 
         <tbody>
-        <tr>
-            <td>3003</td>
-            <td>Spring 2019</td>
-            <td>Ocean and Marine Life</td>
-            <td>3</td>
-            <td><a href="/enterGrade">A+</a></td>
-        </tr>
-
-        <tr>
-            <td>1233</td>
-            <td>Spring 2019</td>
-            <td>Linear Algebra</td>
-            <td>4</td>
-            <td><a href="/enterGrade">B</a></td>
-        </tr>
-
-        <tr>
-            <td>3212</td>
-            <td>Spring 2019</td>
-            <td>Technical Communications</td>
-            <td>3</td>
-            <td><a href="/enterGrade">A</a></td>
-        </tr>
-
-        <tr>
-            <td>1233</td>
-            <td>Fall 2019</td>
-            <td>Database Management</td>
-            <td>4</td>
-            <td><a href="/enterGrade">B</a></td>
-        </tr>
-
-        <tr>
-            <td>1233</td>
-            <td>Fall 2019</td>
-            <td>Computer Networks</td>
-            <td>4</td>
-            <td><a href="/enterGrade">A+</a></td>
-        </tr>
-
-        <tr>
-            <td>1233</td>
-            <td>Fall 2019</td>
-            <td>Basic Spanish</td>
-            <td>4</td>
-            <td><a href="/enterGrade">B+</a></td>
-        </tr>
-
-        <tr>
-            <td>1233</td>
-            <td>Spring 2020</td>
-            <td>Systems Management</td>
-            <td>4</td>
-            <td><a href="/enterGrade">B+</a></td>
-        </tr>
-
-        <tr>
-            <td>1233</td>
-            <td>Spring 2020</td>
-            <td>Intro to Applications</td>
-            <td>4</td>
-            <td><a href="/enterGrade">A</a></td>
-        </tr>
-
+        @foreach($user->grades as $grade)
+            <tr>
+                <td>{{$grade->course->course->crn}}</td>
+                <td>{{$grade->course->course->date}}</td>
+                <td>{{$grade->course->course->subject}}</td>
+                <td>{{$grade->course->course->credits}}</td>
+                <td><a href="{{route('enterGrade', ['grade' => $grade])}}">{{$grade->grade}}</a></td>
+            </tr>
+        @endforeach
         </tbody>
     </table>
 </div>

@@ -18,7 +18,7 @@
                     <button class="dropbtn">{{Auth::user()->name}}</button>
                     <div class="dropdown-content">
                         <a href="/MyInfoA">My Info</a>
-                        <a href="/LogOut">Log out</a>
+                        <a href="/logout">Log out</a>
 
                     </div>
                 </div>
@@ -70,64 +70,23 @@
             </tr>
             </thead>
             <tbody>
-            <tr>
-                <td><a href="/classRoster">Remove</a></td>
-                <td>800234223</td>
-                <td>James Peng</td>
-                <td>jpeng@saturnuni.com</td>
-                <td>646-237-9808</td>
-            </tr>
+            @foreach($course->users as $user)
+                <tr>
+                    <td><a href="/course/{{$user->id}}/{{$course->id}}">Remove</a></td>
+                    <td>{{$user->id}}</td>
+                    <td>{{$user->name}}</td>
+                    <td>{{$user->email}}</td>
+                    @if(isset($user->grades->firstWhere('course.course_id', $course->id)->grade))
+                        <td>{{$user->grades->firstWhere('course.course_id', $course->id)->grade}}</td>
+                    @else
+                        <td>No Grade</td>
+                    @endif
 
-            <tr>
-                <td><a href="/classRoster">Remove</a></td>
-                <td>876543210</td>
-                <td>Ariel Mariner</td>
-                <td>amariner@saturnuni.com</td>
-                <td>516-753-8960</td>
-            </tr>
 
-            <tr>
-                <td><a href="/classRoster">Remove</a></td>
-                <td>876587431</td>
-                <td>Minera Reyes</td>
-                <td>mreyes@saturnuni.com</td>
-                <td>516-654-1239</td>
-            </tr>
-
-            <tr>
-                <td><a href="/classRoster">Remove</a></td>
-                <td>701336743</td>
-                <td>Jotono Miyers</td>
-                <td>jmiyers@saturnuni.com</td>
-                <td>646-764-9090</td>
-            </tr>
-
-            <tr>
-                <td><a href="/classRoster">Remove</a></td>
-                <td>685437084</td>
-                <td>Jason Frank</td>
-                <td>jfrank@saturnuni.com</td>
-                <td>765-980-8001</td>
-            </tr>
-
-            <tr>
-                <td><a href="/classRoster">Remove</a></td>
-                <td>700872387</td>
-                <td>Primavera Trelli</td>
-                <td>ptrelli@saturnuni.com</td>
-                <td>786-808-9123</td>
-            </tr>
-
-            <tr>
-                <td><a href="/classRoster">Remove</a></td>
-                <td>743212347</td>
-                <td>Loreala Paloski</td>
-                <td>lpaloski@saturnuni.com</td>
-                <td>646-237-7654</td>
-            </tr>
+                </tr>
+            @endforeach
 
             </tbody>
         </table>
         </body>
-    </div>
 </html>

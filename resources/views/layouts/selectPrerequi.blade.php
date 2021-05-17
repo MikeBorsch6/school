@@ -9,34 +9,30 @@
             echo(file_get_contents(public_path('css/pagesU.css')))
         @endphp
     </style>
-    <div id="grad1">
+    <div id="grad2p">
 
     <ul>
         <div class="header">
-            <img src='images/saturn1.png' alt="logo" />
+            <img src='/images/saturn1.png' alt="logo" />
       <div class="dropdown" style="float:right;">
           <button class="dropbtn">{{Auth::user()->name}}</button>
           <div class="dropdown-content">
           <a href="/MyInfoA">My Info</a>
-          <a href="/LogOut">Log out</a>
+          <a href="/logout">Log out</a>
 
         </div>
       </div>
     </div>
-
     </ul>
-
 <body>
 
 
 <h1 class="title1">Prerequisites</h1>
-<div>
   <h2>All Courses</h2>
 <input type="text" id="myInput" onkeyup="myFunction()" placeholder="enter course ID">
 <br></br>
-</div>
 
-<table id="prerequi" class="prerequi">
+<table class="prerequi">
   <thead>
   <tr>
     <th>&nbsp;</th>
@@ -44,49 +40,21 @@
     <th>Course Name</th>
     <th>Major</th>
     <th>Credits</th>
-    <th>Departments</th>
-
-
+    <th>Minimum Grade</th>
   </tr>
-</thead>
-<tbody>
-  <tr>
-    <td><a href="/prerequiPage">Select</a></td>
-    <td>127836</td>
-    <td>Linear Algebra</td>
-    <td>Mathemcatics, B.S.</td>
-    <td>4</td>
-    <td>Mathematics</td>
-  </tr>
-
-  <tr>
-    <td><a href="/prerequiPage">Select</a></td>
-    <td>12231</td>
-    <td>Intro to Statistics</td>
-    <td>Mathemcatics, B.S.</td>
-    <td>4</td>
-    <td>Mathematics</td>
-  </tr>
-
-  <tr>
-    <td><a href="/prerequiPage">Select</a></td>
-    <td>56733</td>
-    <td>Computer Networks</td>
-    <td>Computer Science, B.S.</td>
-    <td>4</td>
-    <td>Computer Science</td>
-  </tr>
-
- <tr>
-    <td><a href="/prerequiPage">Select</a></td>
-    <td>45321</td>
-    <td>Child Psychology</td>
-    <td>Psychology, B.S.</td>
-    <td>4</td>
-    <td>Mental Health</td>
-  </tr>
-</tbody>
-</table>
+  </thead>
+  <tbody>
+  @foreach(App\Models\Course::where('date','08/03/21-12/16/21')->get() as $course)
+      <tr>
+          <td><a href="/prerequiPage">Edit</a></td>
+          <td>{{$course->crn}}</td>
+          <td>{{$course->title}}</td>
+          <td>{{$course->subject}}</td>
+          <td>{{$course->credits}}</td>
+          <td>C</td>
+      </tr>
+      @endforeach
+  </tbody>
 
   <script>
 function myFunction() {

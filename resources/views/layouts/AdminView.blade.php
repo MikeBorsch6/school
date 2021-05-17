@@ -31,10 +31,7 @@
 			</button>
 
 			<button class="button button2">
-				<img src='images/coursesAd.png'><a href="/coursePage"><p>Courses</p></a>
-			</button>
-			<button class="button button3">
-				<img src='images/gradesA.png'><a href="/searchStudentG"><p>Grades</p></a>
+				<img src='images/coursesAd.png'><a href="/coursePage"><p>Classes</p></a>
 			</button>
 			<button class="button button4">
 				<img src='images/holdsA.png'><a href="/Holds"><p>Holds</p></a>
@@ -47,7 +44,7 @@
 			</div>
 			<div class ="div2">
 
-<p><a href="/classPage">Classes</a></p>
+                <p><a href="/classPage">Courses</a></p>
 <p><a href="/selectPrerequi">Prerequistes</a></p>
 <p><a href="/selectDepartment">Major/Minor</a></p>
 

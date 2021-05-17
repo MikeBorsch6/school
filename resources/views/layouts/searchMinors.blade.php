@@ -18,15 +18,14 @@
   				<button class="dropbtn">{{Auth::user()->name}}</button>
   				<div class="dropdown-content">
   				<a href="/MyInfoA">My Info</a>
-  				<a href="/LogOut">Log out</a>
+  				<a href="/logout">Log out</a>
 
   			</div>
   		</div>
   	</div>
 
 		</ul>
-	<body>
-
+    <body>
   <label for="userSearch">Search Minors:</label>
   <input type="search" placeholder="Search.." class = "form-control search-input" data-table="tableUser">
   <input type="submit">
@@ -38,40 +37,16 @@
   	<th>&nbsp;</th>
     <th>Minor ID</th>
     <th>Minor Name</th>
-    <th>Department ID</th>
   </tr>
 </thead>
 <tbody>
-  <tr>
-  	<td><a href="/editMinor">Edit</a></td>
-    <td>716</td>
-    <td>Information Math</td>
-    <td>009</td>
-  </tr>
-
-  <tr>
-    <td><a href="/editMinor">Edit</a></td>
-    <td>716</td>
-    <td>Information Math</td>
-    <td>009</td>
-  </tr>
-
-
- <tr>
-    <td><a href="/editMinor">Edit</a></td>
-    <td>716</td>
-    <td>Information Math</td>
-    <td>009</td>
-  </tr>
-
-
-<tr>
-    <td><a href="/editMinor">Edit</a></td>
-    <td>716</td>
-    <td>Information Math</td>
-    <td>009</td>
-  </tr>
-
+@foreach(App\Models\Field::all() as $field)
+    <tr>
+        <td><a href="/editMinor">Edit</a></td>
+        <td>{{$field->id}}</td>
+        <td>{{$field->name}}</td>
+    </tr>
+@endforeach
 </tbody>
 </table>
 

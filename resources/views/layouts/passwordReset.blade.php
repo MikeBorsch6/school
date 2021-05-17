@@ -17,7 +17,7 @@
           <button class="dropbtn">{{Auth::user()->name}}</button>
           <div class="dropdown-content">
           <a href="/MyInfoA">My Info</a>
-          <a href="/LogOut">Log out</a>
+          <a href="/logout">Log out</a>
 
         </div>
       </div>
@@ -25,10 +25,10 @@
 
     </ul>
 <body>
-  <h2>Password Reset For User {{ $user ?? ''->name }}</h2>
+  <h2>Password Reset For User {{ $user->name}}</h2>
 
 
-<form class ="pass" method="post" action="{{route('user.reset', $user ?? ''->id)}}">
+<form class ="pass" method="post" action="{{route('user.reset', $user->id)}}">
     @csrf
   <label for="newpwd">Enter New Password:</label>
   <input type="password" id="pwd" name="password"><br><br>

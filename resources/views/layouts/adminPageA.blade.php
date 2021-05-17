@@ -4,19 +4,22 @@
     <title>Admin Info</title>
     <link rel="stylesheet" type="text/css" href="pagesU.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
     @php
         echo(file_get_contents(public_path('css/pagesU.css')))
     @endphp
+    </style>
+</head>
     <div id="grad1">
 
     <ul>
       <div class="header">
-      <img src='images/saturn1.png' alt="logo" />
+      <img src='/images/saturn1.png' alt="logo" />
       <div class="dropdown" style="float:right;">
           <button class="dropbtn">{{Auth::user()->name}}</button>
           <div class="dropdown-content">
           <a href="/MyInfoA">My Info</a>
-          <a href="/LogOut">Log out</a>
+          <a href="/logout">Log out</a>
 
         </div>
       </div>
@@ -55,67 +58,32 @@ form.invert>button:nth-of-type(3){
  display:none;
 }
 </style>
-<script>
-(function(W){
- var D,form,bts,ipt;
- function init(){
-  D=W.document,previous=[];
-  form=D.getElementsByTagName('form')[0];
-  bts=form.getElementsByTagName('button');
-  ipt=form.getElementsByTagName('input');
-  form.addEventListener('submit',save,false);
-  bts[1].addEventListener('click',cancel,false);
-  bts[2].addEventListener('click',edit,false);
- }
- function save(e){
-  e.preventDefault();
-  form.classList.remove('invert');
-  var l=ipt.length;
-  while(l--){
-   ipt[l].readOnly=true;
-  };
-  previous=[];
-  //send your info here
- }
- function edit(e){
-  e.preventDefault();
-  form.classList.add('invert');
-  var l=ipt.length;
-  while(l--){
-   previous[l]=ipt[l].value;
-   ipt[l].readOnly=false;
-  }
- }
- function cancel(e){
-  form.classList.remove('invert');
-  e.preventDefault();
-  var l=ipt.length;
-  while(l--){
-   ipt[l].value=previous[l];
-   ipt[l].readOnly=true;
-  }
- }
- W.addEventListener('load',init,false);
-})(window)
-</script>
-</div>
 <body>
 
 
-<form>
-<label>ID Number:   <input readonly value ="234631912"></label>
-<label>First Name:  <input readonly value ="Micahel"></label>
-<label>Last Name:   <input readonly value = "Borsch"></label>
-<label>Birth Date:  <input readonly value = "04/03/1999"></label>
-<label>EmailAddress:<input readonly value="michealb@saturnuni.com"></label>
-<label>HomeAddress: <input readonly value = "23 SadBoy Ln, Dest, NY, 11283"></label>
-<label>PhoneNumber: <input readonly value="323-484-3412"></label>
-<button>Save</button><button>Cancel</button><button>Edit</button><br>
-<input type = "submit" value ="Delete" class="buttonDelete">
+<form method="post" action="{{route('users.update', ['user' => $user->id])}}">
+    @method('put')
+    @csrf
+<label>ID Number:   <input readonly value ="{{$user->id}}"></label>
+<label>Name:  <input name="name" value ="{{$user->name}}"></label>
+<label>Birth Date:  <input  value = "04/03/1999"></label>
+<label>EmailAddress:<input  name='email' value="{{$user->email}}"></label>
+<label>HomeAddress: <input  name='address' value = "{{$user->address}}"></label>
+    <br>
+<input type = "submit" value ="Save" class="btn">
 </form>
 
+<div>
+        @if(Auth::user()->role_id === 1)
+          <a href="{{route('studentTranscriptA', ['user' => $user->id])}}">Student Transcript</a>
+          <a href="{{route('searchDegreeEval', ['user' => $user->id])}}">Degree Evaluation</a>
+          <a href="/studentAttendanceA">Attendance</a>
+          <a href="/studentHolds">Holds</a>
+        @elseif(Auth::user()->role_id === 2)
+        <a href="/courseHistoryfA">Classes Teaching</a>
+        <a href="/adviseeA">Advisees</a>
+    @endif
 
-
-</body>
 </div>
+</body>
 </html>

@@ -14,6 +14,13 @@ body {
     background-size: cover;
 }
 
+#grad2p {
+    height: 24000px;
+    background-color: purple; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to bottom right, darkslateblue, lavender);
+    background-size: cover;
+}
+
 ul {
     list-style-type: none;
     margin: 0;

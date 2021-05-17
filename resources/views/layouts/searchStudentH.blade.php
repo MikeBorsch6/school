@@ -18,17 +18,13 @@
   				<button class="dropbtn">{{Auth::user()->name}}</button>
   				<div class="dropdown-content">
   				<a href="/MyInfoA">My Info</a>
-  				<a href="/LogOut">Log out</a>
+  				<a href="/logout">Log out</a>
 
   			</div>
   		</div>
   	</div>
 
 		</ul>
-
-
-
-	</div>
 	<body>
 
   <label for="userSearch">Search Student:</label>
@@ -41,36 +37,20 @@
   <tr>
   	<th>&nbsp;</th>
     <th>User ID</th>
-    <th>First Name</th>
-    <th>Last Name</th>
+    <th>Name</th>
     <th>User Type</th>
 
   </tr>
 </thead>
 <tbody>
-  <tr>
-  	<td><a href="/studentHolds">Edit</a></td>
-    <td>300321233</td>
-    <td>Marean</td>
-    <td>Vivenly</td>
-    <td>Student</td>
-  </tr>
-
-  <tr>
-  <td><a href="/studentHolds">Edit</a></td>
-    <td>300334111</td>
-    <td>Ares</td>
-    <td>Toledoa</td>
-    <td>Student</td>
-  </tr>
-
-  <tr>
-  <td><a href="/studentHolds">Edit</a></td>
-    <td>333234211</td>
-    <td>Sirena</td>
-    <td>Macprones</td>
-    <td>Student</td>
-  </tr>
+    @foreach(App\Models\User::whereIn('role_id', ['3','4','5','6', '7'])->get() as $student)
+        <tr>
+            <td><a href="{{route('student.holds', $student)}}">Edit</a></td>
+            <td>{{$student->id}}</td>
+            <td>{{$student->name}}</td>
+            <td>{{$student->role->name}}</td>
+        </tr>
+    @endforeach
 </tbody>
 
   <script>

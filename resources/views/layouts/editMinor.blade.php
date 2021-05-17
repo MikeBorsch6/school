@@ -18,7 +18,7 @@
           <button class="dropbtn">{{Auth::user()->name}}</button>
           <div class="dropdown-content">
           <a href="/MyInfoA">My Info</a>
-          <a href="/LogOut">Log out</a>
+          <a href="/logout">Log out</a>
 
         </div>
       </div>
@@ -104,11 +104,11 @@ form.invert>button:nth-of-type(3){
 <body>
 
 
-<form>
-<label>Minor ID:     <input readonly value="####"></label>
-<label>Minor Name:   <input readonly value="Intro Science"></label>
-<label>Department ID: <input readonly value="008"></label>
-
+<form method="post" action="{{route('field.update', ['field' => $field->id])}}">
+    @method('put')
+    @csrf
+<label>Minor ID:     <input readonly value="{{$field->id}}"></label>
+<label>Minor Name:   <input readonly value="{{$field->name}}"></label>
 
 <button>Save</button><button>Cancel</button><button>Edit</button><br>
 <input type = "submit" value ="Delete" class="buttonDelete">

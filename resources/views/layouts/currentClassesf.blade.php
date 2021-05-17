@@ -18,7 +18,7 @@
           <button class="dropbtn">{{Auth::user()->name}}</button>
           <div class="dropdown-content">
           <a href="/MyInfoF">My Info</a>
-          <a href="/LogOut">Log out</a>
+          <a href="/logout">Log out</a>
 
         </div>
       </div>
@@ -39,7 +39,6 @@
     <th>CRN</th>
     <th>Course Name</th>
     <th>Course ID</th>
-    <th>Faculty Name</th>
     <th>Section</th>
     <th>Room Number</th>
     <th>Semester Year</th>
@@ -50,50 +49,20 @@
   </tr>
 </thead>
 <tbody>
-  <tr>
-    <td><a href="/attendanceSheet">View</a></td>
-    <td>127836</td>
-    <td>Linear Algebra</td>
-    <td>44382</td>
-    <td>Geta Tekanie</td>
-    <td>4</td>
-    <td>NAB 1127</td>
-    <td>Spring 2021</td>
-    <td>Mon,Wed</td>
-    <td>1:50pm - 3:20pm</td>
-    <td>21</td>
-  </tr>
-
-  <tr>
-    <td><a href="/attendanceSheet">View</a></td>
-    <td>127836</td>
-    <td>Linear Algebra</td>
-    <td>44382</td>
-    <td>Maria Romero Sorto</td>
-    <td>4</td>
-    <td>NAB 1127</td>
-    <td>Spring 2021</td>
-    <td>Mon,Wed</td>
-    <td>1:50pm - 3:20pm</td>
-    <td>21</td>
-  </tr>
-
-  <tr>
-    <td><a href="/attendanceSheet">View</a></td>
-    <td>127836</td>
-    <td>Linear Algebra</td>
-    <td>44382</td>
-    <td>Maria Romero</td>
-    <td>4</td>
-    <td>NAB 1127</td>
-    <td>Spring 2021</td>
-    <td>Mon,Wed</td>
-    <td>1:50pm - 3:20pm</td>
-    <td>21</td>
-  </tr>
-
-
-
+@foreach(Auth::user()->teaches as $course)
+    <tr>
+        <td><a href="/viewClassInfo">View</a></td>
+        <td>{{$course->crn}}</td>
+        <td>{{$course->title}}</td>
+        <td>{{$course->subject}}</td>
+        <td>{{$course->section}}</td>
+        <td>{{$course->location}}</td>
+        <td>{{$course->date}}</td>
+        <td>{{$course->days}}</td>
+        <td>{{$course->time}}</td>
+        <td>{{$course->capacity}}</td>
+    </tr>
+@endforeach
 </tbody>
 </table>
 

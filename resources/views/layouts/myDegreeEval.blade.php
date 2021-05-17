@@ -18,7 +18,7 @@
           <button class="dropbtn">{{Auth::user()->name}}</button>
           <div class="dropdown-content">
           <a href="/MyInfoA">My Info</a>
-          <a href="/LogOut">Log out</a>
+          <a href="/logout">Log out</a>
 
         </div>
       </div>
@@ -32,32 +32,44 @@
 
   <div class="divDU">
     <table class="degreeUser">
-      <tr>
-        <th>Name:</th>
-        <td>James Peng</td>
-        <th>Class Level:</th>
-        <td>Senior</td>
-        <th>Major:</th>
-        <td>Computer Science</td>
-      </tr>
+        <tr>
+            <th>Name:</th>
+            <td>{{Auth::user()->name}}</td>
+            <th>Class Level:</th>
+            <td>{{Auth::user()->role->name}}</td>
+            <th>Major:</th>
+            @if(Auth::user()->majors->isEmpty())
+                <td>NA</td>
+            @else
+                @foreach(Auth::user()->majors as $major)
+                    <td>{{$major->name}}</td>
+                @endforeach
+            @endif
+        </tr>
 
-      <tr>
-        <th>ID Number:</th>
-        <td>730473855</td>
-        <th>College:</th>
-        <td>Saturn University</td>
-        <th>Minor:</th>
-        <td>None</td>
-      </tr>
+        <tr>
+            <th>ID Number:</th>
+            <td>{{Auth::user()->id}}</td>
+            <th>College:</th>
+            <td>Saturn University</td>
+            <th>Minor:</th>
+            @if(Auth::user()->minors->isEmpty())
+                <td>NA</td>
+            @else()
+                @foreach(Auth::user()->minors as $minor)
+                    <td>{{$minor->name}}</td>
+                @endforeach
+            @endif
+        </tr>
 
-      <tr>
-        <th>GPA:</th>
-        <td>3.8</td>
-        <th>Credits:</th>
-        <td>114</td>
-        <th>Credits Required:</th>
-        <td>120</td>
-      </tr>
+        <tr>
+            <th>GPA:</th>
+            <td>{{Auth::user()->gpa()}}</td>
+            <th>Credits:</th>
+            <td>{{ Auth::user()->grades->count() * 4 }}</td>
+            <th>Credits Required:</th>
+            <td>120</td>
+        </tr>
     </table>
 
   </div>

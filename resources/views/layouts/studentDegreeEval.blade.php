@@ -13,12 +13,12 @@
 
     <ul>
       <div class="header">
-      <img src='images/saturn1.png' alt="logo" />
+      <img src='/images/saturn1.png' alt="logo" />
       <div class="dropdown" style="float:right;">
           <button class="dropbtn">{{Auth::user()->name}}</button>
           <div class="dropdown-content">
           <a href="/MyInfoA">My Info</a>
-          <a href="/LogOut">Log out</a>
+          <a href="/logout">Log out</a>
 
         </div>
       </div>
@@ -33,27 +33,39 @@
     <table class="degreeUser">
       <tr>
         <th>Name:</th>
-        <td>James Peng</td>
+        <td>{{$user->name}}</td>
         <th>Class Level:</th>
-        <td>Senior</td>
+        <td>{{$user->role->name}}</td>
         <th>Major:</th>
-        <td>Computer Science</td>
+          @if($user->majors->isEmpty())
+              <td>NA</td>
+          @else
+              @foreach($user->majors as $major)
+                  <td>{{$major->name}}</td>
+              @endforeach
+          @endif
       </tr>
 
       <tr>
         <th>ID Number:</th>
-        <td>730473855</td>
+        <td>{{$user->id}}</td>
         <th>College:</th>
         <td>Saturn University</td>
         <th>Minor:</th>
-        <td>None</td>
+          @if($user->minors->isEmpty())
+              <td>NA</td>
+          @else()
+              @foreach($user->minors as $minor)
+                  <td>{{$minor->name}}</td>
+              @endforeach
+          @endif
       </tr>
 
       <tr>
         <th>GPA:</th>
-        <td>3.8</td>
+        <td>{{$user->gpa()}}</td>
         <th>Credits:</th>
-        <td>114</td>
+        <td>{{ $user->grades->count() * 4 }}</td>
         <th>Credits Required:</th>
         <td>120</td>
       </tr>

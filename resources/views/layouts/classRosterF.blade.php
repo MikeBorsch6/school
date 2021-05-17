@@ -13,47 +13,46 @@
 
     <ul>
       <div class="header">
-      <img src='images/saturn1.png' alt="logo" />
+      <img src='/images/saturn1.png' alt="logo" />
       <div class="dropdown" style="float:right;">
           <button class="dropbtn">{{Auth::user()->name}}</button>
           <div class="dropdown-content">
           <a href="/MyInfoA">My Info</a>
-          <a href="/LogOut">Log out</a>
+          <a href="/logout">Log out</a>
 
         </div>
       </div>
     </div>
 
     </ul>
-</div>
 
 <h1 class="title1">Roster</h1>
   <table class="classinfo">
     <tr>
     <th>Course Name:</th>
-    <td>Linear Algebra</td>
+    <td>{{$course->title}}</td>
     <th>Faculty Name:</th>
-    <td>Geta Tekanie</td>
+    <td>{{$course->teacher->name}}</td>
     <th>Days:</th>
-    <td>Mon, Wed</td>
+    <td>{{$course->days}}</td>
   </tr>
 
   <tr>
     <th>CRN:</th>
-    <td>36823</td>
+    <td>{{$course->crn}}</td>
     <th>Semester Year:</th>
-    <td>Fall 2021</td>
-    <th>Start Time:</th>
-    <td>1:00pm</td>
+    <td>{{$course->date}}</td>
+    <th>Time:</th>
+    <td>{{$course->time}}</td>
   </tr>
 
   <tr>
     <th>Enrolled:</th>
-    <td>20</td>
+    <td>{{$course->users->count()}}</td>
     <th>Capacity:</th>
-    <td>25</td>
-    <th>End Time:</th>
-    <td>2:30pm</td>
+    <td>{{$course->capacity}}</td>
+      <th>Remaining:</th>
+  <td>{{$course->capacity - $course->users->count()}}</td>
   </tr>
   </table>
 
@@ -66,65 +65,26 @@
     <th>ID Number</th>
     <th>Student Name</th>
     <th>Email</th>
-    <th>Phone Number</th>
+      <th>Grade</th>
   </tr>
 </thead>
 <tbody>
+    @foreach($course->users as $user)
   <tr>
-    <td><a href="/classRoster">Remove</a></td>
-    <td>800234223</td>
-    <td>James Peng</td>
-    <td>jpeng@saturnuni.com</td>
-    <td>646-237-9808</td>
-  </tr>
+    <td><a href="/course/{{$user->id}}/{{$course->id}}">Remove</a></td>
+    <td>{{$user->id}}</td>
+    <td>{{$user->name}}</td>
+    <td>{{$user->email}}</td>
+      @if(isset($user->grades->firstWhere('course.course_id', $course->id)->grade))
+           <td>{{$user->grades->firstWhere('course.course_id', $course->id)->grade}}</td>
+      @else
+          <td>No Grade</td>
+      @endif
 
-  <tr>
-    <td><a href="/classRoster">Remove</a></td>
-    <td>876543210</td>
-    <td>Ariel Mariner</td>
-    <td>amariner@saturnuni.com</td>
-    <td>516-753-8960</td>
-  </tr>
 
-  <tr>
-    <td><a href="/classRoster">Remove</a></td>
-    <td>876587431</td>
-    <td>Minera Reyes</td>
-    <td>mreyes@saturnuni.com</td>
-    <td>516-654-1239</td>
   </tr>
+    @endforeach
 
- <tr>
-    <td><a href="/classRoster">Remove</a></td>
-    <td>701336743</td>
-    <td>Jotono Miyers</td>
-    <td>jmiyers@saturnuni.com</td>
-    <td>646-764-9090</td>
-  </tr>
-
-  <tr>
-    <td><a href="/classRoster">Remove</a></td>
-    <td>685437084</td>
-    <td>Jason Frank</td>
-    <td>jfrank@saturnuni.com</td>
-    <td>765-980-8001</td>
-  </tr>
-
-  <tr>
-    <td><a href="/classRoster">Remove</a></td>
-    <td>700872387</td>
-    <td>Primavera Trelli</td>
-    <td>ptrelli@saturnuni.com</td>
-    <td>786-808-9123</td>
-  </tr>
-
-  <tr>
-    <td><a href="/classRoster">Remove</a></td>
-    <td>743212347</td>
-    <td>Loreala Paloski</td>
-    <td>lpaloski@saturnuni.com</td>
-    <td>646-237-7654</td>
-  </tr>
 
 </tbody>
 </table>

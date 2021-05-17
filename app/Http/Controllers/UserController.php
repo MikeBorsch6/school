@@ -57,16 +57,22 @@ class UserController extends Controller
         return $user;
     }
 
-    public function edit($id)
+    public function edit(User $user)
     {
-        //
+        return view('layouts.adminPageA', ['user' => $user]);
     }
 
     public function update(Request $request, User $user)
     {
         $user->update(
-            $request
+            [
+                'name' => $request->name,
+                'email' => $request->email,
+                'address' => $request->address
+            ]
         );
+
+        return redirect(route('searchUser'));
     }
 
     public function destroy(User $user)
@@ -90,10 +96,16 @@ class UserController extends Controller
     {
         $user->update(
             [
+                'locked' => false,
                 'password' => Hash::make($request->get('password'))
             ]
         );
 
         return redirect(route('searchUserP'));
+    }
+
+    public function transcript(User $user)
+    {
+
     }
 }

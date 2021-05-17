@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controller\LoginComntroller;
 use App\Http\Controller\HomeController;
+use Illuminate\Http\Request;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,6 +24,10 @@ use App\Http\Controller\HomeController;
 Route::get('/', function(){
     return view('home');
 })->name('home');
+
+Route::get('/home', function(){
+    return view('home');
+})->name('home1');
 
 Route::get('/admin', function(){
     return view('layouts.AdminView');
@@ -390,14 +395,6 @@ Route::get('/coursePage', function(){
     return view('layouts.coursePage');
 })->name('coursePage');
 
-Route::get('/createCour', function(){
-    return view('layouts.createCour');
-})->name('createCour');
-
-Route::get('/courseEditPage', function(){
-    return view('layouts.courseEditPage');
-})->name('courseEditPage');
-
 Route::get('/searchCour', function(){
     return view('layouts.searchCour');
 })->name('searchCour');
@@ -405,14 +402,6 @@ Route::get('/searchCour', function(){
 Route::get('/searchStudentG', function(){
     return view('layouts.searchStudentG');
 })->name('searchStudentG');
-
-Route::get('/studentTranscriptA', function(){
-    return view('layouts.studentTranscriptA');
-})->name('studentTranscriptA');
-
-Route::get('/enterGrade', function(){
-    return view('layouts.enterGrade');
-})->name('enterGrade');
 
 Route::get('/Holds', function(){
     return view('layouts.Holds');
@@ -422,10 +411,6 @@ Route::get('/searchStudentH', function(){
     return view('layouts.searchStudentH');
 })->name('searchStudentH');
 
-Route::get('/studentHolds', function(){
-    return view('layouts.studentHolds');
-})->name('studentHolds');
-
 Route::get('/searchUserP', function(){
     return view('layouts.searchUserP');
 })->name('searchUserP');
@@ -434,13 +419,9 @@ Route::get('/searchUser', function(){
     return view('layouts.searchUser');
 })->name('searchUser');
 
-Route::get('/studentPageA', function(){
-    return view('layouts.studentPageA');
-})->name('searchPageA');
-
 Route::get('/adminPageA', function(){
-    return view('layouts.studentPageA');
-})->name('searchPageA');
+    return view('layouts.adminPageA');
+})->name('adminPageA');
 
 Route::get('/facultyPageA', function(){
     return view('layouts.facultyPageA');
@@ -453,10 +434,6 @@ Route::get('/researcherPageA', function(){
 Route::get('/studentAttendanceA', function(){
     return view('layouts.studentAttendanceA');
 })->name('searchAttendanceA');
-
-Route::get('/studentDegreeEval', function(){
-    return view('layouts.studentDegreeEval');
-})->name('searchDegreeEval');
 
 Route::get('/classPage', function(){
     return view('layouts.classPage');
@@ -501,10 +478,6 @@ Route::get('/createMinor', function(){
 Route::get('/searchMajor', function(){
     return view('layouts.searchMajor');
 })->name('searchMajor');
-
-Route::get('/editMajor', function(){
-    return view('layouts.editMajor');
-})->name('editMajor');
 
 Route::get('/searchMinors', function(){
     return view('layouts.searchMinors');
@@ -698,6 +671,60 @@ Route::get('/MyInfoF', function(){
 Route::namespace('App\Http\Controllers')
     ->middleware('auth')
     ->group(function() {
+        Route::post('courses', function(Request $request) {
+            \App\Models\Course::create(
+                [
+                    'crn' => $request->crn,
+                    'subject' => $request->subject,
+                    'course' => $request->course,
+                    'section' => $request->section,
+                    'campus_id' =>$request->campus_id,
+                    'credits' =>$request->credits,
+                    'title' =>$request->title,
+                    'days' =>$request->days,
+                    'time' =>$request->time,
+                    'capacity' => $request->capacity,
+                    'section_actual' => $request->section_actual,
+                    'section_remaining' => $request->section_remaining,
+                    'user_id' => $request->user_id,
+                    'date' => $request->date,
+                    'location' => $request->location,
+                    'field_id' => $request->field_id
+                ]
+            );
+        })->name('course.create');
+
+        Route::get('course/{course}',  function(\App\Models\Course $course) {;
+            return view('layouts.courseEditPage', ['course' => $course]);
+        })->name('course.edit');
+
+        Route::put('course/{course}', function(Request $request, \App\Models\Course $course) {
+            $course->update(
+                [
+                    'crn' => $request->crn,
+                    'subject' => $request->subject,
+                    'course' => $request->course,
+                    'section' => $request->section,
+                    'campus_id' =>$request->campus_id,
+                    'credits' =>$request->credits,
+                    'title' =>$request->title,
+                    'days' =>$request->days,
+                    'time' =>$request->time,
+                    'capacity' => $request->capacity,
+                    'section_actual' => $request->section_actual,
+                    'section_remaining' => $request->section_remaining,
+                    'user_id' => $request->user_id,
+                    'date' => $request->date,
+                    'location' => $request->location,
+                    'field_id' => $request->field_id,
+                    'parent_id' => $request->parent_id,
+                    'subject_id' => $request->subject_id
+                ]
+            );
+            return redirect()->back();
+
+        })->name('course.update');
+
         Route::get('users/{user}/courses', 'UserController@teachers');
         Route::resource('users', 'UserController');
         Route::post('user-course', 'StudentCourseController@registerStudent')->name('user-course');
@@ -710,6 +737,95 @@ Route::namespace('App\Http\Controllers')
         Route::get('/user/{user}/password', ['App\Http\Controllers\UserController', 'resetPasswordView']);
         Route::post('/user/{user}/reset', ['App\Http\Controllers\UserController', 'resetPassword'])->name('user.reset');
         Route::post('/user/{user}/reset', ['App\Http\Controllers\UserController', 'resetPassword'])->name('user.reset');
+
+        Route::get('/studentTranscriptA/{user}', function(App\Models\User $user) {
+            return view('layouts.studentTranscriptA', ['user' => $user]);
+        })->name('studentTranscriptA');
+
+        Route::get('/enterGrade/{grade}', function(\App\Models\Grade $grade){
+            return view('layouts.enterGrade', ['grade' => $grade]);
+        })->name('enterGrade');
+
+        Route::put('/grade/{grade}', function(Request $request, \App\Models\Grade $grade) {
+            $grade->update(
+                [
+                    'grade' => $request->grade
+                ]
+            );
+
+            return redirect(route('searchUser'));
+
+        })->name('user.grade.edit');
+
+        Route::get('/studentDegreeEval/{user}', function(\App\Models\User $user){
+            return view('layouts.studentDegreeEval', ['user' => $user]);
+        })->name('searchDegreeEval');
+
+        Route::get('/studentHolds/{user}', function(\App\Models\User $user) {
+            return view('layouts.studentHolds', ['user' => $user]);
+        })->name('student.holds');
+
+        Route::post('/student/holds/{user}', function(Request $request, \App\Models\User $user) {
+
+            $hold = \App\Models\Hold::find($request->hold);
+
+            $user->holds()->save($hold);
+
+            return redirect(route('searchStudentH'));
+
+        })->name('student.holds.post');
+
+        Route::post('/fields', function(Request $request) {
+           \App\Models\Field::create(
+               [
+                   'name' => $request->name
+               ]
+           );
+
+           return redirect(route('selectDepartment'));
+        })->name('field.create');
+
+        Route::get('/editMajor/{field}', function(\App\Models\Field $field){
+            return view('layouts.editMajor', ['field' => $field]);
+        })->name('editMajor');
+
+        Route::put('/editMajor/{field}', function(Request $request, \App\Models\Field $field) {
+            $field->update(['name' => $request->name]);
+
+            return redirect(\route('searchMajor'));
+        });
+
+        Route::get('/classRosterF/{course}', function(\App\Models\Course $course){
+            return view('layouts.classRosterF', ['course' => $course]);
+        })->name('classRosterF');
+
+        Route::get('/searchClassRosterS/{course}', function(\App\Models\Course $course){
+            return view('layouts.searchClassRosterS21', ['course' => $course]);
+        })->name('searchClassRosterS21');
+
+        Route::get('/course/{user}/{course}', function(\App\Models\User $user, \App\Models\Course $course) {
+            $user
+                ->courses()
+                ->detach(
+                    $course
+                );
+
+            return redirect()->back();
+        });
+
+        Route::get('/createCour', function(){
+            return view('layouts.createCour');
+        })->name('createCour');
+
+        Route::post('createCour', function(Request $request) {
+           \App\Models\Subject::create(
+               [
+                   'name' => $request->name
+               ]
+           );
+        })->name('subject.create');
+
+
     });
 
 

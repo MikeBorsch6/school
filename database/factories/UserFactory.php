@@ -20,7 +20,8 @@ class UserFactory extends Factory
             4,
             5,
             6,
-            7
+            7,
+            8
         ];
 
         return [

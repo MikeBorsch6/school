@@ -18,7 +18,7 @@
                     <button class="dropbtn">{{Auth::user()->name}}</button>
                     <div class="dropdown-content">
                         <a href="/MyInfoA">My Info</a>
-                        <a href="/LogOut">Log out</a>
+                        <a href="/logout">Log out</a>
 
                     </div>
                 </div>
@@ -30,7 +30,7 @@
 <input type="search" placeholder="Search.." class = "form-control search-input" data-table="tableUser">
 <input type="submit">
 </form>
-<h1 class="title1">All Courses</h1>
+<h1 class="title1">All Classes</h1>
 <table class="tableUser">
     <thead>
     <tr>
@@ -40,45 +40,31 @@
         <th>Department ID</th>
         <th>Course Credit</th>
         <th>Minimum Grade</th>
-
     </tr>
     </thead>
     <tbody>
+    @foreach(App\Models\Course::all() as $course)
     <tr>
-        <td><a href="/courseEditPage">Edit</a></td>
-        <td>5643</td>
-        <td>Intro to Stats</td>
-        <td>009</td>
-        <td>4</td>
+        <td><a href="{{route('course.edit', ['course' => $course])}}">Edit</a></td>
+        <td>{{$course->id}}</td>
+        <td>{{$course->crn}}</td>
+        <td>{{$course->subject}}</td>
+        <td>{{$course->section}}</td>
+        <td>{{$course->campus_id}}</td>
+        <td>{{$course->credits}}</td>
+        <td>{{$course->title}}</td>
+        <td>{{$course->days}}</td>
+        <td>{{$course->time}}</td>
+        <td>{{$course->capacity}}</td>
+        <td>{{$course->section_actual}}</td>
+        <td>{{$course->section_remaining}}</td>
+        <td>{{$course->date}}</td>
+        <td>{{$course->location}}</td>
+
+
         <td>C</td>
     </tr>
-
-    <tr>
-        <td><a href="/courseEditPage">Edit</a></td>
-        <td>6652</td>
-        <td>Latin American Studies</td>
-        <td>007</td>
-        <td>3</td>
-        <td>C-</td>
-    </tr>
-
-    <tr>
-        <td><a href="/courseEditPage">Edit</a></td>
-        <td>4323</td>
-        <td>Composition I</td>
-        <td>002</td>
-        <td>4</td>
-        <td>C-</td>
-    </tr>
-
-    <tr>
-        <td><a href="/courseEditPage">Edit</a></td>
-        <td>2334</td>
-        <td>Mixed Media in Film</td>
-        <td>010</td>
-        <td>2</td>
-        <td>C-</td>
-    </tr>
+    @endforeach
     </tbody>
 
     <script>

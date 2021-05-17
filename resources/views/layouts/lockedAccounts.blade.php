@@ -18,7 +18,7 @@
   				<button class="dropbtn">{{Auth::user()->name}}</button>
   				<div class="dropdown-content">
   				<a href="/MyInfoA">My Info</a>
-  				<a href="/LogOut">Log out</a>
+  				<a href="/logout">Log out</a>
 
   			</div>
   		</div>
@@ -41,44 +41,20 @@
   <tr>
   	<th>&nbsp;</th>
     <th>User ID</th>
-    <th>First Name</th>
-    <th>Last Name</th>
+    <th>Name</th>
     <th>User Type</th>
 
   </tr>
 </thead>
 <tbody>
+    @foreach(App\Models\User::where('locked', true)->get() as $user)
   <tr>
-  	<td><a href="/passwordReset">Reset</a></td>
-    <td>300321233</td>
-    <td>Marean</td>
-    <td>Vivenly</td>
-    <td>Student</td>
+  	<td><a href="/user/{{$user->id}}/password">Reset</a></td>
+    <td>{{$user->id}}</td>
+    <td>{{$user->name}}</td>
+    <td>{{$user->role->name}}</td>
   </tr>
-
-  <tr>
-  	<td><a href="/passwordReset">Reset</a></td>
-    <td>201282132</td>
-    <td>Jill</td>
-    <td>Litos</td>
-    <td>Faculty</td>
-  </tr>
-
-  <tr>
-  	<td><a href="/passwordReset">Reset</a></td>
-    <td>432319876</td>
-    <td>Lewis</td>
-    <td>Saffarri</td>
-    <td>Researcher</td>
-  </tr>
-
-  <tr>
-  	<td><a href="/passwordReset">Reset</a></td>
-    <td>233412467</td>
-    <td>Micheal</td>
-    <td>Borsch</td>
-    <td>Admin</td>
-  </tr>
+    @endforeach
 
 
 </tbody>
