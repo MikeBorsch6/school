@@ -37,27 +37,131 @@
 
   </tr>
   <tr>
-    <td>1001</td>
-    <td>2321</td>
-    <td>Intro to Math Ideas</td>
-    <td>2</td>
-    <td>C</td>
-  </tr>
-  <tr>
-    <td>1030</td>
-    <td>2321</td>
-    <td>College Algebra</td>
+    <td>3330</td>
+    <td>7</td>
+    <td>Children's Literature	</td>
     <td>4</td>
     <td>C</td>
   </tr>
-  <tr>
-    <td>1050</td>
-    <td>2321</td>
-    <td>College Trigometry</td>
-    <td>4</td>
-    <td>C</td>
-
-  </tr>
+      <tr>
+          <td>3700</td>
+          <td>7</td>
+          <td>Child Dev & Prac for Teachers	</td>
+          <td>4</td>
+          <td>C</td>
+      </tr>
+      <tr>
+          <td>3742</td>
+          <td>7</td>
+          <td>Middle Childhood & Adolescence		</td>
+          <td>4</td>
+          <td>C</td>
+      </tr>
+      <tr>
+          <td>3820</td>
+          <td>7</td>
+          <td>Found of SpecEd/Area of Except		</td>
+          <td>4</td>
+          <td>C</td>
+      </tr>
+      <tr>
+          <td>3900</td>
+          <td>7</td>
+          <td>Foundations of Education		</td>
+          <td>4</td>
+          <td>C</td>
+      </tr>
+      <tr>
+          <td>4050</td>
+          <td>7</td>
+          <td>Instruct. Design & Assessment		</td>
+          <td>4</td>
+          <td>C</td>
+      </tr>
+      <tr>
+          <td>4086</td>
+          <td>7</td>
+          <td>Meth&Matl-Soc Studs-Sec.Schl		</td>
+          <td>4</td>
+          <td>C</td>
+      </tr>
+      <tr>
+          <td>4121</td>
+          <td>7</td>
+          <td>Meth&Matl-Tch Elmtry Science		</td>
+          <td>4</td>
+          <td>C</td>
+      </tr>
+      <tr>
+          <td>4122</td>
+          <td>7</td>
+          <td>Meth&Matl-Tch Elmtry Math		</td>
+          <td>4</td>
+          <td>C</td>
+      </tr>
+      <tr>
+          <td>4200</td>
+          <td>7</td>
+          <td>Literacy for All Students		</td>
+          <td>4</td>
+          <td>C</td>
+      </tr>
+      <tr>
+          <td>4220</td>
+          <td>7</td>
+          <td>Language Arts in Childhood Ed.	</td>
+          <td>4</td>
+          <td>C</td>
+      </tr>
+      <tr>
+          <td>4300</td>
+          <td>7</td>
+          <td>Assessment in Special Ed		</td>
+          <td>4</td>
+          <td>C</td>
+      </tr>
+      <tr>
+          <td>4670</td>
+          <td>7</td>
+          <td>Meth & Matl-Teach Eng/Sec Lang		</td>
+          <td>4</td>
+          <td>C</td>
+      </tr>
+      <tr>
+          <td>4810</td>
+          <td>7</td>
+          <td>PBS and Intervention for SWD		</td>
+          <td>4</td>
+          <td>C</td>
+      </tr>
+      <tr>
+          <td>4850</td>
+          <td>7</td>
+          <td>Inst Design & Delivery SWD		</td>
+          <td>4</td>
+          <td>C</td>
+      </tr>
+      <tr>
+          <td>4890</td>
+          <td>7</td>
+          <td>Practices:Low Incidence SWD		</td>
+          <td>4</td>
+          <td>C</td>
+      </tr>
+      <tr>
+          <td>5890</td>
+          <td>7</td>
+          <td>Pre-Stu TeachingSemSpanSocStud	</td>
+          <td>4</td>
+          <td>C</td>
+      </tr>
+      <tr>
+          <td>5900</td>
+          <td>7</td>
+          <td>StuTch/SecSchol&Sem-Science		</td>
+          <td>4</td>
+          <td>C</td>
+      </tr>
 </table>
 
 

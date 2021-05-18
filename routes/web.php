@@ -823,7 +823,25 @@ Route::namespace('App\Http\Controllers')
                    'name' => $request->name
                ]
            );
+
+           return redirect()->back();
+
         })->name('subject.create');
+
+        Route::get('/editClass/{subject}', function(\App\Models\Subject  $subject){
+            return view('layouts.editClass', ['subject' => $subject]);
+        })->name('editClass');
+
+        Route::put('/editCourse/{subject}', function(Request $request, \App\Models\Subject  $subject){
+            $subject->update(
+                [
+                    'name' => $request->name
+                ]
+            );
+
+            return redirect()->back();
+
+        })->name('editClass');
 
 
     });

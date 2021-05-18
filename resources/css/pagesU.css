@@ -805,7 +805,19 @@ table.research tr:nth-child(odd) {
 }
 
 
-
+.buttonHome {
+    background-color: none;
+    border: none;
+    color: white;
+    padding: 2px 4px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 7%;
+    float: left;
+}
 
 
 

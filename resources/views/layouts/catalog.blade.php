@@ -58,7 +58,6 @@
             <button class="depart"><a href ="/departments/sociology">Sociology</a></button>
             <button class="depart"><a href ="/departments/visualarts">Visual Arts</a></button>
             <button class="depart"><a href ="/departments/womenstudies">Women's Studies</a></button>
-
         </div>
     </div>
 

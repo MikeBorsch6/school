@@ -37,27 +37,12 @@
 
   </tr>
   <tr>
-    <td>1001</td>
-    <td>2321</td>
-    <td>Intro to Math Ideas</td>
-    <td>2</td>
-    <td>C</td>
-  </tr>
-  <tr>
-    <td>1030</td>
-    <td>2321</td>
-    <td>College Algebra</td>
-    <td>4</td>
-    <td>C</td>
-  </tr>
-  <tr>
-    <td>1050</td>
-    <td>2321</td>
-    <td>College Trigometry</td>
+    <td>5000</td>
+    <td>20</td>
+    <td>General Studies Capstone Course	</td>
     <td>4</td>
     <td>C</td>
 
-  </tr>
 </table>
 
 

@@ -13,7 +13,7 @@
 
 		<ul>
 			<div class="header">
-			<img src='images/saturn1.png' alt="logo" />
+                <a href="admin" class="buttonHome"><img src='/images/saturn1.png' alt="logo" >
 			<div class="dropdown" style="float:right;">
   				<button class="dropbtn">{{Auth::user()->name}}</button>
   				<div class="dropdown-content">
@@ -36,76 +36,18 @@
   <table class="tableUser">
   <thead>
   <tr>
-  	<th>&nbsp;</th>
-    <th>CRN</th>
+  	<th>Action</th>
     <th>Course Name</th>
-    <th>Course ID</th>
-    <th>Faculty Name</th>
-    <th>Section</th>
-    <th>Room Number</th>
-    <th>Semester Year</th>
-    <th>Days</th>
-    <th>Time</th>
-    <th>Capacity</th>
 
   </tr>
 </thead>
 <tbody>
-  <tr>
-  	<td><a href="/editClass">Edit</a></td>
-    <td>127836</td>
-    <td>Linear Algebra</td>
-    <td>44382</td>
-    <td>Geta Tekanie</td>
-    <td>4</td>
-    <td>NAB 1127</td>
-    <td>Spring 2021</td>
-    <td>Mon,Wed</td>
-    <td>1:50pm - 3:20pm</td>
-    <td>21</td>
-  </tr>
-
-  <tr>
-    <td><a href="/editClass">Edit</a></td>
-    <td>127836</td>
-    <td>Linear Algebra</td>
-    <td>44382</td>
-    <td>Geta Tekanie</td>
-    <td>4</td>
-    <td>NAB 1127</td>
-    <td>Spring 2021</td>
-    <td>Mon,Wed</td>
-    <td>1:50pm - 3:20pm</td>
-    <td>21</td>
-  </tr>
-
-  <tr>
-    <td><a href="/editClass">Edit</a></td>
-    <td>127836</td>
-    <td>Linear Algebra</td>
-    <td>44382</td>
-    <td>Geta Tekanie</td>
-    <td>4</td>
-    <td>NAB 1127</td>
-    <td>Spring 2021</td>
-    <td>Mon,Wed</td>
-    <td>1:50pm - 3:20pm</td>
-    <td>21</td>
-  </tr>
-
- <tr>
-    <td><a href="/editClass">Edit</a></td>
-    <td>127836</td>
-    <td>Linear Algebra</td>
-    <td>44382</td>
-    <td>Geta Tekanie</td>
-    <td>4</td>
-    <td>NAB 1127</td>
-    <td>Spring 2021</td>
-    <td>Mon,Wed</td>
-    <td>1:50pm - 3:20pm</td>
-    <td>21</td>
-  </tr>
+    @foreach(App\Models\Subject::all() as $subject)
+      <tr>
+        <td><a href="/editClass/{{$subject->id}}">Edit</a></td>
+        <td>{{$subject->name}}</td>
+      </tr>
+    @endforeach
 </tbody>
 </table>
 

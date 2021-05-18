@@ -66,7 +66,6 @@
     <th>ID Number</th>
     <th>Student Name</th>
     <th>Email</th>
-    <th>Phone Number</th>
   </tr>
 </thead>
 <tbody>
@@ -75,7 +74,6 @@
     <td>800234223</td>
     <td>James Peng</td>
     <td>jpeng@saturnuni.com</td>
-    <td>646-237-9808</td>
   </tr>
 
   <tr>
@@ -83,7 +81,6 @@
     <td>876543210</td>
     <td>Ariel Mariner</td>
     <td>amariner@saturnuni.com</td>
-    <td>516-753-8960</td>
   </tr>
 
   <tr>
@@ -91,7 +88,6 @@
     <td>876587431</td>
     <td>Minera Reyes</td>
     <td>mreyes@saturnuni.com</td>
-    <td>516-654-1239</td>
   </tr>
 
  <tr>
@@ -99,7 +95,6 @@
     <td>701336743</td>
     <td>Jotono Miyers</td>
     <td>jmiyers@saturnuni.com</td>
-    <td>646-764-9090</td>
   </tr>
 
 </tbody>

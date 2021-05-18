@@ -37,29 +37,78 @@
     <th>Minimum Grade</th>
 
   </tr>
-  <tr>
-    <td>1001</td>
-    <td>2321</td>
-    <td>Intro to Math Ideas</td>
-    <td>2</td>
-    <td>C</td>
-  </tr>
-  <tr>
-    <td>1030</td>
-    <td>2321</td>
-    <td>College Algebra</td>
-    <td>4</td>
-    <td>C</td>
-  </tr>
-  <tr>
-    <td>1050</td>
-    <td>2321</td>
-    <td>College Trigometry</td>
-    <td>4</td>
-    <td>C</td>
+      <tr>
+          <td>1500</td>
+          <td>6</td>
+          <td>Intro to Criminology	</td>
+          <td>4</td>
+          <td>C</td>
+      </tr>
+      <tr>
+          <td>2090</td>
+          <td>6</td>
+          <td>Juvenile Delinquency	</td>
+          <td>4</td>
+          <td>C</td>
+      </tr>
+      <tr>
+          <td>3092</td>
+          <td>6</td>
+          <td>Victimology		</td>
+          <td>4</td>
+          <td>C</td>
+      </tr>
+      <tr>
+          <td>3093</td>
+          <td>6</td>
+          <td>Criminal Justice Admin		</td>
+          <td>4</td>
+          <td>C</td>
+      </tr>
+      <tr>
+          <td>3094</td>
+          <td>6</td>
+          <td>Drugs and Society		</td>
+          <td>4</td>
+          <td>C</td>
+      </tr>
+      <tr>
+          <td>3200</td>
+          <td>6</td>
+          <td>Crime, Media and Culture		</td>
+          <td>4</td>
+          <td>C</td>
+      </tr>
+      <tr>
+          <td>4000</td>
+          <td>6</td>
+          <td>Gender, Crime and Justice		</td>
+          <td>4</td>
+          <td>C</td>
+      </tr>
+      <tr>
+          <td>4091</td>
+          <td>6</td>
+          <td>Punishment & Corrections		</td>
+          <td>4</td>
+          <td>C</td>
+      </tr>
+      <tr>
+          <td>4099</td>
+          <td>6</td>
+          <td>Sociology of Violence			</td>
+          <td>4</td>
+          <td>C</td>
+      </tr>
+      <tr>
+          <td>4550</td>
+          <td>6</td>
+          <td>Theories of Crime			</td>
+          <td>4</td>
+          <td>C</td>
+      </tr>
 
-  </tr>
-</table>
+  </table>
 
 
 	</body>

@@ -11,7 +11,7 @@
 
 		<ul>
             <div class="header">
-                <img src='images/saturn1.png' alt="logo" />
+                <a href="student" class="buttonHome"><img src='/images/saturn1.png' alt="logo" >
   			<div class="dropdown" style="float:right;">
   				<button class="dropbtn">{{Auth::user()->name}}</button>
   				<div class="dropdown-content">
@@ -50,7 +50,7 @@
 
 		<div>
 			<table id ="courses">
-                <h2>Course I Am Taking</h2>
+                <h2 class="titleS">Course I Am Taking</h2>
 				@foreach(Auth::user()->courses as $course)
                     <tr>
                         <td>

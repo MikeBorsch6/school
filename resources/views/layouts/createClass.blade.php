@@ -13,7 +13,7 @@
 
 		<ul>
 			<div class="header">
-			<img src='images/saturn1.png' alt="logo" />
+                <a href="admin" class="buttonHome"><img src='/images/saturn1.png' alt="logo" >
 			<div class="dropdown" style="float:right;">
   				<button class="dropbtn">{{Auth::user()->name}}</button>
   				<div class="dropdown-content">
@@ -30,35 +30,16 @@
 		<h1>Create a Course</h1>
 
 		<div class="container">
-  <form action="/action_page.php">
-  <div class="row">
-    <div class="col-25">
-      <label for="CRN">CRN</label>
-    </div>
-    <div class="col-75">
-      <input type="text" id="CRN" name="crn" placeholder="CRN..">
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-25">
-      <label for="cName">Subject</label>
-    </div>
-    <div class="col-75">
-      <input type="text" id="cName" name="Subject" placeholder="Subject">
-    </div>
-  </div>
-
+  <form method="post" action="{{route('createCour')}}">
+      @csrf
       <div class="row">
           <div class="col-25">
               <label for="cName">Course Title</label>
           </div>
           <div class="col-75">
-              <input type="text" id="cName" name="Title" placeholder="Title">
+              <input type="text" id="name" name="name" placeholder="Title">
           </div>
       </div>
-
-
   <div class="row">
     <input type="submit" value="Submit">
   </div>

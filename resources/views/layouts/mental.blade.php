@@ -38,27 +38,76 @@
 
   </tr>
   <tr>
-    <td>1001</td>
-    <td>2321</td>
-    <td>Intro to Math Ideas</td>
-    <td>2</td>
-    <td>C</td>
-  </tr>
-  <tr>
-    <td>1030</td>
-    <td>2321</td>
-    <td>College Algebra</td>
+    <td>6500</td>
+    <td>12</td>
+    <td>Lifespan Development	</td>
     <td>4</td>
     <td>C</td>
   </tr>
   <tr>
-    <td>1050</td>
+    <td>6510</td>
     <td>2321</td>
-    <td>College Trigometry</td>
+    <td>Asmnt Techniques in Counseling	</td>
     <td>4</td>
     <td>C</td>
 
   </tr>
+    <tr>
+        <td>6520</td>
+        <td>2321</td>
+        <td>Multicultural Counseling Lab		</td>
+        <td>4</td>
+        <td>C</td>
+
+    </tr>
+    <tr>
+        <td>6530</td>
+        <td>2321</td>
+        <td>Prncpls & Tchnqs of Counseling		</td>
+        <td>4</td>
+        <td>C</td>
+
+    </tr>
+    <tr>
+        <td>6540</td>
+        <td>2321</td>
+        <td>Practicum II	</td>
+        <td>4</td>
+        <td>C</td>
+
+    </tr>
+    <tr>
+        <td>7500</td>
+        <td>2321</td>
+        <td>Dgns&Trtmt Addictive Disorders	</td>
+        <td>4</td>
+        <td>C</td>
+
+    </tr>
+    <tr>
+        <td>7510</td>
+        <td>2321</td>
+        <td>Career Development		</td>
+        <td>4</td>
+        <td>C</td>
+
+    </tr>
+    <tr>
+        <td>7520</td>
+        <td>2321</td>
+        <td>Research Methods in Counseling		</td>
+        <td>4</td>
+        <td>C</td>
+
+    </tr>
+    <tr>
+        <td>7530</td>
+        <td>2321</td>
+        <td>Clinical Internship II	</td>
+        <td>4</td>
+        <td>C</td>
+
+    </tr>
 </table>
 
 

@@ -36,28 +36,142 @@
     <th>Minimum Grade</th>
 
   </tr>
+
   <tr>
-    <td>1001</td>
-    <td>2321</td>
-    <td>Intro to Math Ideas</td>
-    <td>2</td>
-    <td>C</td>
-  </tr>
-  <tr>
-    <td>1030</td>
-    <td>2321</td>
-    <td>College Algebra</td>
+    <td>2220</td>
+    <td>14</td>
+    <td>Intro to Urban Issues</td>
     <td>4</td>
     <td>C</td>
   </tr>
   <tr>
-    <td>1050</td>
-    <td>2321</td>
-    <td>College Trigometry</td>
+    <td>2300</td>
+    <td>14</td>
+    <td>Introduction to Law	</td>
     <td>4</td>
     <td>C</td>
 
   </tr>
+    <tr>
+        <td>2420</td>
+        <td>14</td>
+        <td>Principles of Microeconomics		</td>
+        <td>4</td>
+        <td>C</td>
+
+    </tr>
+    <tr>
+        <td>2650</td>
+        <td>14</td>
+        <td>Intro to U.S. Politics	</td>
+        <td>4</td>
+        <td>C</td>
+
+    </tr>
+    <tr>
+        <td>3100</td>
+        <td>14</td>
+        <td>International Relations		</td>
+        <td>4</td>
+        <td>C</td>
+
+    </tr>
+    <tr>
+        <td>3160</td>
+        <td>14</td>
+        <td>Ethnopolitics in the World		</td>
+        <td>4</td>
+        <td>C</td>
+
+    </tr>
+    <tr>
+        <td>3400</td>
+        <td>14</td>
+        <td>Global South	</td>
+        <td>4</td>
+        <td>C</td>
+
+    </tr>
+    <tr>
+        <td>3410</td>
+        <td>14</td>
+        <td>Contemp US Political Economy	</td>
+        <td>4</td>
+        <td>C</td>
+
+    </tr>
+    <tr>
+        <td>4325</td>
+        <td>14</td>
+        <td>Jurisprudence: Legal Thought	</td>
+        <td>4</td>
+        <td>C</td>
+
+    </tr>
+    <tr>
+        <td>4470</td>
+        <td>14</td>
+        <td>History of Economic Thought I	</td>
+        <td>4</td>
+        <td>C</td>
+
+    </tr>
+    <tr>
+        <td>4590</td>
+        <td>14</td>
+        <td>Global Economy in 20th Century	</td>
+        <td>4</td>
+        <td>C</td>
+
+    </tr>
+    <tr>
+        <td>4615</td>
+        <td>14</td>
+        <td>Public Finance&Public Policy		</td>
+        <td>4</td>
+        <td>C</td>
+
+    </tr>
+    <tr>
+        <td>4620</td>
+        <td>14</td>
+        <td>Political & Social Thought	</td>
+        <td>4</td>
+        <td>C</td>
+
+    </tr>
+    <tr>
+        <td>4658</td>
+        <td>14</td>
+        <td>Law & Civil Liberties	</td>
+        <td>4</td>
+        <td>C</td>
+
+    </tr>
+    <tr>
+        <td>4665</td>
+        <td>14</td>
+        <td>Human Rights		</td>
+        <td>4</td>
+        <td>C</td>
+
+    </tr>
+    <tr>
+        <td>5990</td>
+        <td>14</td>
+        <td>Internship</td>
+        <td>4</td>
+        <td>C</td>
+
+    </tr>
+    <tr>
+        <td>9990</td>
+        <td>14</td>
+        <td>Independent Study-PE		</td>
+        <td>4</td>
+        <td>C</td>
+
+    </tr>
 </table>
 
 

@@ -32,45 +32,116 @@
 
     <h1 class="title1">Professional Studies</h1>
 <table class="tableMa">
-  <tr>
-    <th>CRN</th>
-    <th>Course ID</th>
-    <th>Faculty ID</th>
-    <th>Course Name</th>
-    <th>Section</th>
-    <th>Day</th>
-    <th>Time</th>
-    <th>Building</th>
-    <th>Room Number</th>
-    <th>Professor</th>
-    <th>Email</th>
-  </tr>
-   <tr>
-    <td>10308</td>
-    <td>2321</td>
-    <td>2897</td>
-    <td>Intro to American History</td>
-    <td>002</td>
-    <td>M W</td>
-    <td>1:50pm-3:20pm</td>
-    <td>New Academic Building</td>
-    <td>151</td>
-    <td>Professor Skentine</td>
-    <td>paulas@saturnuni.com</td>
-  </tr>
-  <tr>
-    <td>10308</td>
-    <td>2321</td>
-    <td>2897</td>
-    <td>Intro to American History</td>
-    <td>002</td>
-    <td>M W</td>
-    <td>1:50pm-3:20pm</td>
-    <td>New Academic Building</td>
-    <td>151</td>
-    <td>Professor Skentine</td>
-    <td>paulas@saturnuni.com</td>
-  </tr>
+    <tr>
+        <th>CRN</th>
+        <th>Course ID</th>
+        <th>Faculty ID</th>
+        <th>Course Name</th>
+        <th>Section</th>
+        <th>Day</th>
+        <th>Time</th>
+        <th>Building</th>
+        <th>Room Number</th>
+    </tr>
+    <tr>
+        <td>54074</td>
+        <td>3130</td>
+        <td>575</td>
+        <td>Accounting for Professionals									</td>
+        <td>1</td>
+        <td>T				</td>
+        <td>07:10 pm-08:40 pm									</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>52311</td>
+        <td>3330</td>
+        <td>576</td>
+        <td>Professional Supervision										</td>
+        <td>1</td>
+        <td>S				</td>
+        <td>01:00 pm-04:10 pm									</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>53723</td>
+        <td>3430</td>
+        <td>577</td>
+        <td>Marketing for Professionals										</td>
+        <td>1</td>
+        <td>TBA				</td>
+        <td>TBA									</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>54806</td>
+        <td>3995</td>
+        <td>578</td>
+        <td>Career Internship										</td>
+        <td>1</td>
+        <td>TBA				</td>
+        <td>TBA									</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>54490</td>
+        <td>4225</td>
+        <td>579</td>
+        <td>The Law for Professionals										</td>
+        <td>1</td>
+        <td>TBA				</td>
+        <td>TBA									</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>54170</td>
+        <td>4325</td>
+        <td>580</td>
+        <td>The Financial Systems										</td>
+        <td>1</td>
+        <td>TBA				</td>
+        <td>TBA									</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>52454</td>
+        <td>4430</td>
+        <td>581</td>
+        <td>Entertainment & Sports Mktg.										</td>
+        <td>1</td>
+        <td>R				</td>
+        <td>07:10 pm-08:40 pm									</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>50729</td>
+        <td>4630</td>
+        <td>582</td>
+        <td>Financial Admin of Non Profits										</td>
+        <td>1</td>
+        <td>TBA				</td>
+        <td>TBA									</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>52693</td>
+        <td>5435</td>
+        <td>583</td>
+        <td>Entertainment & Sports Finance											</td>
+        <td>1</td>
+        <td>TBA				</td>
+        <td>TBA									</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
 </table>
 
 </body>

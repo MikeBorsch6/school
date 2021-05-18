@@ -38,27 +38,110 @@
 
   </tr>
   <tr>
-    <td>1001</td>
-    <td>2321</td>
-    <td>Intro to Math Ideas</td>
-    <td>2</td>
-    <td>C</td>
-  </tr>
-  <tr>
-    <td>1030</td>
-    <td>2321</td>
-    <td>College Algebra</td>
+    <td>1500</td>
+    <td>1</td>
+    <td>Intro to Computer Applications</td>
     <td>4</td>
     <td>C</td>
   </tr>
-  <tr>
-    <td>1050</td>
-    <td>2321</td>
-    <td>College Trigometry</td>
-    <td>4</td>
-    <td>C</td>
-
-  </tr>
+    <tr>
+        <td>2510</td>
+        <td>1</td>
+        <td>Computer Programming 1</td>
+        <td>4</td>
+        <td>C</td>
+    </tr>
+    <tr>
+        <td>2511</td>
+        <td>1</td>
+        <td>Computer Programming 2</td>
+        <td>4</td>
+        <td>C</td>
+    </tr>
+    <tr>
+        <td>3611</td>
+        <td>1</td>
+        <td>Advanced C#</td>
+        <td>4</td>
+        <td>C</td>
+    </tr>
+    <tr>
+        <td>3620</td>
+        <td>1</td>
+        <td>Computer Architecture I</td>
+        <td>4</td>
+        <td>C</td>
+    </tr>
+    <tr>
+        <td>3810</td>
+        <td>1</td>
+        <td>Data Structures & Algorithms</td>
+        <td>4</td>
+        <td>C</td>
+    </tr>
+    <tr>
+        <td>3911</td>
+        <td>1</td>
+        <td>C++in Object Oriented Design</td>
+        <td>4</td>
+        <td>C</td>
+    </tr>
+    <tr>
+        <td>4100</td>
+        <td>1</td>
+        <td>Technical Communications</td>
+        <td>4</td>
+        <td>C</td>
+    </tr>
+    <tr>
+        <td>4200</td>
+        <td>1</td>
+        <td>Mobile Programming via Android</td>
+        <td>4</td>
+        <td>C</td>
+    </tr>
+    <tr>
+        <td>4501</td>
+        <td>1</td>
+        <td>Software Engineering</td>
+        <td>4</td>
+        <td>C</td>
+    </tr>
+    <tr>
+        <td>4550</td>
+        <td>1</td>
+        <td>Database Management Systems</td>
+        <td>4</td>
+        <td>C</td>
+    </tr>
+    <tr>
+        <td>4720</td>
+        <td>1</td>
+        <td>Internet & Web Tech</td>
+        <td>4</td>
+        <td>C</td>
+    </tr>
+    <tr>
+        <td>5710</td>
+        <td>1</td>
+        <td>Computer Networks</td>
+        <td>4</td>
+        <td>C</td>
+    </tr>
+    <tr>
+        <td>5810</td>
+        <td>1</td>
+        <td>Data Mining</td>
+        <td>4</td>
+        <td>C</td>
+    </tr>
+    <tr>
+        <td>5910</td>
+        <td>1</td>
+        <td>Systems Design & Implement</td>
+        <td>4</td>
+        <td>C</td>
+    </tr>
 </table>
 
 

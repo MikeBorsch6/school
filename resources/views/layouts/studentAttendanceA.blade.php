@@ -13,8 +13,8 @@
 
         <ul>
             <div class="header">
-                <img src='images/saturn1.png' alt="logo" />
-                <div class="dropdown" style="float:right;">
+                <a href="admin" class="buttonHome"><img src='images/saturn1.png' alt="logo" >
+                <div class="dropdown" style="float:right;" >
                     <button class="dropbtn">{{Auth::user()->name}}</button>
                     <div class="dropdown-content">
                         <a href="/MyInfoA">My Info</a>
@@ -44,8 +44,359 @@
                 <label for="attend">----</label>
                 <select id="attend" name="attend">
                     <option value="Present">Present</option>
-                    <option value="Absent">Absent</option>
-                    <option value="select">-select-</option>
+
+                </select>
+            </form>
+        </td>
+        <td>01/25/21</td>
+    </tr>
+
+
+    <tr>
+        <td>James Peng</td>
+        <td><form action="action_page.php">
+                <label for="attend">----</label>
+                <select id="attend" name="attend">
+                    <option value="Present">Present</option>
+
+                </select>
+            </form>
+        </td>
+        <td>01/27/21</td>
+    </tr>
+
+
+    <tr>
+        <td>James Peng</td>
+        <td><form action="action_page.php">
+                <label for="attend">----</label>
+                <select id="attend" name="attend">
+                    <option value="Present">Present</option>
+
+                </select>
+            </form>
+        </td>
+        <td>02/01/21</td>
+    </tr>
+
+
+    <tr>
+        <td>James Peng</td>
+        <td><form action="action_page.php">
+                <label for="attend">----</label>
+                <select id="attend" name="attend">
+                    <option value="Present">Present</option>
+
+                </select>
+            </form>
+        </td>
+        <td>02/03/21</td>
+    </tr>
+
+
+    <tr>
+        <td>James Peng</td>
+        <td><form action="action_page.php">
+                <label for="attend">----</label>
+                <select id="attend" name="attend">
+                    <option value="Present">Present</option>
+
+                </select>
+            </form>
+        </td>
+        <td>02/08/21</td>
+    </tr>
+
+
+    <tr>
+        <td>James Peng</td>
+        <td><form action="action_page.php">
+                <label for="attend">----</label>
+                <select id="attend" name="attend">
+                    <option value="Present">Present</option>
+
+                </select>
+            </form>
+        </td>
+        <td>02/10/21</td>
+    </tr>
+
+
+    <tr>
+        <td>James Peng</td>
+        <td><form action="action_page.php">
+                <label for="attend">----</label>
+                <select id="attend" name="attend">
+                    <option value="Present">Present</option>
+
+                </select>
+            </form>
+        </td>
+        <td>02/15/21</td>
+    </tr>
+
+
+    <tr>
+        <td>James Peng</td>
+        <td><form action="action_page.php">
+                <label for="attend">----</label>
+                <select id="attend" name="attend">
+                    <option value="Present">Present</option>
+
+                </select>
+            </form>
+        </td>
+        <td>02/17/21</td>
+    </tr>
+
+
+    <tr>
+        <td>James Peng</td>
+        <td><form action="action_page.php">
+                <label for="attend">----</label>
+                <select id="attend" name="attend">
+                    <option value="Present">Present</option>
+
+                </select>
+            </form>
+        </td>
+        <td>02/22/21</td>
+    </tr>
+
+
+    <tr>
+        <td>James Peng</td>
+        <td><form action="action_page.php">
+                <label for="attend">----</label>
+                <select id="attend" name="attend">
+                    <option value="Present">Present</option>
+
+                </select>
+            </form>
+        </td>
+        <td>02/24/21</td>
+    </tr>
+
+
+    <tr>
+        <td>James Peng</td>
+        <td><form action="action_page.php">
+                <label for="attend">----</label>
+                <select id="attend" name="attend">
+                    <option value="Present">Present</option>
+
+                </select>
+            </form>
+        </td>
+        <td>03/01/21</td>
+    </tr>
+
+
+    <tr>
+        <td>James Peng</td>
+        <td><form action="action_page.php">
+                <label for="attend">----</label>
+                <select id="attend" name="attend">
+                    <option value="Present">Present</option>
+
+                </select>
+            </form>
+        </td>
+        <td>03/03/21</td>
+    </tr>
+
+
+    <tr>
+        <td>James Peng</td>
+        <td><form action="action_page.php">
+                <label for="attend">----</label>
+                <select id="attend" name="attend">
+                    <option value="Present">Present</option>
+
+                </select>
+            </form>
+        </td>
+        <td>03/08/21</td>
+    </tr>
+
+
+    <tr>
+        <td>James Peng</td>
+        <td><form action="action_page.php">
+                <label for="attend">----</label>
+                <select id="attend" name="attend">
+                    <option value="Present">Present</option>
+
+                </select>
+            </form>
+        </td>
+        <td>03/10/21</td>
+    </tr>
+
+
+    <tr>
+        <td>James Peng</td>
+        <td><form action="action_page.php">
+                <label for="attend">----</label>
+                <select id="attend" name="attend">
+                    <option value="Present">Present</option>
+
+                </select>
+            </form>
+        </td>
+        <td>03/15/21</td>
+    </tr>
+
+
+    <tr>
+        <td>James Peng</td>
+        <td><form action="action_page.php">
+                <label for="attend">----</label>
+                <select id="attend" name="attend">
+                    <option value="Present">Present</option>
+
+                </select>
+            </form>
+        </td>
+        <td>03/17/21</td>
+    </tr>
+
+
+    <tr>
+        <td>James Peng</td>
+        <td><form action="action_page.php">
+                <label for="attend">----</label>
+                <select id="attend" name="attend">
+                    <option value="Present">Present</option>
+
+                </select>
+            </form>
+        </td>
+        <td>03/22/21</td>
+    </tr>
+
+
+    <tr>
+        <td>James Peng</td>
+        <td><form action="action_page.php">
+                <label for="attend">----</label>
+                <select id="attend" name="attend">
+                    <option value="Present">Present</option>
+
+                </select>
+            </form>
+        </td>
+        <td>03/24/21</td>
+    </tr>
+
+
+    <tr>
+        <td>James Peng</td>
+        <td><form action="action_page.php">
+                <label for="attend">----</label>
+                <select id="attend" name="attend">
+                    <option value="Present">Present</option>
+
+                </select>
+            </form>
+        </td>
+        <td>03/29/21</td>
+    </tr>
+
+
+    <tr>
+        <td>James Peng</td>
+        <td><form action="action_page.php">
+                <label for="attend">----</label>
+                <select id="attend" name="attend">
+                    <option value="Present">Present</option>
+
+                </select>
+            </form>
+        </td>
+        <td>03/31/21</td>
+    </tr>
+
+
+    <tr>
+        <td>James Peng</td>
+        <td><form action="action_page.php">
+                <label for="attend">----</label>
+                <select id="attend" name="attend">
+                    <option value="Present">Present</option>
+
+                </select>
+            </form>
+        </td>
+        <td>04/05/21</td>
+    </tr>
+
+
+    <tr>
+        <td>James Peng</td>
+        <td><form action="action_page.php">
+                <label for="attend">----</label>
+                <select id="attend" name="attend">
+                    <option value="Present">Present</option>
+
+                </select>
+            </form>
+        </td>
+        <td>04/07/21</td>
+    </tr>
+
+
+    <tr>
+        <td>James Peng</td>
+        <td><form action="action_page.php">
+                <label for="attend">----</label>
+                <select id="attend" name="attend">
+                    <option value="Present">Present</option>
+
+                </select>
+            </form>
+        </td>
+        <td>04/12/21</td>
+    </tr>
+
+
+    <tr>
+        <td>James Peng</td>
+        <td><form action="action_page.php">
+                <label for="attend">----</label>
+                <select id="attend" name="attend">
+                    <option value="Present">Present</option>
+
+                </select>
+            </form>
+        </td>
+        <td>04/14/21</td>
+    </tr>
+
+
+    <tr>
+        <td>James Peng</td>
+        <td><form action="action_page.php">
+                <label for="attend">----</label>
+                <select id="attend" name="attend">
+                    <option value="Present">Present</option>
+
+                </select>
+            </form>
+        </td>
+        <td>04/19/21</td>
+    </tr>
+
+
+
+
+    <tr>
+        <td>James Peng</td>
+        <td><form action="action_page.php">
+                <label for="attend">----</label>
+                <select id="attend" name="attend">
+                    <option value="Present">Present</option>
+
                 </select>
             </form>
         </td>
@@ -58,8 +409,7 @@
                 <label for="attend">----</label>
                 <select id="attend" name="attend">
                     <option value="Present">Present</option>
-                    <option value="Absent">Absent</option>
-                    <option value="select">-select-</option>
+
                 </select>
             </form>
         </td>
@@ -72,8 +422,6 @@
                 <label for="attend">----</label>
                 <select id="attend" name="attend">
                     <option value="Present">Present</option>
-                    <option value="Absent">Absent</option>
-                    <option value="select">-select-</option>
                 </select>
             </form>
         </td>
@@ -85,9 +433,8 @@
         <td><form action="action_page.php">
                 <label for="attend">----</label>
                 <select id="attend" name="attend">
-                    <option value="Present">Present</option>
                     <option value="Absent">Absent</option>
-                    <option value="select">-select-</option>
+
                 </select>
             </form>
         </td>
@@ -99,9 +446,8 @@
         <td><form action="action_page.php">
                 <label for="attend">----</label>
                 <select id="attend" name="attend">
-                    <option value="select">-select-</option>
                     <option value="Present">Present</option>
-                    <option value="Absent">Absent</option>
+
 
                 </select>
             </form>
@@ -114,9 +460,7 @@
         <td><form action="action_page.php">
                 <label for="attend">----</label>
                 <select id="attend" name="attend">
-                    <option value="select">-select-</option>
                     <option value="Present">Present</option>
-                    <option value="Absent">Absent</option>
 
                 </select>
             </form>
@@ -129,9 +473,8 @@
         <td><form action="action_page.php">
                 <label for="attend">----</label>
                 <select id="attend" name="attend">
-                    <option value="select">-select-</option>
                     <option value="Present">Present</option>
-                    <option value="Absent">Absent</option>
+
 
                 </select>
             </form>
@@ -144,8 +487,6 @@
         <td><form action="action_page.php">
                 <label for="attend">----</label>
                 <select id="attend" name="attend">
-                    <option value="select">-select-</option>
-                    <option value="Present">Present</option>
                     <option value="Absent">Absent</option>
 
                 </select>
@@ -159,9 +500,8 @@
         <td><form action="action_page.php">
                 <label for="attend">----</label>
                 <select id="attend" name="attend">
-                    <option value="select">-select-</option>
                     <option value="Present">Present</option>
-                    <option value="Absent">Absent</option>
+
 
                 </select>
             </form>
@@ -169,19 +509,6 @@
         <td>05/17/21</td>
     </tr>
 
-    <tr>
-        <td>James Peng</td>
-        <td><form action="action_page.php">
-                <label for="attend">----</label>
-                <select id="attend" name="attend">
-                    <option value="select">-select-</option>
-                    <option value="Present">Present</option>
-                    <option value="Absent">Absent</option>
-                </select>
-            </form>
-        </td>
-        <td>05/19/21</td>
-    </tr>
 
 
     </tbody>

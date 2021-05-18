@@ -37,23 +37,16 @@
 
   </tr>
   <tr>
-    <td>1001</td>
-    <td>2321</td>
-    <td>Intro to Math Ideas</td>
-    <td>2</td>
-    <td>C</td>
-  </tr>
-  <tr>
-    <td>1030</td>
-    <td>2321</td>
-    <td>College Algebra</td>
+    <td>6300</td>
+    <td>10</td>
+    <td>Internship/Field Placement	</td>
     <td>4</td>
     <td>C</td>
   </tr>
   <tr>
-    <td>1050</td>
-    <td>2321</td>
-    <td>College Trigometry</td>
+    <td>7510</td>
+    <td>10</td>
+    <td>Thesis Research	</td>
     <td>4</td>
     <td>C</td>
 

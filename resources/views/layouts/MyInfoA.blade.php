@@ -13,8 +13,7 @@
 
 		<ul>
             <div class="header">
-                <img src='/images/saturn1.png' alt="logo" />
-  			<div class="dropdown" style="float:right;">
+                <a href="admin" class="buttonHome"><img src='/images/saturn1.png' alt="logo" >
   				<button class="dropbtn">{{Auth::user()->name}}</button>
   				<div class="dropdown-content">
   				<a href="/MyInfo">My Info</a>

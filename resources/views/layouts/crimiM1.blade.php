@@ -32,45 +32,127 @@
 
     <h1 class="title1">Criminology</h1>
 <table class="tableMa">
-  <tr>
-    <th>CRN</th>
-    <th>Course ID</th>
-    <th>Faculty ID</th>
-    <th>Course Name</th>
-    <th>Section</th>
-    <th>Day</th>
-    <th>Time</th>
-    <th>Building</th>
-    <th>Room Number</th>
-    <th>Professor</th>
-    <th>Email</th>
-  </tr>
-   <tr>
-    <td>10308</td>
-    <td>2321</td>
-    <td>2897</td>
-    <td>Intro to American History</td>
-    <td>002</td>
-    <td>M W</td>
-    <td>1:50pm-3:20pm</td>
-    <td>New Academic Building</td>
-    <td>151</td>
-    <td>Professor Skentine</td>
-    <td>paulas@saturnuni.com</td>
-  </tr>
-  <tr>
-    <td>10311</td>
-    <td>2321</td>
-    <td>2897</td>
-    <td>Intro to American History</td>
-    <td>002</td>
-    <td>M W</td>
-    <td>1:50pm-3:20pm</td>
-    <td>New Academic Building</td>
-    <td>151</td>
-    <td>Professor Skentine</td>
-    <td>paulas@saturnuni.com</td>
-  </tr>
+    <tr>
+        <th>CRN</th>
+        <th>Course ID</th>
+        <th>Faculty ID</th>
+        <th>Course Name</th>
+        <th>Section</th>
+        <th>Day</th>
+        <th>Time</th>
+        <th>Building</th>
+        <th>Room Number</th>
+    </tr>
+    <tr>
+        <td>19374</td>
+        <td>1500</td>
+        <td>188</td>
+        <td>Intro to Criminology	</td>
+        <td>1</td>
+        <td>TR	</td>
+        <td>07:10 pm-08:40 pm		</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>16785</td>
+        <td>2090</td>
+        <td>189</td>
+        <td>Juvenile Delinquency	</td>
+        <td>1</td>
+        <td>MW	</td>
+        <td>07:10 pm-08:40 pm		</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>15061</td>
+        <td>3092</td>
+        <td>190</td>
+        <td>Victimology		</td>
+        <td>1</td>
+        <td>MW	</td>
+        <td>01:00 pm-02:30 pm			</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>19828</td>
+        <td>3093</td>
+        <td>191</td>
+        <td>Criminal Justice Admin		</td>
+        <td>1</td>
+        <td>TR	</td>
+        <td>09:40 am-11:10 am		</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>16454</td>
+        <td>3094</td>
+        <td>192</td>
+        <td>Drugs and Society		</td>
+        <td>1</td>
+        <td>TR	</td>
+        <td>11:20 am-12:50 pm		</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>17439</td>
+        <td>3200</td>
+        <td>193</td>
+        <td>Crime, Media and Culture		</td>
+        <td>1</td>
+        <td>TR	</td>
+        <td>05:30 pm-07:00 pm			</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>17174</td>
+        <td>4000</td>
+        <td>194</td>
+        <td>Gender, Crime and Justice	</td>
+        <td>1</td>
+        <td>TBA		</td>
+        <td>TBA			</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>16825</td>
+        <td>4091</td>
+        <td>195</td>
+        <td>Punishment & Corrections		</td>
+        <td>1</td>
+        <td>TR	</td>
+        <td>05:30 pm-07:00 pm		</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>11536</td>
+        <td>4099</td>
+        <td>196</td>
+        <td>Sociology of Violence		</td>
+        <td>1</td>
+        <td>TR	</td>
+        <td>01:00 pm-02:30 pm			</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>12278</td>
+        <td>4550</td>
+        <td>197</td>
+        <td>Theories of Crime		</td>
+        <td>1</td>
+        <td>MW	</td>
+        <td>07:10 pm-08:40 pm			</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
 </table>
 
 </body>

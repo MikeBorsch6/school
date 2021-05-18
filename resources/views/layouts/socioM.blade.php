@@ -33,44 +33,204 @@
     <h1 class="title1">Sociology</h1>
 <table class="tableMa">
   <tr>
-    <th>CRN</th>
-    <th>Course ID</th>
-    <th>Faculty ID</th>
-    <th>Course Name</th>
-    <th>Section</th>
-    <th>Day</th>
-    <th>Time</th>
-    <th>Building</th>
-    <th>Room Number</th>
-    <th>Professor</th>
-    <th>Email</th>
-  </tr>
-   <tr>
-    <td>10308</td>
-    <td>2321</td>
-    <td>2897</td>
-    <td>Intro to American History</td>
-    <td>002</td>
-    <td>M W</td>
-    <td>1:50pm-3:20pm</td>
-    <td>New Academic Building</td>
-    <td>151</td>
-    <td>Professor Skentine</td>
-    <td>paulas@saturnuni.com</td>
-  </tr>
-  <tr>
-    <td>10308</td>
-    <td>2321</td>
-    <td>2897</td>
-    <td>Intro to American History</td>
-    <td>002</td>
-    <td>M W</td>
-    <td>1:50pm-3:20pm</td>
-    <td>New Academic Building</td>
-    <td>151</td>
-    <td>Professor Skentine</td>
-    <td>paulas@saturnuni.com</td>
-  </tr>
+    <tr>
+        <th>CRN</th>
+        <th>Course ID</th>
+        <th>Faculty ID</th>
+        <th>Course Name</th>
+        <th>Section</th>
+        <th>Day</th>
+        <th>Time</th>
+        <th>Building</th>
+        <th>Room Number</th>
+    </tr>
+    <tr>
+        <td>52090</td>
+        <td>1500</td>
+        <td>584</td>
+        <td>Intro Sociology				</td>
+        <td>2</td>
+        <td>TR				</td>
+        <td>05:30 pm-07:00 pm											</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>54282</td>
+        <td>2550</td>
+        <td>586</td>
+        <td>Social Problems			</td>
+        <td>1</td>
+        <td>TBA				</td>
+        <td>TBA										</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>50557</td>
+        <td>2600</td>
+        <td>588</td>
+        <td>Social Deviance			</td>
+        <td>1</td>
+        <td>TBA				</td>
+        <td>TBA				</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>52967</td>
+        <td>3160</td>
+        <td>589</td>
+        <td>Sociology of Culture		</td>
+        <td>1</td>
+        <td>TR				</td>
+        <td>TBA								</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>54319</td>
+        <td>3700</td>
+        <td>590</td>
+        <td>Family & Society			</td>
+        <td>1</td>
+        <td>TR					</td>
+        <td>09:40 am-11:10 am					</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>50219</td>
+        <td>3750</td>
+        <td>591</td>
+        <td>Medical Sociology		</td>
+        <td>1</td>
+        <td>TBA					</td>
+        <td>TBA									</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>53042</td>
+        <td>3800</td>
+        <td>592</td>
+        <td>Race and Ethnicity		</td>
+        <td>1</td>
+        <td>M		</td>
+        <td>05:30 pm-07:00 pm								</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>51199</td>
+        <td>3900</td>
+        <td>593</td>
+        <td>Social Movements			</td>
+        <td>1</td>
+        <td>TR				</td>
+        <td>01:00 pm-02:30 pm									</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>52601</td>
+        <td>4260</td>
+        <td>594</td>
+        <td>Social Work:Theory & Practice		</td>
+        <td>1</td>
+        <td>M					</td>
+        <td>09:40 am-11:10 am							</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>53716</td>
+        <td>4500</td>
+        <td>595</td>
+        <td>Global Sociology		</td>
+        <td>1</td>
+        <td>MW				</td>
+        <td>08:50 pm-10:20 pm									</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>54013</td>
+        <td>4520</td>
+        <td>597</td>
+        <td>Research Methods I			</td>
+        <td>1</td>
+        <td>MW				</td>
+        <td>03:50 pm-05:20 pm								</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>50119</td>
+        <td>4530</td>
+        <td>585</td>
+        <td>Sociological Theory I	</td>
+        <td>1</td>
+        <td>MW				</td>
+        <td>05:30 pm-07:00 pm									</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>50715</td>
+        <td>4530</td>
+        <td>585</td>
+        <td>Sociological Theory II	</td>
+        <td>1</td>
+        <td>W				</td>
+        <td>05:30 pm-07:00 pm									</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>53346</td>
+        <td>4570</td>
+        <td>602</td>
+        <td>Research Methods II		</td>
+        <td>1</td>
+        <td>MW				</td>
+        <td>07:10 pm-08:40 pm						</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>52981</td>
+        <td>4810</td>
+        <td>603</td>
+        <td>Law & Justice		</td>
+        <td>1</td>
+        <td>TR				</td>
+        <td>07:10 pm-08:40 pm										</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>51540</td>
+        <td>4830</td>
+        <td>604</td>
+        <td>Gender and Society	</td>
+        <td>1</td>
+        <td>MW				</td>
+        <td>03:50 pm-05:20 pm							</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>51977</td>
+        <td>5990</td>
+        <td>606</td>
+        <td>Senior Seminar	</td>
+        <td>1</td>
+        <td>MW				</td>
+        <td>07:10 pm-08:40 pm								</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
 </table>
 
 </body>

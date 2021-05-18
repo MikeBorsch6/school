@@ -32,45 +32,62 @@
 
     <h1 class="title1">Music and Dance</h1>
 <table class="tableMa">
-  <tr>
-    <th>CRN</th>
-    <th>Course ID</th>
-    <th>Faculty ID</th>
-    <th>Course Name</th>
-    <th>Section</th>
-    <th>Day</th>
-    <th>Time</th>
-    <th>Building</th>
-    <th>Room Number</th>
-    <th>Professor</th>
-    <th>Email</th>
-  </tr>
-   <tr>
-    <td>10308</td>
-    <td>2321</td>
-    <td>2897</td>
-    <td>Intro to American History</td>
-    <td>002</td>
-    <td>M W</td>
-    <td>1:50pm-3:20pm</td>
-    <td>New Academic Building</td>
-    <td>151</td>
-    <td>Professor Skentine</td>
-    <td>paulas@saturnuni.com</td>
-  </tr>
-  <tr>
-    <td>10308</td>
-    <td>2321</td>
-    <td>2897</td>
-    <td>Intro to American History</td>
-    <td>002</td>
-    <td>M W</td>
-    <td>1:50pm-3:20pm</td>
-    <td>New Academic Building</td>
-    <td>151</td>
-    <td>Professor Skentine</td>
-    <td>paulas@saturnuni.com</td>
-  </tr>
+    <tr>
+        <th>CRN</th>
+        <th>Course ID</th>
+        <th>Faculty ID</th>
+        <th>Course Name</th>
+        <th>Section</th>
+        <th>Day</th>
+        <th>Time</th>
+        <th>Building</th>
+        <th>Room Number</th>
+    </tr>
+    <tr>
+        <td>52457</td>
+        <td>1000</td>
+        <td>332</td>
+        <td>Music of Global Cultures I							</td>
+        <td>1</td>
+        <td>MW			</td>
+        <td>09:40 am-11:10 am							</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>52388</td>
+        <td>1110</td>
+        <td>333</td>
+        <td>Cultural Diverse Lang of Dance					</td>
+        <td>1</td>
+        <td>MW			</td>
+        <td>11:20 am-12:50 pm								</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>50862</td>
+        <td>2350</td>
+        <td>334</td>
+        <td>Acting						</td>
+        <td>1</td>
+        <td>TR				</td>
+        <td>01:00 pm-02:30 pm								</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>53750</td>
+        <td>3010</td>
+        <td>335</td>
+        <td>History of Jazz							</td>
+        <td>1</td>
+        <td>MW			</td>
+        <td>11:20 am-12:50 pm								</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+
 </table>
 
 </body>

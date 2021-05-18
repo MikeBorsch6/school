@@ -32,45 +32,248 @@
 
     <h1 class="title1">Biological Sciences</h1>
 <table class="tableMa">
-  <tr>
-    <th>CRN</th>
-    <th>Course ID</th>
-    <th>Faculty ID</th>
-    <th>Course Name</th>
-    <th>Section</th>
-    <th>Day</th>
-    <th>Time</th>
-    <th>Building</th>
-    <th>Room Number</th>
-    <th>Professor</th>
-    <th>Email</th>
-  </tr>
-   <tr>
-    <td>10308</td>
-    <td>2321</td>
-    <td>2897</td>
-    <td>Intro to American History</td>
-    <td>002</td>
-    <td>M W</td>
-    <td>1:50pm-3:20pm</td>
-    <td>New Academic Building</td>
-    <td>151</td>
-    <td>Professor Skentine</td>
-    <td>paulas@saturnuni.com</td>
-  </tr>
-  <tr>
-    <td>10311</td>
-    <td>2321</td>
-    <td>2897</td>
-    <td>Intro to American History</td>
-    <td>002</td>
-    <td>M W</td>
-    <td>1:50pm-3:20pm</td>
-    <td>New Academic Building</td>
-    <td>151</td>
-    <td>Professor Skentine</td>
-    <td>paulas@saturnuni.com</td>
-  </tr>
+    <tr>
+        <th>CRN</th>
+        <th>Course ID</th>
+        <th>Faculty ID</th>
+        <th>Course Name</th>
+        <th>Section</th>
+        <th>Day</th>
+        <th>Time</th>
+        <th>Building</th>
+        <th>Room Number</th>
+    </tr>
+    <tr>
+        <td>10625</td>
+        <td>2100</td>
+        <td>133</td>
+        <td>Biology for Non-Science Majors	</td>
+        <td>1</td>
+        <td>TR</td>
+        <td>01:00 pm-02:30 pm	</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>13025</td>
+        <td>2300</td>
+        <td>154</td>
+        <td>Anatomy&Physiology I Lecture		</td>
+        <td>1</td>
+        <td>TR</td>
+        <td>05:30 pm-07:00 pm		</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>10717</td>
+        <td>2301</td>
+        <td>154</td>
+        <td>Anatomy&Physiology I Lab		</td>
+        <td>1</td>
+        <td>F</td>
+        <td>02:00 pm-05:00 pm		</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>18482</td>
+        <td>2310</td>
+        <td>146</td>
+        <td>Anatomy&Physiology II Lecture		</td>
+        <td>1</td>
+        <td>TR</td>
+        <td>03:50 pm-05:20 pm		</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>10230</td>
+        <td>2311</td>
+        <td>146</td>
+        <td>Anatomy&Physiology II Lab		</td>
+        <td>1</td>
+        <td>T	</td>
+        <td>06:01 pm-09:01 pm	</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>14281</td>
+        <td>2400</td>
+        <td>141</td>
+        <td>Basic Bio Sciences I	</td>
+        <td>1</td>
+        <td>MW</td>
+        <td>08:00 am-09:30 am		</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>14290</td>
+        <td>2401</td>
+        <td>138</td>
+        <td>Basic Bio Sciences I Lab		</td>
+        <td>1</td>
+        <td>M</td>
+        <td>03:50 pm-07:00 pm	</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>18792</td>
+        <td>2410</td>
+        <td>136</td>
+        <td>Basic Bio Sciences II		</td>
+        <td>1</td>
+        <td>TR</td>
+        <td>11:20 am-12:50 pm	</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>17706</td>
+        <td>2411</td>
+        <td>134</td>
+        <td>Basic Bio Sciences II Lab		</td>
+        <td>1</td>
+        <td>W</td>
+        <td>11:20 am-02:30 pm	</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>19360</td>
+        <td>3400</td>
+        <td>148</td>
+        <td>Vertebrate Physiology		</td>
+        <td>1</td>
+        <td>MW</td>
+        <td>08:00 am-09:30 am		</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>18315</td>
+        <td>3910</td>
+        <td>147</td>
+        <td>Intro to Bioinformatics		</td>
+        <td>1</td>
+        <td>MW</td>
+        <td>08:00 am-09:30 am	</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>10558</td>
+        <td>4400</td>
+        <td>139</td>
+        <td>Cell Biology	</td>
+        <td>1</td>
+        <td>TR</td>
+        <td>09:40 am-11:10 am	</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>15763</td>
+        <td>4420</td>
+        <td>140</td>
+        <td>Microbiology</td>
+        <td>1</td>
+        <td>TR</td>
+        <td>01:00 pm-02:30 pm	</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>16416</td>
+        <td>4430</td>
+        <td>155</td>
+        <td>Developmental Biology		</td>
+        <td>1</td>
+        <td>MW	</td>
+        <td>01:00 pm-02:30 pm	</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>15384</td>
+        <td>4440</td>
+        <td>142</td>
+        <td>Evolution	</td>
+        <td>1</td>
+        <td>MW</td>
+        <td>11:20 am-12:50 pm		</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>19042</td>
+        <td>4460</td>
+        <td>150</td>
+        <td>Genetics	</td>
+        <td>1</td>
+        <td>TR</td>
+        <td>08:00 am-09:30 am		</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>10845</td>
+        <td>4474</td>
+        <td>153</td>
+        <td>Microbial Ecology	</td>
+        <td>1</td>
+        <td>WF</td>
+        <td>11:20 am-12:50 pm		</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>13801</td>
+        <td>4500</td>
+        <td>143</td>
+        <td>Cell & Molecular Neurobiology		</td>
+        <td>1</td>
+        <td>TR</td>
+        <td>11:20 am-12:50 pm		</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>19124</td>
+        <td>5410</td>
+        <td>152</td>
+        <td>Senior Seminar I		</td>
+        <td>1</td>
+        <td>TR</td>
+        <td>01:00 pm-02:30 pm	</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>12398</td>
+        <td>5420</td>
+        <td>137</td>
+        <td>Senior Seminar II		</td>
+        <td>1</td>
+        <td>TR</td>
+        <td>01:00 pm-02:30 pm	</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>17281</td>
+        <td>5590</td>
+        <td>149</td>
+        <td>Advanced Research		</td>
+        <td>1</td>
+        <td>TBA	</td>
+        <td>TBA		</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
 </table>
 
 </body>

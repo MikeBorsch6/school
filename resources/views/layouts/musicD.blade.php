@@ -37,27 +37,36 @@
 
   </tr>
   <tr>
-    <td>1001</td>
-    <td>2321</td>
-    <td>Intro to Math Ideas</td>
-    <td>2</td>
-    <td>C</td>
-  </tr>
-  <tr>
-    <td>1030</td>
-    <td>2321</td>
-    <td>College Algebra</td>
+    <td>1000</td>
+    <td>20</td>
+    <td>Music of Global Cultures I	</td>
     <td>4</td>
     <td>C</td>
   </tr>
   <tr>
-    <td>1050</td>
-    <td>2321</td>
-    <td>College Trigometry</td>
+    <td>1110</td>
+    <td>20</td>
+    <td>Cultural Diverse Lang of Dance	</td>
     <td>4</td>
     <td>C</td>
 
   </tr>
+      <tr>
+          <td>2350</td>
+          <td>20</td>
+          <td>Acting	</td>
+          <td>4</td>
+          <td>C</td>
+
+      </tr>
+      <tr>
+          <td>3010</td>
+          <td>20</td>
+          <td>History of Jazz		</td>
+          <td>4</td>
+          <td>C</td>
+
+      </tr>
 </table>
 
 

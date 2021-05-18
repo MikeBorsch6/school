@@ -32,45 +32,216 @@
 
     <h1 class="title1">Politics, Economics and Law</h1>
 <table class="tableMa">
-  <tr>
-    <th>CRN</th>
-    <th>Course ID</th>
-    <th>Faculty ID</th>
-    <th>Course Name</th>
-    <th>Section</th>
-    <th>Day</th>
-    <th>Time</th>
-    <th>Building</th>
-    <th>Room Number</th>
-    <th>Professor</th>
-    <th>Email</th>
-  </tr>
-   <tr>
-    <td>10308</td>
-    <td>2321</td>
-    <td>2897</td>
-    <td>Intro to American History</td>
-    <td>002</td>
-    <td>M W</td>
-    <td>1:50pm-3:20pm</td>
-    <td>New Academic Building</td>
-    <td>151</td>
-    <td>Professor Skentine</td>
-    <td>paulas@saturnuni.com</td>
-  </tr>
-  <tr>
-    <td>10311</td>
-    <td>2321</td>
-    <td>2897</td>
-    <td>Intro to American History</td>
-    <td>002</td>
-    <td>M W</td>
-    <td>1:50pm-3:20pm</td>
-    <td>New Academic Building</td>
-    <td>151</td>
-    <td>Professor Skentine</td>
-    <td>paulas@saturnuni.com</td>
-  </tr>
+    <tr>
+        <th>CRN</th>
+        <th>Course ID</th>
+        <th>Faculty ID</th>
+        <th>Course Name</th>
+        <th>Section</th>
+        <th>Day</th>
+        <th>Time</th>
+        <th>Building</th>
+        <th>Room Number</th>
+    </tr>
+    <tr>
+        <td>15875</td>
+        <td>2220</td>
+        <td>336</td>
+        <td>Intro to Urban Issues								</td>
+        <td>1</td>
+        <td>MW			</td>
+        <td>08:00 am-09:30 am								</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>11109</td>
+        <td>2300</td>
+        <td>337</td>
+        <td>Introduction to Law									</td>
+        <td>1</td>
+        <td>TR			</td>
+        <td>03:50 pm-05:20 pm									</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>12834</td>
+        <td>2420</td>
+        <td>338</td>
+        <td>Principles of Microeconomics								</td>
+        <td>1</td>
+        <td>MW			</td>
+        <td>01:00 pm-02:30 pm									</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>14474</td>
+        <td>2420</td>
+        <td>339</td>
+        <td>Principles of Microeconomics									</td>
+        <td>1</td>
+        <td>TR			</td>
+        <td>11:20 am-12:50 pm									</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>10176</td>
+        <td>2430</td>
+        <td>340</td>
+        <td>Principles of Macroeconomics									</td>
+        <td>1</td>
+        <td>MW			</td>
+        <td>01:00 pm-02:30 pm									</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>18763</td>
+        <td>2650</td>
+        <td>342</td>
+        <td>Intro to U.S. Politics									</td>
+        <td>1</td>
+        <td>R			</td>
+        <td>05:30 pm-07:00 pm								</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>19504</td>
+        <td>3100</td>
+        <td>344</td>
+        <td>International Relations									</td>
+        <td>1</td>
+        <td>R			</td>
+        <td>11:20 am-12:50 pm									</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>19534</td>
+        <td>3160</td>
+        <td>345</td>
+        <td>Ethnopolitics in the World									</td>
+        <td>1</td>
+        <td>MW			</td>
+        <td>01:00 pm-02:30 pm									</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>12841</td>
+        <td>3400</td>
+        <td>346</td>
+        <td>Global South									</td>
+        <td>1</td>
+        <td>MW			</td>
+        <td>03:50 pm-05:20 pm									</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>19434</td>
+        <td>4325</td>
+        <td>348</td>
+        <td>Jurisprudence: Legal Thought										</td>
+        <td>1</td>
+        <td>W			</td>
+        <td>08:00 am-09:30 am										</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>14294</td>
+        <td>4470</td>
+        <td>349</td>
+        <td>History of Economic Thought I										</td>
+        <td>1</td>
+        <td>MW			</td>
+        <td>09:40 am-11:10 am										</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>18980</td>
+        <td>4590</td>
+        <td>350</td>
+        <td>Global Economy in 20th Century										</td>
+        <td>1</td>
+        <td>MW			</td>
+        <td>03:50 pm-05:20 pm										</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>12737</td>
+        <td>4615</td>
+        <td>351</td>
+        <td>Public Finance&Public Policy										</td>
+        <td>1</td>
+        <td>TBA			</td>
+        <td>TBA									</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>15420</td>
+        <td>4620</td>
+        <td>352</td>
+        <td>Political & Social Thought										</td>
+        <td>1</td>
+        <td>TR			</td>
+        <td>03:50 pm-05:20 pm										</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>18667</td>
+        <td>4658</td>
+        <td>353</td>
+        <td>Law & Civil Liberties										</td>
+        <td>1</td>
+        <td>W				</td>
+        <td>01:00 pm-02:30 pm							</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>10304</td>
+        <td>4665</td>
+        <td>354</td>
+        <td>Human Rights										</td>
+        <td>1</td>
+        <td>MW			</td>
+        <td>01:00 pm-02:30 pm								</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>18485</td>
+        <td>3410</td>
+        <td>355</td>
+        <td>Internship								</td>
+        <td>1</td>
+        <td>TBA			</td>
+        <td>TBA									</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>16249</td>
+        <td>9990</td>
+        <td>356</td>
+        <td>Independent Study-PE										</td>
+        <td>1</td>
+        <td>TBA			</td>
+        <td>TBA									</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+
 </table>
 
 </body>

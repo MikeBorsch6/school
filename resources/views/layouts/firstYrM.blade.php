@@ -32,45 +32,61 @@
 
     <h1 class="title1">First Year Experience</h1>
 <table class="tableMa">
-  <tr>
-    <th>CRN</th>
-    <th>Course ID</th>
-    <th>Faculty ID</th>
-    <th>Course Name</th>
-    <th>Section</th>
-    <th>Day</th>
-    <th>Time</th>
-    <th>Building</th>
-    <th>Room Number</th>
-    <th>Professor</th>
-    <th>Email</th>
-  </tr>
-   <tr>
-    <td>10308</td>
-    <td>2321</td>
-    <td>2897</td>
-    <td>Intro to American History</td>
-    <td>002</td>
-    <td>M W</td>
-    <td>1:50pm-3:20pm</td>
-    <td>New Academic Building</td>
-    <td>151</td>
-    <td>Professor Skentine</td>
-    <td>paulas@saturnuni.com</td>
-  </tr>
-  <tr>
-    <td>10308</td>
-    <td>2321</td>
-    <td>2897</td>
-    <td>Intro to American History</td>
-    <td>002</td>
-    <td>M W</td>
-    <td>1:50pm-3:20pm</td>
-    <td>New Academic Building</td>
-    <td>151</td>
-    <td>Professor Skentine</td>
-    <td>paulas@saturnuni.com</td>
-  </tr>
+    <tr>
+        <th>CRN</th>
+        <th>Course ID</th>
+        <th>Faculty ID</th>
+        <th>Course Name</th>
+        <th>Section</th>
+        <th>Day</th>
+        <th>Time</th>
+        <th>Building</th>
+        <th>Room Number</th>
+    </tr>
+    <tr>
+        <td>50740</td>
+        <td>1000</td>
+        <td>231</td>
+        <td>Ethics of Engagement			</td>
+        <td>1</td>
+        <td>MW	</td>
+        <td>11:20 am-12:50 pm				</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>53364</td>
+        <td>1000</td>
+        <td>232</td>
+        <td>Ethics of Engagement			</td>
+        <td>2</td>
+        <td>TR		</td>
+        <td>09:40 am-11:10 am					</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>53463</td>
+        <td>3000</td>
+        <td>234</td>
+        <td>Undergrad Teach Asst Seminar				</td>
+        <td>1</td>
+        <td>TBA	</td>
+        <td>TBA				</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>51714</td>
+        <td>3000</td>
+        <td>233</td>
+        <td>Undergrad Teach Asst Seminar			</td>
+        <td>2</td>
+        <td>TBA	</td>
+        <td>TBA				</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
 </table>
 
 </body>

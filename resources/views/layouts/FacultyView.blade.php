@@ -12,7 +12,7 @@
 
 		<ul>
 			<div class="header">
-			<img src='images/saturn1.png' alt="logo" />
+                <a href="faculty" class="buttonHome"><img src='/images/saturn1.png' alt="logo" >
   			<div class="dropdown" style="float:right;">
   				<button class="dropbtn">{{Auth::user()->name}}</button>
   				<div class="dropdown-content">
@@ -51,9 +51,7 @@
 
 			<div>
 			<table id ="courses">
-				<tr>
-					<th>Courses I am Teaching</th>
-				</tr>
+				<h2 class="titleS">Courses I am Teaching</h2>
 				<tr>
 					<td>sample course 1</td>
 

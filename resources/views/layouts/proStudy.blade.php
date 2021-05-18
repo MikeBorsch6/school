@@ -37,27 +37,69 @@
 
   </tr>
   <tr>
-    <td>1001</td>
-    <td>2321</td>
-    <td>Intro to Math Ideas</td>
-    <td>2</td>
-    <td>C</td>
-  </tr>
-  <tr>
-    <td>1030</td>
-    <td>2321</td>
-    <td>College Algebra</td>
+    <td>3130</td>
+    <td>15</td>
+    <td>Accounting for Professionals	</td>
     <td>4</td>
     <td>C</td>
   </tr>
   <tr>
-    <td>1050</td>
-    <td>2321</td>
-    <td>College Trigometry</td>
+    <td>3330</td>
+    <td>15</td>
+    <td>Professional Supervision	</td>
     <td>4</td>
     <td>C</td>
+  </tr>
+    <tr>
+        <td>3430</td>
+        <td>15</td>
+        <td>Marketing for Professionals		</td>
+        <td>4</td>
+        <td>C</td>
+    </tr>
+    <tr>
+        <td>3995</td>
+        <td>15</td>
+        <td>Career Internship		</td>
+        <td>4</td>
+        <td>C</td>
+    </tr>
+    <tr>
+        <td>4225</td>
+        <td>15</td>
+        <td>The Law for Professionals		</td>
+        <td>4</td>
+        <td>C</td>
+    </tr>
+    <tr>
+        <td>4325</td>
+        <td>15</td>
+        <td>The Financial Systems	</td>
+        <td>4</td>
+        <td>C</td>
+    </tr>
+    <tr>
+        <td>4430</td>
+        <td>15</td>
+        <td>Entertainment & Sports Mktg.	</td>
+        <td>4</td>
+        <td>C</td>
+    </tr>
+    <tr>
+        <td>4630</td>
+        <td>15</td>
+        <td>Financial Admin of Non Profits		</td>
+        <td>4</td>
+        <td>C</td>
+    </tr>
+    <tr>
+        <td>5435</td>
+        <td>15</td>
+        <td>Entertainment & Sports Finance		</td>
+        <td>4</td>
+        <td>C</td>
+    </tr>
 
-  </tr>
 </table>
 
 

@@ -32,45 +32,118 @@
 
     <h1 class="title1">Mathematics</h1>
 <table class="tableMa">
-  <tr>
-    <th>CRN</th>
-    <th>Course ID</th>
-    <th>Faculty ID</th>
-    <th>Course Name</th>
-    <th>Section</th>
-    <th>Day</th>
-    <th>Time</th>
-    <th>Building</th>
-    <th>Room Number</th>
-    <th>Professor</th>
-    <th>Email</th>
-  </tr>
-   <tr>
-    <td>10308</td>
-    <td>2321</td>
-    <td>2897</td>
-    <td>Intro to American History</td>
-    <td>002</td>
-    <td>M W</td>
-    <td>1:50pm-3:20pm</td>
-    <td>New Academic Building</td>
-    <td>151</td>
-    <td>Professor Skentine</td>
-    <td>paulas@saturnuni.com</td>
-  </tr>
-  <tr>
-    <td>10308</td>
-    <td>2321</td>
-    <td>2897</td>
-    <td>Intro to American History</td>
-    <td>002</td>
-    <td>M W</td>
-    <td>1:50pm-3:20pm</td>
-    <td>New Academic Building</td>
-    <td>151</td>
-    <td>Professor Skentine</td>
-    <td>paulas@saturnuni.com</td>
-  </tr>
+    <tr>
+        <th>CRN</th>
+        <th>Course ID</th>
+        <th>Faculty ID</th>
+        <th>Course Name</th>
+        <th>Section</th>
+        <th>Day</th>
+        <th>Time</th>
+        <th>Building</th>
+        <th>Room Number</th>
+    </tr>
+    <tr>
+        <td>54899</td>
+        <td>6500</td>
+        <td>300</td>
+        <td>Lifespan Development							</td>
+        <td>1</td>
+        <td>M		</td>
+        <td>10:30 am-12:45 pm						</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>53222</td>
+        <td>6510</td>
+        <td>301</td>
+        <td>Asmnt Techniques in Counseling							</td>
+        <td>1</td>
+        <td>F		</td>
+        <td>08:00 am-10:15 am							</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>51091</td>
+        <td>6520</td>
+        <td>302</td>
+        <td>Multicultural Counseling Lab								</td>
+        <td>1</td>
+        <td>W		</td>
+        <td>08:00 am-10:15 am							</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>51010</td>
+        <td>6530</td>
+        <td>303</td>
+        <td>Prncpls & Tchnqs of Counseling								</td>
+        <td>1</td>
+        <td>W		</td>
+        <td>01:00 pm-03:15 pm							</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>51152</td>
+        <td>6540</td>
+        <td>304</td>
+        <td>Practicum II							</td>
+        <td>1</td>
+        <td>M		</td>
+        <td>08:00 am-10:15 am						</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>51840</td>
+        <td>7500</td>
+        <td>305</td>
+        <td>Dgns&Trtmt Addictive Disorders							</td>
+        <td>1</td>
+        <td>M		</td>
+        <td>01:00 pm-03:15 pm							</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>53586</td>
+        <td>7510</td>
+        <td>306</td>
+        <td>Career Development								</td>
+        <td>1</td>
+        <td>M		</td>
+        <td>08:00 am-10:15 am							</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>50697</td>
+        <td>7520</td>
+        <td>307</td>
+        <td>Research Methods in Counseling							</td>
+        <td>1</td>
+        <td>W			</td>
+        <td>08:00 am-10:15 am							</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+    <tr>
+        <td>50634</td>
+        <td>7530</td>
+        <td>308</td>
+        <td>Clinical Internship II				</td>
+        <td>1</td>
+        <td>W			</td>
+        <td>10:30 am-12:45 pm								</td>
+        <td>1</td>
+        <td>REMOTE</td>
+    </tr>
+
+
 </table>
 
 </body>

@@ -17,7 +17,7 @@ class StudentCourseController extends Controller
 
            $user
                 ->courses()
-                ->sync(
+                ->attach(
                     $course
                 );
 

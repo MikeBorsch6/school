@@ -37,25 +37,128 @@
 
   </tr>
   <tr>
-    <td>1001</td>
-    <td>2321</td>
-    <td>Intro to Math Ideas</td>
-    <td>2</td>
-    <td>C</td>
-  </tr>
-  <tr>
-    <td>1030</td>
-    <td>2321</td>
-    <td>College Algebra</td>
+    <td>1500</td>
+    <td>18</td>
+    <td>Intro Sociology	</td>
     <td>4</td>
     <td>C</td>
   </tr>
-  <tr>
-    <td>1050</td>
-    <td>2321</td>
-    <td>College Trigometry</td>
-    <td>4</td>
-    <td>C</td>
+    <tr>
+        <td>2550</td>
+        <td>18</td>
+        <td>Social Problems		</td>
+        <td>4</td>
+        <td>C</td>
+    </tr>
+    <tr>
+        <td>2600</td>
+        <td>18</td>
+        <td>Social Deviance		</td>
+        <td>4</td>
+        <td>C</td>
+    </tr>
+    <tr>
+        <td>3160</td>
+        <td>18</td>
+        <td>Sociology of Culture		</td>
+        <td>4</td>
+        <td>C</td>
+    </tr>
+    <tr>
+        <td>3700</td>
+        <td>18</td>
+        <td>Family & Society		</td>
+        <td>4</td>
+        <td>C</td>
+    </tr>
+    <tr>
+        <td>3750</td>
+        <td>18</td>
+        <td>Medical Sociology		</td>
+        <td>4</td>
+        <td>C</td>
+    </tr>
+    <tr>
+        <td>3800</td>
+        <td>18</td>
+        <td>Race and Ethnicity		</td>
+        <td>4</td>
+        <td>C</td>
+    </tr>
+    <tr>
+        <td>3900</td>
+        <td>18</td>
+        <td>Social Movements		</td>
+        <td>4</td>
+        <td>C</td>
+    </tr>
+    <tr>
+        <td>4260</td>
+        <td>18</td>
+        <td>Social Work:Theory & Practice		</td>
+        <td>4</td>
+        <td>C</td>
+    </tr>
+    <tr>
+        <td>4500</td>
+        <td>18</td>
+        <td>Global Sociology	</td>
+        <td>4</td>
+        <td>C</td>
+    </tr>
+    <tr>
+        <td>4520</td>
+        <td>18</td>
+        <td>Research Methods I		</td>
+        <td>4</td>
+        <td>C</td>
+    </tr>
+    <tr>
+        <td>4530</td>
+        <td>18</td>
+        <td>Sociological Theory I		</td>
+        <td>4</td>
+        <td>C</td>
+    </tr>
+    <tr>
+        <td>4540</td>
+        <td>18</td>
+        <td>Sociological Theory II	</td>
+        <td>4</td>
+        <td>C</td>
+    </tr>
+    <tr>
+        <td>4570</td>
+        <td>18</td>
+        <td>Research Methods II		</td>
+        <td>4</td>
+        <td>C</td>
+    </tr>
+    <tr>
+        <td>4810</td>
+        <td>18</td>
+        <td>Law & Justice		</td>
+        <td>4</td>
+        <td>C</td>
+    </tr>
+    <tr>
+        <td>4830</td>
+        <td>18</td>
+        <td>Gender and Society	</td>
+        <td>4</td>
+        <td>C</td>
+    </tr>
+    <tr>
+        <td>5990</td>
+        <td>18</td>
+        <td>Senior Seminar		</td>
+        <td>4</td>
+        <td>C</td>
+    </tr>
+
+
+
+
 
   </tr>
 </table>

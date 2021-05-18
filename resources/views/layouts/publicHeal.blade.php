@@ -37,27 +37,84 @@
 
   </tr>
   <tr>
-    <td>1001</td>
-    <td>2321</td>
-    <td>Intro to Math Ideas</td>
-    <td>2</td>
-    <td>C</td>
-  </tr>
-  <tr>
-    <td>1030</td>
-    <td>2321</td>
-    <td>College Algebra</td>
+    <td>2900</td>
+    <td>17</td>
+    <td>Black Lives Matter: US Health	</td>
     <td>4</td>
     <td>C</td>
   </tr>
-  <tr>
-    <td>1050</td>
-    <td>2321</td>
-    <td>College Trigometry</td>
-    <td>4</td>
-    <td>C</td>
+    <tr>
+        <td>3600</td>
+        <td>17</td>
+        <td>Social Determinants of Health	</td>
+        <td>4</td>
+        <td>C</td>
+    </tr>
+    <tr>
+        <td>3610</td>
+        <td>17</td>
+        <td>Intro.-U.S.Health Care System	</td>
+        <td>4</td>
+        <td>C</td>
+    </tr>
+    <tr>
+        <td>3700</td>
+        <td>17</td>
+        <td>Medical Anthropology	</td>
+        <td>4</td>
+        <td>C</td>
+    </tr>
+    <tr>
+        <td>4670</td>
+        <td>17</td>
+        <td>Biostatistics</td>
+        <td>4</td>
+        <td>C</td>
+    </tr>
+    <tr>
+        <td>4760</td>
+        <td>17</td>
+        <td>Health Administration	</td>
+        <td>4</td>
+        <td>C</td>
+    </tr>
+    <tr>
+        <td>4800</td>
+        <td>17</td>
+        <td>Epidemiology	</td>
+        <td>4</td>
+        <td>C</td>
+    </tr>
+    <tr>
+        <td>4900</td>
+        <td>17</td>
+        <td>Community Health Field Placmt	</td>
+        <td>4</td>
+        <td>C</td>
+    </tr>
+    <tr>
+        <td>4920</td>
+        <td>17</td>
+        <td>Spcl Topics in Public Health		</td>
+        <td>4</td>
+        <td>C</td>
+    </tr>
+    <tr>
+        <td>5900</td>
+        <td>17</td>
+        <td>Research Methods		</td>
+        <td>4</td>
+        <td>C</td>
+    </tr>
+    <tr>
+        <td>5920</td>
+        <td>17</td>
+        <td>Senior Seminar	</td>
+        <td>4</td>
+        <td>C</td>
+    </tr>
 
-  </tr>
+
 </table>
 
 
