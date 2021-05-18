@@ -33,7 +33,7 @@
   <form action="/action_page.php">
   <div class="row">
     <div class="col-25">
-      <label for="CRN"></label>
+      <label for="CRN">CRN</label>
     </div>
     <div class="col-75">
       <input type="text" id="CRN" name="crn" placeholder="CRN..">
@@ -42,22 +42,22 @@
 
   <div class="row">
     <div class="col-25">
-      <label for="cName">Course Title</label>
+      <label for="cName">Subject</label>
     </div>
     <div class="col-75">
-      <input type="text" id="cName" name="classname" placeholder="Class Name..">
+      <input type="text" id="cName" name="Subject" placeholder="Subject">
     </div>
   </div>
 
-  </div>
-  <div class="row">
-    <div class="col-25">
-      <label for="sec">Section</label>
-    </div>
-    <div class="col-75">
-      <input type="text" id="sec" name="section" placeholder="section..">
-    </div>
-  </div>
+      <div class="row">
+          <div class="col-25">
+              <label for="cName">Course Title</label>
+          </div>
+          <div class="col-75">
+              <input type="text" id="cName" name="Title" placeholder="Title">
+          </div>
+      </div>
+
 
   <div class="row">
     <input type="submit" value="Submit">

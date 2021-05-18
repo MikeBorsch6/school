@@ -36,17 +36,28 @@
     <tr>
         <th>&nbsp;</th>
         <th>Course ID</th>
-        <th>Course Name</th>
-        <th>Department ID</th>
-        <th>Course Credit</th>
+        <th>Course </th>
+        <th>Section </th>
+        <th>Campus ID </th>
+        <th>Credits </th>
+        <th>Title </th>
+        <th>Days </th>
+        <th>Time </th>
+        <th>Capacity </th>
+        <th>Section Actual </th>
+        <th>Section Remaining </th>
+        <th>Date </th>
+        <th>Location </th>
         <th>Minimum Grade</th>
+
+
+
     </tr>
     </thead>
     <tbody>
     @foreach(App\Models\Course::all() as $course)
     <tr>
         <td><a href="{{route('course.edit', ['course' => $course])}}">Edit</a></td>
-        <td>{{$course->id}}</td>
         <td>{{$course->crn}}</td>
         <td>{{$course->subject}}</td>
         <td>{{$course->section}}</td>
@@ -60,8 +71,6 @@
         <td>{{$course->section_remaining}}</td>
         <td>{{$course->date}}</td>
         <td>{{$course->location}}</td>
-
-
         <td>C</td>
     </tr>
     @endforeach
