@@ -108,13 +108,24 @@ class User extends Authenticatable
 
     public function calculateLetterGrades($grade)
     {
-        return match (true) {
-            $grade >= 90 => 'A',
-            $grade >= 80 && $grade <= 89 => 'B',
-            $grade >= 70 && $grade <= 79 => 'C',
-            $grade >= 60 && $grade <= 69 => 'D',
-            default => 'F',
-        };
+        if($grade->grade >= 90)
+        {
+            return 'A';
+        }
+        elseif( $grade->grade >= 80 && $grade->grade)
+        {
+            return 'B';
+        }
+        elseif($grade->grade >= 70 && $grade->grade <= 79)
+        {
+            return 'C' ;
+        }
+        elseif($grade->grade >= 60 && $grade->grade <= 69) {
+            return 'D';
+        }
+        else {
+            return 'F';
+        }
     }
 
     public function holds()
