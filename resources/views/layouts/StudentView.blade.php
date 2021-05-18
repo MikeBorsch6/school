@@ -51,7 +51,7 @@
 		<div>
 			<table id ="courses">
                 <h2 class="titleS">Course I Am Taking</h2>
-				@foreach(Auth::user()->courses as $course)
+				@foreach(Auth::user()->courses->take(3) as $course)
                     <tr>
                         <td>
                             {{ $course->crn }}
