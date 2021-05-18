@@ -77,13 +77,25 @@ class User extends Authenticatable
 
         $this->grades
             ->each(function($grade){
-                $result = match (true) {
-                    $grade->grade >= 90 => 4,
-                    $grade->grade >= 80 && $grade->grade <= 89 => 3,
-                    $grade->grade >= 70 && $grade->grade <= 79 => 2,
-                    $grade->grade >= 60 && $grade->grade <= 69 => 1,
-                    default => 0,
-                };
+                $result = 0;
+                if($grade->grade >= 90)
+                {
+                    $result=4;
+                }
+                elseif( $grade->grade >= 80 && $grade->grade)
+                {
+                    $result =3;
+                }
+                elseif($grade->grade >= 70 && $grade->grade <= 79)
+                {
+                    $result = 2 ;
+                }
+                elseif($grade->grade >= 60 && $grade->grade <= 69) {
+                    $result = 1;
+                }
+                else {
+                    $result = 0;
+                }
 
                 $this->gpa += $result;
             });
