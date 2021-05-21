@@ -52,7 +52,6 @@
 
 <div class = "div3">
 
-<p><a href="/departments">Departments</a></p>
 <p><a href="/selectSemestRost">Rosters</a></p>
 <p><a href="/lockedAccounts">Locked Accounts</a></p>
 			</div>

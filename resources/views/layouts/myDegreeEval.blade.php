@@ -9,7 +9,7 @@
             echo(file_get_contents(public_path('css/pagesU.css')))
         @endphp
     </style>
-    <div id="grad1">
+    <div id="grad2p">
 
     <ul>
       <div class="header">
@@ -87,79 +87,29 @@
       </tr>
 
       <tr>
-        <th>Course Name</th>
-        <th>CRN</th>
-        <th>Credits</th>
-        <th>Grade</th>
-        <th>Completed</th>
+          <th>Course Name</th>
+          <th>Course</th>
+          <th>Credits</th>
+          <th>Grade</th>
+          <th>Completed</th>
       </tr>
 
       </thead>
       <tbody>
-      <tr>
-        <td>Composition I</td>
-        <td>1234</td>
-        <td>4</td>
-        <td>A+</td>
-        <td>Fall 2017</td>
-      </tr>
+      @foreach(Auth::user()->degreeEval() as $course)
+          <tr>
+              <td>{{$course->title}}</td>
+              <td>{{$course->course}}</td>
+              <td>4</td>
+              @if(isset($course->grade))
+                  <td>{{$course->grade}}</td>
+              @else
+                  <td>NA</td>
+              @endif
+              <td>{{$course->date}}</td>
+          </tr>
+      @endforeach
 
-       <tr>
-        <td>Composition II</td>
-        <td>2345</td>
-        <td>4</td>
-        <td>A</td>
-        <td>Spring 2018</td>
-      </tr>
-
-      <tr>
-        <td>Programming I</td>
-        <td>5642</td>
-        <td>4</td>
-        <td>A</td>
-        <td>Spring 2018</td>
-      </tr>
-
-      <tr>
-        <td>Programming II</td>
-        <td>5678</td>
-        <td>4</td>
-        <td>A</td>
-        <td>Fall 2018</td>
-      </tr>
-
-      <tr>
-        <td>Data Structures</td>
-        <td>5785</td>
-        <td>4</td>
-        <td>B+</td>
-        <td>Spring 2019</td>
-      </tr>
-
-       <tr>
-        <td>Computer Networks</td>
-        <td>5697</td>
-        <td>4</td>
-        <td>A</td>
-        <td>Spring 2019</td>
-      </tr>
-
-      <tr>
-        <td>Database Management</td>
-        <td>5789</td>
-        <td>4</td>
-        <td>B</td>
-        <td>Fall 2020</td>
-      </tr>
-
-
-      <tr>
-        <td>System Design</td>
-        <td>5909</td>
-        <td>4</td>
-        <td></td>
-        <td></td>
-      </tr>
       </tbody>
       </table>
 

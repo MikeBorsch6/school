@@ -74,13 +74,13 @@ form.invert>button:nth-of-type(3){
 </form>
 
 <div>
-        @if(Auth::user()->role_id === 1)
+        @if(in_array($user->role_id, [3,4,5,6,7]))
           <a href="{{route('studentTranscriptA', ['user' => $user->id])}}">Student Transcript</a>
           <a href="{{route('searchDegreeEval', ['user' => $user->id])}}">Degree Evaluation</a>
-          <a href="/studentAttendanceA">Attendance</a>
-          <a href="/studentHolds">Holds</a>
-        @elseif(Auth::user()->role_id === 2)
-        <a href="/courseHistoryfA">Classes Teaching</a>
+          <a href="/studentAttendanceA/{{$user->id}}">Attendance</a>
+          <a href="/studentHolds/{{$user->id}}">Holds</a>
+        @elseif($user->role_id === 2)
+        <a href="/courseHistoryfA/{{$user->id}}">Classes Teaching</a>
         <a href="/adviseeA">Advisees</a>
     @endif
 

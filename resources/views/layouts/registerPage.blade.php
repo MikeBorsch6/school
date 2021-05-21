@@ -48,7 +48,7 @@
       </thead>
 
       <tbody>
-      @foreach(Auth::user()->courses as $course)
+      @foreach(Auth::user()->courses->where('date', '08/03/21-12/16/21') as $course)
           <tr>
               <td>
                   {{ $course->crn }}
@@ -71,12 +71,15 @@
     </table>
 
 <hr class="rounded">
-
+  @if($errors->any())
+      <h4>{{$errors->first()}}</h4>
+  @endif
   <form name="add-blog-post-form" id="add-blog-post-form" method="post" action="{{route('user-course')}}">
       @csrf
       <div class="form-group">
           <label for="crn2">Register Class</label>
           <br>
+          <input type="hidden" name="semester" value="08/03/21-12/16/21">
           <input type="text" id="CRN" name="CRN" placeholder="CRN NUMBER" value="">
       </div>
       <br>

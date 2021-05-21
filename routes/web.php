@@ -431,6 +431,10 @@ Route::get('/researcherPageA', function(){
     return view('layouts.researcherPageA');
 })->name('researcherPageA');
 
+Route::get('/ResearcherView', function(){
+    return view('layouts.ResearchView');
+})->name('ResearcherView');
+
 Route::get('/studentAttendanceA', function(){
     return view('layouts.studentAttendanceA');
 })->name('searchAttendanceA');
@@ -454,10 +458,6 @@ Route::get('/editClass', function(){
 Route::get('/selectPrerequi', function(){
     return view('layouts.selectPrerequi');
 })->name('selectPrerequi');
-
-Route::get('/prerequiPage', function(){
-    return view('layouts.prerequiPage');
-})->name('prerequiPage');
 
 Route::get('/selectDepartment', function(){
     return view('layouts.selectDepartment');
@@ -573,14 +573,6 @@ Route::get('/myForms', function(){
 Route::get('/MyInfoS', function(){
     return view('layouts.MyInfoS');
 })->middleware('auth')->name('MyInfoS');
-
-Route::get('/courseHistoryfA', function(){
-    return view('layouts.courseHistoryfA');
-})->name('courseHistoryfA');
-
-Route::get('/viewClassInfoA', function(){
-    return view('layouts.viewClassInfoA');
-})->name('viewClassInfoA');
 
 Route::get('/adviseeA', function(){
     return view('layouts.adviseeA');
@@ -843,7 +835,27 @@ Route::namespace('App\Http\Controllers')
 
         })->name('editClass');
 
+        Route::get('/prerequiPage/{course}', function(\App\Models\Course $course){
+            $parents = \App\Models\Course::select()
+                ->where('date', '08/03/21-12/16/21')
+                ->where('course', $course->parent_id)
+                ->where('field_id', $course->field_id)
+                ->get();
 
+            return view('layouts.prerequiPage', ['course' => $course, 'parents' => $parents]);
+        })->name('prerequiPage');
+
+        Route::get('/studentAttendanceA/{user}', function(App\Models\User $user){
+            return view('layouts.studentAttendanceA', ['user' => $user]);
+        })->name('searchAttendanceA');
+
+        Route::get('/courseHistoryfA/{user}', function(App\Models\User $user){
+            return view('layouts.courseHistoryfA', ['user' => $user]);
+        })->name('courseHistoryfA');
+
+        Route::get('/viewClassInfoA/{course}', function(App\Models\Course $course){
+            return view('layouts.viewClassInfoA', ['course' => $course]);
+        })->name('viewClassInfoA');
     });
 
 

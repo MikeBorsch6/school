@@ -29,18 +29,20 @@
 
 <h1 class="title1">Roster</h1>
   <table class="classinfo">
+
+      @foreach(Auth::user()->courses as $course)
     <tr>
     <th>Course Name:</th>
-    <td>Linear Algebra</td>
+    <td>{{ $course->title }}</td>
     <th>Faculty Name:</th>
-    <td>Maria Romero Sorto</td>
+    <td>{{Auth::user()->name}}</td>
     <th>Days:</th>
-    <td>Mon, Wed</td>
+    <td>Mon, Wed, Tues</td>
   </tr>
 
   <tr>
     <th>CRN:</th>
-    <td>36823</td>
+    <td>3682</td>
     <th>Semester Year:</th>
     <td>Spring 2021</td>
     <th>Start Time:</th>
@@ -55,6 +57,7 @@
     <th>End Time:</th>
     <td>2:30pm</td>
   </tr>
+      @endforeach
   </table>
 
 

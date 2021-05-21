@@ -33,36 +33,36 @@
 
 		<div class ="div2">
 			<table>
-  				<tr>
-    				<th>Saturn University</th>
+                <tr>
+                    <th>Saturn University</th>
 
-  				</tr>
-  				<tr>
-    				<td><img src='images/profile.png' style = "width:60px;height:60px;"></td>
-    				<td><b>Researcher</b></td>
- 				 </tr>
-  				<tr>
-    				<td><b>ID number</b></td>
-    				<td>{{$user->id}}</td>
+                </tr>
+                <tr>
+                    <td><img src='images/profile.png' style = "width:60px;height:60px;"></td>
+                    <td><b>Admin</b></td>
+                </tr>
+                <tr>
+                    <td><b>ID number</b></td>
+                    <td>{{Auth::user()->id}}</td>
 
-  				</tr>
-  				<tr>
-    				<td><b>Name</b></td>
-    				<td>{{$user->name}}</td>
+                </tr>
+                <tr>
+                    <td><b>Name</b></td>
+                    <td>{{Auth::user()->name}}</td>
 
- 				 </tr>
+                </tr>
 
-  				<tr>
-    				<td><b>Email</b></td>
-    				<td>{{$user->email}}</td>
+                <tr>
+                    <td><b>Email</b></td>
+                    <td>{{Auth::user()->email}}</td>
 
-  				</tr>
+                </tr>
 
-  				<tr>
-    				<td><b>Address</b></td>
-    				<td>{{$user->address}}</td>
+                <tr>
+                    <td><b>Address</b></td>
+                    <td>{{Auth::user()->address}}</td>
 
-  				</tr>
+                </tr>
 
 
 

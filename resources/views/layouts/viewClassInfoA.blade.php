@@ -31,29 +31,27 @@
   <table class="classinfo">
     <tr>
     <th>Course Name:</th>
-    <td>Linear Algebra</td>
+    <td>{{$course->title}}</td>
     <th>Faculty Name:</th>
-    <td>Maria Romero Sorto</td>
+    <td>{{$course->teacher->name}}</td>
     <th>Days:</th>
-    <td>Mon, Wed</td>
+    <td>{{$course->days}}</td>
   </tr>
 
   <tr>
     <th>CRN:</th>
-    <td>36823</td>
+    <td>{{$course->crn}}</td>
     <th>Semester Year:</th>
-    <td>Spring 2021</td>
-    <th>Start Time:</th>
-    <td>1:00pm</td>
+    <td>{{$course->date}}</td>
+    <th>Time:</th>
+    <td>{{$course->time}}</td>
   </tr>
 
   <tr>
     <th>Enrolled:</th>
-    <td>20</td>
+    <td>{{$course->users->count()}}</td>
     <th>Capacity:</th>
-    <td>25</td>
-    <th>End Time:</th>
-    <td>2:30pm</td>
+    <td>{{$course->capacity}}</td>
   </tr>
   </table>
 
@@ -66,66 +64,17 @@
     <th>ID Number</th>
     <th>Student Name</th>
     <th>Email</th>
-    <th>Phone Number</th>
   </tr>
 </thead>
 <tbody>
+    @foreach($course->users as $user)
   <tr>
-    <td><a href="/studentTranscriptA">View</a></td>
-    <td>800234223</td>
-    <td>James Peng</td>
-    <td>jpeng@saturnuni.com</td>
-    <td>646-237-9808</td>
+    <td><a href="/studentTranscriptA/{{$user->id}}">View</a></td>
+    <td>{{$user->id}}</td>
+    <td>{{$user->name}}</td>
+    <td>{{$user->email}}</td>
   </tr>
-
-  <tr>
-    <td><a href="/studentTranscriptA">View</a></td>
-    <td>876543210</td>
-    <td>Ariel Mariner</td>
-    <td>amariner@saturnuni.com</td>
-    <td>516-753-8960</td>
-  </tr>
-
-  <tr>
-    <td><a href="/studentTranscriptA">View</a></td>
-    <td>876587431</td>
-    <td>Minera Reyes</td>
-    <td>mreyes@saturnuni.com</td>
-    <td>516-654-1239</td>
-  </tr>
-
- <tr>
-    <td><a href="/studentTranscriptA">View</a></td>
-    <td>701336743</td>
-    <td>Jotono Miyers</td>
-    <td>jmiyers@saturnuni.com</td>
-    <td>646-764-9090</td>
-  </tr>
-
-  <tr>
-    <td><a href="/studentTranscriptA">View</a></td>
-    <td>685437084</td>
-    <td>Jason Frank</td>
-    <td>jfrank@saturnuni.com</td>
-    <td>765-980-8001</td>
-  </tr>
-
-  <tr>
-    <td><a href="/studentTranscriptA">View</a></td>
-    <td>700872387</td>
-    <td>Primavera Trelli</td>
-    <td>ptrelli@saturnuni.com</td>
-    <td>786-808-9123</td>
-  </tr>
-
-  <tr>
-    <td><a href="/studentTranscriptA">View</a></td>
-    <td>743212347</td>
-    <td>Loreala Paloski</td>
-    <td>lpaloski@saturnuni.com</td>
-    <td>646-237-7654</td>
-  </tr>
-
+    @endforeach
 </tbody>
 </table>
 </body>

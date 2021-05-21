@@ -62,29 +62,6 @@
     				<td>{{Auth::user()->address}}</td>
   				</tr>
 
-  				<tr>
-    				<td><b>Advisees</b></td>
-    				<td>James Peng</td>
-
-  				</tr>
-  				<tr>
-    				<td><b>Advisees Email</b></td>
-    				<td>jpeng1@saturnuni.com</td>
-
-  				</tr>
-          <tr>
-            <td><b>Advisees</b></td>
-            <td>Kim Kamado</td>
-
-          </tr>
-          <tr>
-            <td><b>Advisees Email</b></td>
-            <td>kkamado@saturnuni.com</td>
-
-          </tr>
-
-
-
 			</table>
 		</div>
 

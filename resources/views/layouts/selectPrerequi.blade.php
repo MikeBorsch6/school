@@ -13,7 +13,7 @@
 
     <ul>
         <div class="header">
-            <<a href="admin" class="buttonHome"><img src='/images/saturn1.png' alt="logo" >
+            <a href="admin" class="buttonHome"><img src='/images/saturn1.png' alt="logo" >
       <div class="dropdown" style="float:right;">
           <button class="dropbtn">{{Auth::user()->name}}</button>
           <div class="dropdown-content">
@@ -46,7 +46,7 @@
   <tbody>
   @foreach(App\Models\Course::where('date','08/03/21-12/16/21')->get() as $course)
       <tr>
-          <td><a href="/prerequiPage">Edit</a></td>
+          <td><a href="/prerequiPage/{{$course->id}}">View</a></td>
           <td>{{$course->crn}}</td>
           <td>{{$course->title}}</td>
           <td>{{$course->subject}}</td>

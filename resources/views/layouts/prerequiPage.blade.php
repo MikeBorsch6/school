@@ -32,26 +32,24 @@
 <h1 class="title1">Prerequisites for:</h1>
 
 <div class="divP1">
-  <h2 class ="title2">127836 Linear Algebra</h2></div>
+  <h2 class ="title2">{{$course->course}} {{$course->title}}</h2></div>
 <div>
 <table id="prerequi" class="prerequi">
   <thead>
   <tr>
-    <th>Course ID</th>
+    <th>Course</th>
     <th>Course Name</th>
     <th>Major</th>
     <th>Credits</th>
-    <th>Departments</th>
   </tr>
 
 </thead>
 <tbody>
   <tr>
-    <td>127836</td>
-    <td>Linear Algebra</td>
-    <td>Mathemcatics, B.S.</td>
+    <td>{{$course->course }}</td>
+    <td>{{$course->title}}</td>
+    <td>{{$course->subject}}</td>
     <td>4</td>
-    <td>Mathematics</td>
   </tr>
 </tbody>
 </table>
@@ -71,18 +69,18 @@
     <th>Course Name</th>
     <th>Major</th>
     <th>Credits</th>
-    <th>Departments</th>
   </tr>
 </thead>
 
 <tbody>
-  <tr>
-    <td>12231</td>
-    <td>Intro to Statistics</td>
-    <td>Mathemcatics, B.S.</td>
-    <td>4</td>
-    <td>Mathematics</td>
-  </tr>
+  @foreach($parents as $parent)
+      <tr>
+          <td>{{$parent->course}}</td>
+          <td>{{$parent->title}}</td>
+          <td>{{$parent->subject}}</td>
+          <td>4</td>
+      </tr>
+  @endforeach
 </tbody>
 </div>
 

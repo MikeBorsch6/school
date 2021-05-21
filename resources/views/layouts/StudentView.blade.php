@@ -51,7 +51,8 @@
 		<div>
 			<table id ="courses">
                 <h2 class="titleS">Course I Am Taking</h2>
-				@foreach(Auth::user()->courses->take(3) as $course)
+				@foreach(Auth::user()->courses as $course)
+                    @if($course->created_at > '2021')
                     <tr>
                         <td>
                             {{ $course->crn }}
@@ -65,10 +66,9 @@
                         <td>
                             {{ $course->time }}
                         </td>
-                        <td>
-                            {{ $course->location }}
-                        </td>
+
                     </tr>
+                    @endif
                 @endforeach
 			</table>
 		</div>

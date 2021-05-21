@@ -62,24 +62,8 @@
     				<td><b>Address</b></td>
     				<td>{{Auth::user()->address}}</td>
   				</tr>
-
-  				<tr>
-    				<td><b>Advisor</b></td>
-    				<td>Maria Romero Sorto</td>
-
-  				</tr>
-
-  				<tr>
-    				<td><b>Advisor Email</b></td>
-    				<td>romeroms@saturnuni.com</td>
-
-  				</tr>
-
 			</table>
 		</div>
-
-
-
 	</body>
 	</html>
 

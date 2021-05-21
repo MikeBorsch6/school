@@ -31,10 +31,33 @@ class AuthenticatedSessionController extends Controller
         {
             return redirect(route('FacultyView'));
         }
-        else
+        elseif(Auth::user()->role_id == 3)
             {
 
             return redirect(route('StudentView'));
+        }
+        elseif(Auth::user()->role_id == 4)
+        {
+
+            return redirect(route('StudentView'));
+        }
+        elseif(Auth::user()->role_id == 5)
+        {
+
+            return redirect(route('StudentView'));
+        }
+        elseif(Auth::user()->role_id == 6)
+        {
+
+            return redirect(route('StudentView'));
+        }
+        elseif(Auth::user()->role_id == 7)
+        {
+
+            return redirect(route('StudentView'));
+        }
+        else{
+            return redirect(route('ResearcherView'));
         }
     }
 

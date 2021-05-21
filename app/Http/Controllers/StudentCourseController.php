@@ -13,15 +13,35 @@ class StudentCourseController extends Controller
     {
         $course = Course::where('crn', $request->get('CRN'))->first();
 
-        $user = Auth::user();
+        $myCourses = Auth::user()->courses()->where('date', '08/03/21-12/16/21')
+            ->where('days', $course->days)
+            ->where('time', $course->time)
+            ->get();
 
-           $user
+        $grades = Auth::user()->grades
+            ->filter(function($grade) use($course) {
+               return $grade->course->course->course === $course->parent_id;
+            });
+
+        if(!$grades->isEmpty() && $grades->first()->grade >= 70 && $myCourses->isEmpty())
+        {
+            $user = Auth::user();
+
+            $user
                 ->courses()
                 ->attach(
                     $course
                 );
+            return redirect()->back();
+        }
+        elseif (!$myCourses->isEmpty())
+        {
+            return redirect()->back()->withErrors(['Time Slot Conflict']);
+        }
+        else {
+            return redirect()->back()->withErrors(['Could Not Register, No Prereq Grade ']);
+        }
 
-           return redirect()->back();
     }
 
     public function deleteStudentCourse(Request $request)

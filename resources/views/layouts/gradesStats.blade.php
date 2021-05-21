@@ -29,9 +29,6 @@
 
 <body>
   <h1 class="title1">Grades</h1>
-  <label for="userSearch">Search Department:</label>
-  <input type="search" placeholder="Search.." class = "form-control search-input" data-table="research">
-  <input type="submit">
 </form>
   <table class="research">
   <thead>
@@ -43,38 +40,11 @@
   </tr>
 </thead>
 <tbody>
-  <tr>
-    <td>American Studies</td>
-    <td>B+</td>
-  </tr>
-
-  <tr>
-    <td>Computer Science</td>
-    <td>A</td>
-  </tr>
-
-  <tr>
-    <td>Psychology</td>
-    <td>A</td>
-  </tr>
-
-  <tr>
-    <td>Biological Sciences</td>
-    <td>A</td>
-  </tr>
-
-  <tr>
-    <td>Accounting</td>
-    <td>B</td>
-  </tr>
-
-  <tr>
-    <td>Business</td>
-    <td>B</td>
-  </tr>
-
-
-
+@foreach(App\Models\Subject::all() as $subject)
+    <tr>
+        <td>{{$subject->name}}</td>
+    </tr>
+@endforeach
 </tbody>
 </table>
 

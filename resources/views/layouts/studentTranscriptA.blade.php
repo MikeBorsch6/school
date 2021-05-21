@@ -94,7 +94,7 @@
             <tr>
                 <td>{{$grade->course->course->crn}}</td>
                 <td>{{$grade->course->course->date}}</td>
-                <td>{{$grade->course->course->subject}}</td>
+                <td>{{$grade->course->course->title}}</td>
                 <td>{{$grade->course->course->credits}}</td>
                 <td><a href="{{route('enterGrade', ['grade' => $grade])}}">{{$grade->grade}}</a></td>
             </tr>

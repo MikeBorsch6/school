@@ -17,8 +17,8 @@
       <div class="dropdown" style="float:right;">
           <button class="dropbtn">{{Auth::user()->name}}</button>
           <div class="dropdown-content">
-          <a href="MyInfoS.blade.php">My Info</a>
-          <a href="logout.html">Log out</a>
+          <a href="/MyInfoS">My Info</a>
+          <a href="/logout">Log out</a>
 
         </div>
       </div>
@@ -49,6 +49,7 @@
                 <td>NA</td>
             @else
                 @foreach(Auth::user()->majors as $major)
+                    <td>{{$major->name }}</td>
                 @endforeach
             @endif
 
@@ -60,18 +61,15 @@
                 <td>NA</td>
             @else
                 @foreach(Auth::user()->minors as $minor)
-                    <td>{{Auth::user()-> minor->name }}</td>
+
+                    <td>{{$minor->name }}</td>
                 @endforeach
             @endif
         </tr>
 
         <tr>
             <th>GPA:   </th>
-            @if(Auth::user()->grades->isEmpty())
-                <td>NA</td>
-            @else
                 <td>{{Auth::user()->gpa()}}</td>
-            @endif
         </tr>
 
     </table>
@@ -90,15 +88,18 @@
         <th>Grade</th>
         </tr>
 </thead>
-
     <tbody>
     @foreach(Auth::user()->grades as $grade)
         <tr>
-            <td>{{$grade()->course->course->crn}}</td>
-            <td>{{$grade()->course->course->date}}</td>
-            <td>{{$grade()->course->course->subject}}</td>
-            <td>{{$grade()->course->course->credits}}</td>
-            <td><a href="{{route('enterGrade', ['grade' => $grade])}}">{{$grade->grade}}</a></td>
+            <td>{{$grade->course->course->crn}}</td>
+            <td>{{$grade->course->course->date}}</td>
+            <td>{{$grade->course->course->title}}</td>
+            <td>{{$grade->course->course->credits}}</td>
+            @if(in_array(Auth::user()->role->id, [1,2]))
+                <td><a href="{{route('enterGrade', ['grade' => $grade])}}">{{Auth::user()->calculateLetterGrades($grade)}}</a></td>
+            @else
+                <td>{{Auth::user()->calculateLetterGrades($grade)}}</a></td>
+            @endif
         </tr>
     @endforeach
 

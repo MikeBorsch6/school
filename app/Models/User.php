@@ -34,7 +34,7 @@ class User extends Authenticatable
 
     public function courses()
     {
-        return $this->belongsToMany(Course::class);
+        return $this->belongsToMany(Course::class)->withPivot('id');;
     }
 
     public function grades()
@@ -74,7 +74,6 @@ class User extends Authenticatable
 
     public function gpa()
     {
-
         $this->grades
             ->each(function($grade){
                 $result = 0;
@@ -98,10 +97,11 @@ class User extends Authenticatable
                 }
 
                 $this->gpa += $result;
+
             });
 
         return $this->grades()->count() > 0
-            ?  $this->gpa / $this->grades()->count()
+            ?  round($this->gpa / $this->grades()->count(), 2)
             : 0;
 
     }
@@ -131,5 +131,32 @@ class User extends Authenticatable
     public function holds()
     {
         return $this->belongsToMany(Hold::class);
+    }
+
+    public function degreeEval()
+    {
+        $courses = Course::select('courses.title', 'courses.course')
+            ->whereIn('field_id', $this->fields->pluck('id'))
+            ->groupBy('course', 'title')
+            ->orderBy('courses.course', 'ASC')
+            ->get();
+
+        $coursesTaken = $courses->map(function($course) {
+           $grade = $this->grades->filter(function($grade) use ($course) {
+              return $grade->course->course->title === $course->title;
+           });
+           if(!$grade->isEmpty()) {
+               $course->grade = $grade->first()->grade;
+               $course->date = $grade->first()->course->course->date;
+               return $course;
+           }
+           else {
+               $course->grade = null;
+               $course->date = 'TBA';
+               return $course;
+           }
+        });
+
+        return $coursesTaken;
     }
 }

@@ -48,89 +48,21 @@
   </tr>
 </thead>
 <tbody>
-  <tr>
-    <td><a href="/viewClassInfoA">View</a></td>
-    <td>127836</td>
-    <td>Linear Algebra</td>
-    <td>44382</td>
-    <td>Geta Tekanie</td>
-    <td>4</td>
-    <td>NAB 1127</td>
-    <td>Spring 2021</td>
-    <td>Mon,Wed</td>
-    <td>1:50pm - 3:20pm</td>
-    <td>21</td>
-  </tr>
-
-  <tr>
-    <td><a href="/viewClassInfoA">View</a></td>
-    <td>127836</td>
-    <td>Linear Algebra</td>
-    <td>44382</td>
-    <td>Maria Romero Sorto</td>
-    <td>4</td>
-    <td>NAB 1127</td>
-    <td>Spring 2021</td>
-    <td>Mon,Wed</td>
-    <td>1:50pm - 3:20pm</td>
-    <td>21</td>
-  </tr>
-
-  <tr>
-    <td><a href="/viewClassInfoA">View</a></td>
-    <td>127836</td>
-    <td>Linear Algebra</td>
-    <td>44382</td>
-    <td>Maria Romero</td>
-    <td>4</td>
-    <td>NAB 1127</td>
-    <td>Spring 2021</td>
-    <td>Mon,Wed</td>
-    <td>1:50pm - 3:20pm</td>
-    <td>21</td>
-  </tr>
-
- <tr>
-    <td><a href="/viewClassInfoA">View</a></td>
-    <td>127836</td>
-    <td>Linear Algebra</td>
-    <td>44382</td>
-    <td>Maria Romero</td>
-    <td>4</td>
-    <td>NAB 1127</td>
-    <td>Spring 2020</td>
-    <td>Mon,Wed</td>
-    <td>1:50pm - 3:20pm</td>
-    <td>21</td>
-  </tr>
-
-  <tr>
-    <td><a href="/viewClassInfoA">View</a></td>
-    <td>127836</td>
-    <td>Linear Algebra</td>
-    <td>44382</td>
-    <td>Maria Romero</td>
-    <td>4</td>
-    <td>NAB 1127</td>
-    <td>Spring 2019</td>
-    <td>Mon,Wed</td>
-    <td>1:50pm - 3:20pm</td>
-    <td>21</td>
-  </tr>
-
-  <tr>
-    <td><a href="/viewClassInfoA">View</a></td>
-    <td>127836</td>
-    <td>Linear Algebra</td>
-    <td>44382</td>
-    <td>Maria Romero</td>
-    <td>4</td>
-    <td>NAB 1127</td>
-    <td>Spring 2018</td>
-    <td>Mon,Wed</td>
-    <td>1:50pm - 3:20pm</td>
-    <td>21</td>
-  </tr>
+    @foreach($user->teaches as $course)
+        <tr>
+            <td><a href="/viewClassInfoA/{{$course->id}}">View</a></td>
+            <td>{{$course->crn}}</td>
+            <td>{{$course->title}}</td>
+            <td>{{$course->course}}</td>
+            <td>{{$course->teacher->name}}</td>
+            <td>{{$course->section}}</td>
+            <td>{{$course->location}}</td>
+            <td>{{$course->date}}</td>
+            <td>{{$course->days}}</td>
+            <td>{{$course->time}}</td>
+            <td>{{$course->capacity}}</td>
+        </tr>
+    @endforeach
 </tbody>
 </table>
 

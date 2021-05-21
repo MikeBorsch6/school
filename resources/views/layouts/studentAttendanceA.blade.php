@@ -13,7 +13,7 @@
 
         <ul>
             <div class="header">
-                <a href="admin" class="buttonHome"><img src='images/saturn1.png' alt="logo" >
+                <a href="admin" class="buttonHome"><img src='/images/saturn1.png' alt="logo" >
                 <div class="dropdown" style="float:right;" >
                     <button class="dropbtn">{{Auth::user()->name}}</button>
                     <div class="dropdown-content">
@@ -39,7 +39,7 @@
 
     <tbody>
     <tr>
-        <td>James Peng</td>
+        <td>{{$user->name}}</td>
         <td><form action="action_page.php">
                 <label for="attend">----</label>
                 <select id="attend" name="attend">
@@ -53,7 +53,7 @@
 
 
     <tr>
-        <td>James Peng</td>
+        <td>{{$user->name}}</td>
         <td><form action="action_page.php">
                 <label for="attend">----</label>
                 <select id="attend" name="attend">
@@ -67,7 +67,7 @@
 
 
     <tr>
-        <td>James Peng</td>
+        <td>{{$user->name}}</td>
         <td><form action="action_page.php">
                 <label for="attend">----</label>
                 <select id="attend" name="attend">
@@ -81,7 +81,7 @@
 
 
     <tr>
-        <td>James Peng</td>
+        <td>{{$user->name}}</td>
         <td><form action="action_page.php">
                 <label for="attend">----</label>
                 <select id="attend" name="attend">
@@ -95,7 +95,7 @@
 
 
     <tr>
-        <td>James Peng</td>
+        <td>{{$user->name}}</td>
         <td><form action="action_page.php">
                 <label for="attend">----</label>
                 <select id="attend" name="attend">
@@ -109,7 +109,7 @@
 
 
     <tr>
-        <td>James Peng</td>
+        <td>{{$user->name}}</td>
         <td><form action="action_page.php">
                 <label for="attend">----</label>
                 <select id="attend" name="attend">
@@ -123,7 +123,7 @@
 
 
     <tr>
-        <td>James Peng</td>
+        <td>{{$user->name}}</td>
         <td><form action="action_page.php">
                 <label for="attend">----</label>
                 <select id="attend" name="attend">
@@ -137,7 +137,7 @@
 
 
     <tr>
-        <td>James Peng</td>
+        <td>{{$user->name}}</td>
         <td><form action="action_page.php">
                 <label for="attend">----</label>
                 <select id="attend" name="attend">
@@ -151,7 +151,7 @@
 
 
     <tr>
-        <td>James Peng</td>
+        <td>{{$user->name}}</td>
         <td><form action="action_page.php">
                 <label for="attend">----</label>
                 <select id="attend" name="attend">
@@ -165,7 +165,7 @@
 
 
     <tr>
-        <td>James Peng</td>
+        <td>{{$user->name}}</td>
         <td><form action="action_page.php">
                 <label for="attend">----</label>
                 <select id="attend" name="attend">
@@ -179,7 +179,7 @@
 
 
     <tr>
-        <td>James Peng</td>
+        <td>{{$user->name}}</td>
         <td><form action="action_page.php">
                 <label for="attend">----</label>
                 <select id="attend" name="attend">
@@ -193,7 +193,7 @@
 
 
     <tr>
-        <td>James Peng</td>
+        <td>{{$user->name}}</td>
         <td><form action="action_page.php">
                 <label for="attend">----</label>
                 <select id="attend" name="attend">
@@ -207,7 +207,7 @@
 
 
     <tr>
-        <td>James Peng</td>
+        <td>{{$user->name}}</td>
         <td><form action="action_page.php">
                 <label for="attend">----</label>
                 <select id="attend" name="attend">
@@ -221,7 +221,7 @@
 
 
     <tr>
-        <td>James Peng</td>
+        <td>{{$user->name}}</td>
         <td><form action="action_page.php">
                 <label for="attend">----</label>
                 <select id="attend" name="attend">
@@ -235,7 +235,7 @@
 
 
     <tr>
-        <td>James Peng</td>
+        <td>{{$user->name}}</td>
         <td><form action="action_page.php">
                 <label for="attend">----</label>
                 <select id="attend" name="attend">
@@ -249,7 +249,7 @@
 
 
     <tr>
-        <td>James Peng</td>
+        <td>{{$user->name}}</td>
         <td><form action="action_page.php">
                 <label for="attend">----</label>
                 <select id="attend" name="attend">
@@ -263,7 +263,7 @@
 
 
     <tr>
-        <td>James Peng</td>
+        <td>{{$user->name}}</td>
         <td><form action="action_page.php">
                 <label for="attend">----</label>
                 <select id="attend" name="attend">
@@ -277,7 +277,7 @@
 
 
     <tr>
-        <td>James Peng</td>
+        <td>{{$user->name}}</td>
         <td><form action="action_page.php">
                 <label for="attend">----</label>
                 <select id="attend" name="attend">
@@ -291,7 +291,7 @@
 
 
     <tr>
-        <td>James Peng</td>
+        <td>{{$user->name}}</td>
         <td><form action="action_page.php">
                 <label for="attend">----</label>
                 <select id="attend" name="attend">
@@ -305,7 +305,7 @@
 
 
     <tr>
-        <td>James Peng</td>
+        <td>{{$user->name}}</td>
         <td><form action="action_page.php">
                 <label for="attend">----</label>
                 <select id="attend" name="attend">
@@ -319,7 +319,7 @@
 
 
     <tr>
-        <td>James Peng</td>
+        <td>{{$user->name}}</td>
         <td><form action="action_page.php">
                 <label for="attend">----</label>
                 <select id="attend" name="attend">
@@ -333,7 +333,7 @@
 
 
     <tr>
-        <td>James Peng</td>
+        <td>{{$user->name}}</td>
         <td><form action="action_page.php">
                 <label for="attend">----</label>
                 <select id="attend" name="attend">
@@ -347,7 +347,7 @@
 
 
     <tr>
-        <td>James Peng</td>
+        <td>{{$user->name}}</td>
         <td><form action="action_page.php">
                 <label for="attend">----</label>
                 <select id="attend" name="attend">
@@ -361,7 +361,7 @@
 
 
     <tr>
-        <td>James Peng</td>
+        <td>{{$user->name}}</td>
         <td><form action="action_page.php">
                 <label for="attend">----</label>
                 <select id="attend" name="attend">
@@ -375,7 +375,7 @@
 
 
     <tr>
-        <td>James Peng</td>
+        <td>{{$user->name}}</td>
         <td><form action="action_page.php">
                 <label for="attend">----</label>
                 <select id="attend" name="attend">
@@ -391,7 +391,7 @@
 
 
     <tr>
-        <td>James Peng</td>
+        <td>{{$user->name}}</td>
         <td><form action="action_page.php">
                 <label for="attend">----</label>
                 <select id="attend" name="attend">
@@ -404,7 +404,7 @@
     </tr>
 
     <tr>
-        <td>James Peng</td>
+        <td>{{$user->name}}</td>
         <td><form action="action_page.php">
                 <label for="attend">----</label>
                 <select id="attend" name="attend">
@@ -417,7 +417,7 @@
     </tr>
 
     <tr>
-        <td>James Peng</td>
+        <td>{{$user->name}}</td>
         <td><form action="action_page.php">
                 <label for="attend">----</label>
                 <select id="attend" name="attend">
@@ -429,7 +429,7 @@
     </tr>
 
     <tr>
-        <td>James Peng</td>
+        <td>{{$user->name}}</td>
         <td><form action="action_page.php">
                 <label for="attend">----</label>
                 <select id="attend" name="attend">
@@ -442,7 +442,7 @@
     </tr>
 
     <tr>
-        <td>James Peng</td>
+        <td>{{$user->name}}</td>
         <td><form action="action_page.php">
                 <label for="attend">----</label>
                 <select id="attend" name="attend">
@@ -456,7 +456,7 @@
     </tr>
 
     <tr>
-        <td>James Peng</td>
+        <td>{{$user->name}}</td>
         <td><form action="action_page.php">
                 <label for="attend">----</label>
                 <select id="attend" name="attend">
@@ -469,7 +469,7 @@
     </tr>
 
     <tr>
-        <td>James Peng</td>
+        <td>{{$user->name}}</td>
         <td><form action="action_page.php">
                 <label for="attend">----</label>
                 <select id="attend" name="attend">
@@ -483,7 +483,7 @@
     </tr>
 
     <tr>
-        <td>James Peng</td>
+        <td>{{$user->name}}</td>
         <td><form action="action_page.php">
                 <label for="attend">----</label>
                 <select id="attend" name="attend">
@@ -496,7 +496,7 @@
     </tr>
 
     <tr>
-        <td>James Peng</td>
+        <td>{{$user->name}}</td>
         <td><form action="action_page.php">
                 <label for="attend">----</label>
                 <select id="attend" name="attend">
